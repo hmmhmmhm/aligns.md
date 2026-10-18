@@ -12,9 +12,11 @@ Load and follow the align skill for an explicit personal review or a consequenti
 unresolved criteria conflict. If it is unavailable, disclose manual loading of a
 trusted usable source or the blocked step; do not claim skill use without reading
 the method. Routine work uses existing criteria without an interview.
-Carry answers into the next authorized step. After saving an item, offer one useful
-next topic in natural language if a real gap remains; wait for a choice before
-expanding scope, and honor stopping. Do not require another command to continue.
+Carry answers into the next authorized step. After completing an alignment item,
+offer remaining choices and a finish option, excluding completed, declined, or
+currently deferred topics. Recommend an eligible next topic or finishing if none
+remain. Prefer a supported question UI; otherwise use numbered text. Wait before
+new scope and honor stop or single-item-only requests.
 Update only the scope the user requests or confirms. Project feedback does not
 by itself authorize global changes. Keep each agreement's confirmation time
 independent, and keep skill-method updates separate from personal criteria.

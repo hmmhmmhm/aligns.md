@@ -38,14 +38,25 @@ question. If you asked only for installation, it stops after verifying installat
 
 Before saving an item, the agent shows the criterion and where it belongs. It asks
 for confirmation when needed and reuses permission you have already given. After
-saving and verification, it reports the result and recommends one useful next topic
-if there is an unresolved gap. You can accept, choose another topic, or stop.
-Already requested items continue without another permission question. New topics,
-personal setup, and extra history review wait for your choice.
+saving and verification, it summarizes the result and offers the next choices.
+Completed, declined, and deferred topics are excluded. It recommends the most useful
+remaining topic with a reason and includes a finish option. If no topic remains,
+it recommends finishing rather than inventing another task.
 
-For example: “The completion criteria are saved. Would you like to decide when a
-long-running task should pause next?” If nothing useful remains, the agent closes
-the session. You can ask to revisit your criteria later in your own words.
+When your client provides a suitable choice interface in the active mode, the agent
+uses it. Otherwise it presents numbered choices in text. You can always reply in
+your own words. Stable path numbers are preserved, and 0 means finish. A preselected
+option is not an answer. The agent waits for your choice before starting new scope.
+
+For example, after project criteria are saved, it might offer **4. Rehearse decisions
+(recommended)**, **6. Personal defaults**, and **0. Finish here**. The choices depend
+on what you have already done and what remains useful. It does not ask you to repeat
+completed work or require you to complete all six paths.
+
+Already requested items continue without another permission question. A stop or
+“only this item” request ends the flow directly. The agent keeps session progress
+in the conversation, without creating another log or background task. See the
+[session flow procedure](../skills/align/references/session-flow.md) for details.
 
 ## Personal defaults across projects
 

@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.8.1
+
+- Separate item completion from session completion with a next-choice step and an explicit finish option.
+- Exclude completed, declined, and deferred topics; recommend the most useful eligible next step and preserve progress across replies.
+- Prefer supported structured-question tools within their mode limits, with numbered text as fallback and no implied selection from defaults.
+- Preserve direct closure for stop or single-item-only requests and continue already authorized work without extra gates.
+
 ## 0.8.0
 
 - Resume authorized alignment work after menu, client, source, and storage answers instead of ending with another invocation suggestion.

@@ -124,6 +124,6 @@ file. Keep current criteria in each agreement and use existing Git history.
 After a source or storage answer, resume the selected personal setup without
 repeating the menu or requiring another invocation. Ask about saving a concrete
 scoped criterion only if it has not already been authorized. After saving and
-verifying the connection, offer one relevant next topic under the main skill's
-continuation rule. A project-level follow-up is optional unless already requested;
+verifying the connection, provide the next-choice step under
+[session flow](session-flow.md), excluding completed or declined topics. A project-level follow-up is optional unless already requested;
 never spread the new personal criterion to other projects automatically.

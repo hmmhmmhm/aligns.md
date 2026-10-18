@@ -3,7 +3,7 @@ name: align
 description: Establish and maintain project or optional cross-project personal alignment in ALIGNS.md, including review of selected personal documents, PR feedback, or conversations for scoped criteria. Use when goals or priorities are unclear, important decisions diverge from the user's expectations, repeated corrections expose a missing criterion, or a long autonomous run needs judgment calibration. Apply existing agreements without reopening routine decisions.
 license: MIT
 metadata:
-  version: "0.8.0"
+  version: "0.8.1"
 ---
 
 # Align
@@ -59,9 +59,11 @@ their language after reading the available project context. Keep numbers stable:
 Accept a numbered choice or a clear natural-language request as the starting
 path without showing the menu again. Preserve existing command aliases for users
 who already use them, but do not require or suggest a command to continue. Otherwise ask for a number or a free-form answer.
-If the client offers choice buttons, keep the numbers in their labels; plain
-text is sufficient. Treat a number as
-an answer to the most recent pending menu, including a history-scope menu.
+Use the client's available structured-question UI when its active mode supports
+it. Follow [session flow](references/session-flow.md) for capability limits,
+progress tracking, and the next-choice step. Keep stable numbers in labels and
+accept natural-language replies. Treat a number as an answer to the most recent
+pending menu, including a history-scope menu.
 Do not show the start menu again after a valid choice. For an ambiguous answer,
 clarify only the ambiguous part. An unanswered menu does not select a default.
 
@@ -117,21 +119,20 @@ confirmation, save the item, complete its authorized connection and verification
 and state what was actually saved. A single-item confirmation updates only that
 item's confirmation annotation, not the whole document's Last aligned time.
 
-After completing an item in an active alignment session, recommend at most one
-useful next alignment topic with a short reason based on the available context.
-For example: “The completion criteria are saved. We have not settled when the
-agent should pause a long run. Would you like to review that next?” Use natural
-language, and accept a brief answer without restarting the menu. If the next item
-is already part of an authorized multi-item request, continue instead of asking
-again. Otherwise, wait for the user's choice before starting a new topic, reading
-additional history, or configuring personal scope.
+After completing an item in an active alignment session, always provide a next-choice
+step unless the user requested stopping or only that item. Follow
+[session flow](references/session-flow.md): summarize completion, exclude already
+completed or declined topics, recommend the best remaining eligible topic with a
+reason, and offer a finish choice. Use the supported question UI or a numbered
+text fallback. Do not silently end because the selected item is finished. If no
+eligible topic remains, recommend finishing and offer space for a user-named topic;
+do not invent a gap or restart the menu.
 
-Do not invent gaps to keep the session alive. If nothing consequential remains,
-close with the result and mention once that the user can ask to revisit criteria
-later. Honor stop, decline, and “only this item” requests without a follow-up pitch.
-An unanswered recommendation stays optional; it does not create a loop, reminder,
-or background task. In routine non-alignment work, apply the agreement without
-appending an alignment recommendation to every response.
+Continue already authorized multi-item work without another selection gate.
+Otherwise wait for the user's choice before starting new scope. Reuse an answered
+selection without asking for an invocation or “continue.” Respect tool availability
+and mode restrictions, and do not equate a default selection with an answer.
+In routine non-alignment work, apply existing criteria without a follow-up menu.
 
 ## Choose the smallest useful alignment
 
@@ -281,7 +282,6 @@ do not fetch or change it every turn. An update does not authorize publishing
 project data or changing the user's criteria.
 
 Finish each alignment item with the agreed changes, consequential open issues,
-and saved paths, then follow the continuation rule above. Finish the session when
-the requested work is complete and no useful next topic remains, or when the user
-chooses to stop. In routine work, return to the task without a closing approval
+and saved paths, then follow the continuation rule above. Separate item completion from session completion. Use the finish choice when
+no eligible topics remain; close directly on a stop or single-item-only request. In routine work, return to the task without a closing approval
 question. Do not repeat declined suggestions without new evidence.

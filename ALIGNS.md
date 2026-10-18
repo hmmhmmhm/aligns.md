@@ -146,10 +146,14 @@ User-requested scope update: 2026-10-18 (Asia/Seoul). Partial confirmation only.
 
 Carry setup answers and menu choices into the next authorized step. Ask to save a
 concrete item when needed, reusing existing authorization. After completing an
-alignment item, recommend one useful next topic based on the actual context.
-Continue already requested work; let the user choose before expanding scope.
-Respect stopping and avoid inventing gaps or repeatedly offering declined topics.
-Use natural-language invitations and examples instead of requiring command syntax.
+alignment item, summarize completion and offer a next choice, excluding completed,
+declined, or currently deferred topics. Recommend the best eligible next topic
+with a reason, or recommend finishing when none remain. Include a finish option.
+Use the client's supported structured-question UI when available in the active
+mode, with numbered text as fallback. Track progress in the conversation, not a
+new log. Continue already requested work; let the user choose before expanding
+scope. Honor stopping and single-item-only requests. Use natural-language
+invitations instead of requiring command syntax.
 
 ## Working with other skills
 

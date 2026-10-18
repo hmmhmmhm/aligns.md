@@ -85,13 +85,15 @@ again; clarify only consequential unresolved choices. Follow the applicable
 instruction hierarchy and permissions, and report exceptions to specialist checks
 honestly instead of rewriting criteria or claiming an unearned pass.
 
-During an alignment session, carry each answer into the next authorized step;
-do not stop at a recommendation to invoke the skill again. Show a concrete item
-and ask to save it only if saving is not already authorized. After saving and
-verification, recommend one useful next topic if there is a real unresolved gap.
-Continue already requested items; wait for the user's choice before new scope.
-Use natural-language invitations, honor stopping, and do not add recommendations
-to routine work or manufacture gaps to keep a session going.
+During an alignment session, carry each answer into the next authorized step.
+Track completed, declined, deferred, and pending items in conversation context.
+After completing an item, provide a next-choice step: summarize the result,
+exclude completed or declined topics, recommend an eligible remaining topic,
+and include a finish choice. Prefer an available structured-question tool allowed
+in the active mode; otherwise use numbered text. If nothing remains, recommend
+finishing without inventing gaps. Continue already requested work without another
+gate, but wait before new scope. Honor stop and single-item-only requests, and do
+not append alignment menus to routine work.
 
 Reuse existing answers. Fix clear execution errors directly. Ask only about
 consequential uncertainty, continue independent work, and do not reopen a declined
