@@ -4,6 +4,30 @@ The skill contains the evolving alignment method. Your project's ALIGNS.md
 contains your criteria. Install the skill once through one route, connect your
 project instructions, and use it again when there is something worth aligning.
 
+## Choose where to start
+
+Invoke `$align` in Codex, `/align:align` with the Claude Code plugin, or ask to
+use the align skill. If the purpose is open, the agent offers these choices in
+your language:
+
+1. Set or review project direction and personal criteria.
+2. Review a decision that missed your expectations.
+3. Find criteria in selected PR or conversation history.
+4. Rehearse decisions before a long autonomous run.
+5. Suggest a starting point from the current project.
+
+Reply with a number or describe what you need. You can also write `$align 3`
+to choose history review directly. A specific request such as
+“Use align to review my recent PR feedback” skips the start menu. History review
+still lets you choose sources and scope with time estimates before collection.
+Choosing option 3 does not select all your records.
+
+The agent briefly explains the path: check context, ask about unresolved choices,
+summarize the criteria, then save authorized changes. It shows the current step
+when moving between stages and skips work already done. A menu choice does not
+confirm new preferences. Rehearsal discusses hypothetical decisions without
+starting the autonomous run.
+
 ## Ask your agent to install it
 
 Copy the [installation request](install-request.txt), or say:

@@ -74,6 +74,8 @@ npx skills add hmmhmmhm/aligns.md --skill align
 
 Then ask: **Use the align skill to set up ongoing alignment for this project.**
 
+Call `$align` with no specific request to choose a starting point by number: project criteria, a decision that missed expectations, history review, rehearsal before a long run, or a recommendation. The agent outlines the steps and guides you through them. If you already say what you need, it skips the menu.
+
 Native plugin installation is available for Codex and Claude Code. Claude Code
 can update this marketplace automatically when enabled. Other routes can use a
 user-authorized update at the start of an alignment session. No background

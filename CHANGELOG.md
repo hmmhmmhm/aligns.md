@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.6.0
+
+- Offer five numbered starting points when align is invoked without a clear purpose. Accept numbers or free-form answers.
+- Show a short outline for the selected path and identify meaningful step transitions.
+- Skip the menu for clear requests, reuse prior choices, and preserve history-scope and agreement authorization.
+
 ## 0.5.2
 
 - Review unresolved criteria when a loop or goal is configured, stops, or is marked complete against user expectations.

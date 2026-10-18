@@ -3,7 +3,7 @@ name: align
 description: Establish and maintain personal project alignment in ALIGNS.md, including selected PR or conversation history review for scoped taste invariants. Use when goals or priorities are unclear, important decisions diverge from the user's expectations, repeated corrections expose a missing criterion, or a long autonomous run needs judgment calibration. Apply existing agreements without reopening routine decisions.
 license: MIT
 metadata:
-  version: "0.5.2"
+  version: "0.6.0"
 ---
 
 # Align
@@ -37,6 +37,47 @@ At initial setup, or after the user changes tools, read
 and whether it is the current client. Reuse explicit context; ask once if it
 is unclear. Do not infer the main client just from a filename or installed binary.
 Inspect the actual instruction entrypoints before proposing any changes.
+For an open-purpose invocation, defer setup questions until a path is selected.
+
+## Start with a numbered choice when the purpose is open
+
+When the user invokes align without a clear purpose, show this short menu in
+their language after reading the available project context. Keep numbers stable:
+
+1. Set or review the project's direction and personal criteria.
+2. Review a recent decision that missed expectations.
+3. Find candidate criteria in selected PR or conversation history.
+4. Rehearse judgment before a long autonomous run.
+5. Recommend a starting point from the current project context.
+
+Accept an explicit numbered invocation such as `$align 3` as that starting path
+without showing the menu again. Otherwise ask for a number or a free-form answer.
+If the client offers choice buttons, keep the numbers in their labels; plain
+text is sufficient. Treat a number as
+an answer to the most recent pending menu, including a history-scope menu.
+Do not show the start menu again after a valid choice. For an ambiguous answer,
+clarify only the ambiguous part. An unanswered menu does not select a default.
+
+Skip this menu when the request, earlier choice, or active task already gives a
+clear purpose, including implicit activation during a mismatch. Do not turn a
+routine task, conceptual question, or known execution error into a menu session.
+For option 5, recommend one path with a reason from known context and begin its
+first useful question, if one remains. Do not invent preferences or collect
+history to recommend.
+
+Option 3 opens the source, scope and time-estimate choice in
+[history review](references/history.md);
+it does not authorize reading unspecified logs or all PRs. Reuse scope already given.
+
+After selecting a path, give one brief outline of the relevant steps:
+**check context → clarify unresolved choices → summarize criteria → save authorized
+changes**. Name the current step at meaningful transitions, not on every reply.
+Adapt the outline: history review starts with source/scope selection and evidence;
+rehearsal uses hypothetical decisions without executing the run. Skip completed
+steps and do not add confirmation gates. Saving follows the authorization rules
+below; selecting a path alone does not confirm lasting criteria. If no criterion
+changes, close with the outcome instead of rewriting the agreement. Only include
+environment setup or instruction-file connection when needed for the selected task.
 
 ## Choose the smallest useful alignment
 
