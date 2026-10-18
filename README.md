@@ -85,6 +85,16 @@ updater or universal automatic activation is assumed.
 
 [Installation and updates](docs/usage.md) · [Behavioral benchmark](BENCHMARK.md) · [Intervention pilot](EFFORT_BENCHMARK.md) · [Preference transfer](DISCOVERY_BENCHMARK.md) · [Preference retention](RETENTION_BENCHMARK.md) · [Validation](docs/validation.md) · [Distribution](docs/distribution.md)
 
+## Add the badge to your project
+
+Use this badge in your README if your project uses ALIGNS.md. Copy the Markdown below.
+
+[![Uses ALIGNS.md](assets/badges/uses-aligns.svg)](https://github.com/hmmhmmhm/aligns.md)
+
+```markdown
+[![Uses ALIGNS.md](https://raw.githubusercontent.com/hmmhmmhm/aligns.md/main/assets/badges/uses-aligns.svg)](https://github.com/hmmhmmhm/aligns.md)
+```
+
 ## License
 
 [MIT](LICENSE). Copyright (c) 2026 hmmhmmhm.

@@ -83,6 +83,16 @@ Codex와 Claude Code에서는 자체 플러그인 방식으로 설치할 수 있
 
 [설치 및 업데이트](../usage.md) · [동작 벤치마크](../../BENCHMARK.md) · [사용자 개입 예비 실험](../../EFFORT_BENCHMARK.md) · [선호 전이](../../DISCOVERY_BENCHMARK.md) · [선호 유지](../../RETENTION_BENCHMARK.md) · [검증](../validation.md) · [배포](../distribution.md)
 
+## 프로젝트에 배지 붙이기
+
+ALIGNS.md를 쓰는 프로젝트라면 README에 이 배지를 붙일 수 있습니다. 아래 Markdown을 복사하세요.
+
+[![Uses ALIGNS.md](../../assets/badges/uses-aligns.svg)](https://github.com/hmmhmmhm/aligns.md)
+
+```markdown
+[![Uses ALIGNS.md](https://raw.githubusercontent.com/hmmhmmhm/aligns.md/main/assets/badges/uses-aligns.svg)](https://github.com/hmmhmmhm/aligns.md)
+```
+
 ## 라이선스
 
 [MIT](../../LICENSE). Copyright (c) 2026 hmmhmmhm.

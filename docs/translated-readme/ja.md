@@ -83,6 +83,16 @@ CodexとClaude Codeでは、各クライアントのプラグインとしてイ�
 
 [インストールと更新](../usage.md) · [動作ベンチマーク](../../BENCHMARK.md) · [ユーザー介入の予備実験](../../EFFORT_BENCHMARK.md) · [好みの引き継ぎ](../../DISCOVERY_BENCHMARK.md) · [好みの保持](../../RETENTION_BENCHMARK.md) · [検証](../validation.md) · [配布](../distribution.md)
 
+## プロジェクトにバッジを付ける
+
+ALIGNS.mdを使っているプロジェクトのREADMEに、このバッジを付けられます。下のMarkdownをコピーしてください。
+
+[![Uses ALIGNS.md](../../assets/badges/uses-aligns.svg)](https://github.com/hmmhmmhm/aligns.md)
+
+```markdown
+[![Uses ALIGNS.md](https://raw.githubusercontent.com/hmmhmmhm/aligns.md/main/assets/badges/uses-aligns.svg)](https://github.com/hmmhmmhm/aligns.md)
+```
+
 ## ライセンス
 
 [MIT](../../LICENSE). Copyright (c) 2026 hmmhmmhm.
