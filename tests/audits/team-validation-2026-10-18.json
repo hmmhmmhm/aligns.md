@@ -1,0 +1,291 @@
+{
+  "schema_version": 1,
+  "scope": "Local unit tests; not model performance or independent review.",
+  "tests_run": 67,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "outcomes": [
+    {
+      "test": "test_history.ChatTests.test_claude_metadata_dedup_and_malformed_record",
+      "status": "passed"
+    },
+    {
+      "test": "test_history.ChatTests.test_cli_plan_and_collection_work_without_network",
+      "status": "passed"
+    },
+    {
+      "test": "test_history.ChatTests.test_codex_project_switch_and_tool_text_exclusion",
+      "status": "passed"
+    },
+    {
+      "test": "test_history.ChatTests.test_cross_file_duplicate_and_source_preservation",
+      "status": "passed"
+    },
+    {
+      "test": "test_history.ChatTests.test_inventory_does_not_parse_bodies_and_recent_is_mtime",
+      "status": "passed"
+    },
+    {
+      "test": "test_history.ChatTests.test_malformed_context_cannot_inherit_previous_project",
+      "status": "passed"
+    },
+    {
+      "test": "test_history.ChatTests.test_missing_scope_does_not_leak",
+      "status": "passed"
+    },
+    {
+      "test": "test_history.ChatTests.test_output_rejects_git_and_parent_symlink_bypass",
+      "status": "passed"
+    },
+    {
+      "test": "test_history.ChatTests.test_unknown_content_reports_partial_coverage",
+      "status": "passed"
+    },
+    {
+      "test": "test_history.PRTests.test_all_is_not_capped_at_1000",
+      "status": "passed"
+    },
+    {
+      "test": "test_history.PRTests.test_api_parses_headers_without_disclosing_stderr",
+      "status": "passed"
+    },
+    {
+      "test": "test_history.PRTests.test_bot_matching_is_exact_and_short_human_replies_remain",
+      "status": "passed"
+    },
+    {
+      "test": "test_history.PRTests.test_date_filter_checks_all_creation_order_rows",
+      "status": "passed"
+    },
+    {
+      "test": "test_history.PRTests.test_pages_follows_next_and_rejects_repeated_cursor",
+      "status": "passed"
+    },
+    {
+      "test": "test_history.PRTests.test_paginated_feedback_is_not_lost",
+      "status": "passed"
+    },
+    {
+      "test": "test_history.PRTests.test_partial_resume_keeps_completed_prs_and_refetches_incomplete",
+      "status": "passed"
+    },
+    {
+      "test": "test_history.PRTests.test_plan_reads_metadata_only_and_uses_actual_quota",
+      "status": "passed"
+    },
+    {
+      "test": "test_history.PRTests.test_quota_stops_without_subprocess",
+      "status": "passed"
+    },
+    {
+      "test": "test_history.PRTests.test_recent_deduplicates_and_limits",
+      "status": "passed"
+    },
+    {
+      "test": "test_setup.PackageTests.test_hook_returns_static_valid_context_for_untrusted_input",
+      "status": "passed"
+    },
+    {
+      "test": "test_setup.PackageTests.test_version_and_declared_paths",
+      "status": "passed"
+    },
+    {
+      "test": "test_setup.SetupTests.test_broken_link_is_not_replaced",
+      "status": "passed"
+    },
+    {
+      "test": "test_setup.SetupTests.test_canonical_symlink_is_not_followed",
+      "status": "passed"
+    },
+    {
+      "test": "test_setup.SetupTests.test_claude_primary",
+      "status": "passed"
+    },
+    {
+      "test": "test_setup.SetupTests.test_connect_is_idempotent_and_preserves_instructions",
+      "status": "passed"
+    },
+    {
+      "test": "test_setup.SetupTests.test_distinct_secondary_blocks_all_changes",
+      "status": "passed"
+    },
+    {
+      "test": "test_setup.SetupTests.test_dry_run_changes_nothing",
+      "status": "passed"
+    },
+    {
+      "test": "test_setup.SetupTests.test_existing_block_refresh_keeps_surrounding_content",
+      "status": "passed"
+    },
+    {
+      "test": "test_setup.SetupTests.test_legacy_agreement_does_not_get_orphaned",
+      "status": "passed"
+    },
+    {
+      "test": "test_setup.SetupTests.test_malformed_markers_are_preserved",
+      "status": "passed"
+    },
+    {
+      "test": "test_setup.SetupTests.test_shadowing_file_requires_review",
+      "status": "passed"
+    },
+    {
+      "test": "test_team_training.TeamTrainingTests.test_approved_batch_exports_completion_and_provenance",
+      "status": "passed"
+    },
+    {
+      "test": "test_team_training.TeamTrainingTests.test_artifact_paths_reject_traversal_and_symlinks",
+      "status": "passed"
+    },
+    {
+      "test": "test_team_training.TeamTrainingTests.test_changed_file_is_rejected",
+      "status": "passed"
+    },
+    {
+      "test": "test_team_training.TeamTrainingTests.test_changed_prompt_needs_new_context_review",
+      "status": "passed"
+    },
+    {
+      "test": "test_team_training.TeamTrainingTests.test_changed_submission_is_rejected",
+      "status": "passed"
+    },
+    {
+      "test": "test_team_training.TeamTrainingTests.test_cli_validates_without_writing_and_export_refuses_overwrite",
+      "status": "passed"
+    },
+    {
+      "test": "test_team_training.TeamTrainingTests.test_code_evidence_exports_without_claiming_execution",
+      "status": "passed"
+    },
+    {
+      "test": "test_team_training.TeamTrainingTests.test_context_cannot_be_metadata_only",
+      "status": "passed"
+    },
+    {
+      "test": "test_team_training.TeamTrainingTests.test_contradictory_pairs_are_rejected_across_batches",
+      "status": "passed"
+    },
+    {
+      "test": "test_team_training.TeamTrainingTests.test_failed_code_check_is_rejected",
+      "status": "passed"
+    },
+    {
+      "test": "test_team_training.TeamTrainingTests.test_failed_validation_creates_no_export",
+      "status": "passed"
+    },
+    {
+      "test": "test_team_training.TeamTrainingTests.test_invalid_timestamp_is_rejected",
+      "status": "passed"
+    },
+    {
+      "test": "test_team_training.TeamTrainingTests.test_missing_or_stale_record_approval_is_rejected",
+      "status": "passed"
+    },
+    {
+      "test": "test_team_training.TeamTrainingTests.test_missing_tool_result_is_rejected",
+      "status": "passed"
+    },
+    {
+      "test": "test_team_training.TeamTrainingTests.test_pair_requires_separate_approval",
+      "status": "passed"
+    },
+    {
+      "test": "test_team_training.TeamTrainingTests.test_pending_review_is_excluded",
+      "status": "passed"
+    },
+    {
+      "test": "test_team_training.TeamTrainingTests.test_previous_bad_assistant_is_context_not_completion",
+      "status": "passed"
+    },
+    {
+      "test": "test_team_training.TeamTrainingTests.test_required_criterion_snapshot_is_enforced",
+      "status": "passed"
+    },
+    {
+      "test": "test_team_training.TeamTrainingTests.test_tool_action_preserves_schema_and_argument_objects",
+      "status": "passed"
+    },
+    {
+      "test": "test_team_training.TeamTrainingTests.test_train_eval_exact_overlap_is_rejected",
+      "status": "passed"
+    },
+    {
+      "test": "test_team_training.TeamTrainingTests.test_unhashed_code_evidence_is_rejected",
+      "status": "passed"
+    },
+    {
+      "test": "test_team_training.TeamTrainingTests.test_unlisted_reviewer_is_rejected",
+      "status": "passed"
+    },
+    {
+      "test": "test_team_training.TeamTrainingTests.test_withdrawn_record_is_excluded",
+      "status": "passed"
+    },
+    {
+      "test": "test_training_data.TrainingDataTests.test_candidates_stale_and_unreviewed_privacy_are_excluded",
+      "status": "passed"
+    },
+    {
+      "test": "test_training_data.TrainingDataTests.test_changed_context_cannot_become_a_preference_pair",
+      "status": "passed"
+    },
+    {
+      "test": "test_training_data.TrainingDataTests.test_criterion_confirmation_does_not_confirm_generated_target",
+      "status": "passed"
+    },
+    {
+      "test": "test_training_data.TrainingDataTests.test_does_not_silently_flatten_tool_trajectories",
+      "status": "passed"
+    },
+    {
+      "test": "test_training_data.TrainingDataTests.test_evaluation_family_never_enters_training",
+      "status": "passed"
+    },
+    {
+      "test": "test_training_data.TrainingDataTests.test_exact_prompt_leakage_across_families_is_rejected",
+      "status": "passed"
+    },
+    {
+      "test": "test_training_data.TrainingDataTests.test_export_preserves_sources_and_refuses_overwrite",
+      "status": "passed"
+    },
+    {
+      "test": "test_training_data.TrainingDataTests.test_exports_only_reviewed_targets_without_private_metadata",
+      "status": "passed"
+    },
+    {
+      "test": "test_training_data.TrainingDataTests.test_generated_rejection_without_user_choice_is_not_dpo",
+      "status": "passed"
+    },
+    {
+      "test": "test_training_data.TrainingDataTests.test_hypothetical_and_reconstructed_need_explicit_export_inclusion",
+      "status": "passed"
+    },
+    {
+      "test": "test_training_data.TrainingDataTests.test_missing_split_duplicate_ids_and_missing_evidence_fail",
+      "status": "passed"
+    },
+    {
+      "test": "test_training_data.TrainingDataTests.test_repeated_example_does_not_inflate_training_count",
+      "status": "passed"
+    },
+    {
+      "test": "test_training_data.TrainingDataTests.test_validation_failure_writes_nothing",
+      "status": "passed"
+    }
+  ],
+  "sources": {
+    "skills/align/scripts/check_training_adapter.py": "5fa647c1e366e1d148559d2feff41544cf4625e58f070a723b28c05b60c46154",
+    "skills/align/scripts/collect_chat_feedback.py": "5613c0f3f13a5b9d2ce5bb19b58241e8130eb4114f5eb8e3fda4155553200ad8",
+    "skills/align/scripts/collect_pr_feedback.py": "a1d59ec76f20c4271b37d277c63f57a0f7d1005830a3675cabbc08f60fe40183",
+    "skills/align/scripts/connect_project.py": "c1b97586e2cee601ca89251bce8e223ac8a43d8652deaeefcd0f4ff9d5cafc08",
+    "skills/align/scripts/export_team_dataset.py": "604d1268f7742f97b685fb174ff6ffe9f1178653c0d6172ff3bb7f58b5fe1ef4",
+    "skills/align/scripts/export_training_data.py": "ad57e877e8a1ee5924bc837ece9a9cb0384d9d27731a5cd0116fc50fea10cbfa",
+    "skills/align/scripts/history_common.py": "954ba3e55e878dc4a0e3e7a7e9d350959afa6735bd3b3adc88810a72305b0388",
+    "tests/test_history.py": "d61a65f0a3a302413269ff931c4985ae8f4eaaf2a58c30f55d065e5599d52c11",
+    "tests/test_setup.py": "d28f280b601e348afc13e0bb9d930514fbff14f685d860990683c4f21d0f58f8",
+    "tests/test_team_training.py": "b096619658be6ab95434b2cff6e4db84996d588a23d93644c1832277d6dce9e4",
+    "tests/test_training_data.py": "b2826e0dd119f1600841d4a26a491f4a3a15a460ce03c7628598d8b82f13e083"
+  }
+}

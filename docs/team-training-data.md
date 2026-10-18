@@ -2,9 +2,15 @@
 
 ALIGNS.md can help a team turn recurring corrections and agreed decisions into
 examples for a coding agent. Option 8 supplies local candidate collection, review
-and text-only dataset export. The workflow below adds a manual handoff and team
+and local dataset export. The workflow below adds a manual handoff and team
 review. It is an operating guide, not a hosted submission service or a claim that
 a trained model will fit the team without evaluation.
+
+For technical review or an adoption decision, share the [MLOps and team decision
+brief](team-mlops-brief.md), also available in [Korean](translated-briefs/ko.md).
+It includes the implemented checks, reproducible evidence and remaining validation
+work. The [initial readiness audit](training-data-readiness.md) is retained as
+the record of the gaps that prompted these changes.
 
 ## Set up a small pilot
 
@@ -43,7 +49,7 @@ storage. It contains:
 | File | Purpose |
 | --- | --- |
 | `submission.json` | Selected scope, contributor alias, intended use, record IDs and file hashes. Start with the [submission template](templates/team-submission.json). |
-| `records.jsonl` | Only the selected decision records from option 8, including minimal context, actual responses, corrections and confirmation evidence. |
+| `records.jsonl` | Selected version-2 decision records, including input context, approved targets, correction and verification evidence. |
 | `review.json` | Team reviewer decisions, added after review using the [review template](templates/team-review.json). |
 
 In `submission.json`, each `files` entry records a relative file path and its
@@ -68,16 +74,17 @@ criterion version and target answer. Record `approved`, `needs_changes` or
 `excluded`, with the reason and approval date. Approval of a PR or collection
 settings does not stand in for approval of the training target.
 
-Keep the original submission intact. Copy only approved examples into a separate
-`records.reviewed.jsonl` for export. Retain a private mapping from output record ID
-to batch ID, original record ID and review decision. Give IDs a batch namespace.
-Use a shared task-family ID for the same issue, PR or derived scenario across
-contributors, so different submissions cannot place the same task in both splits.
+Keep the original submission intact. The version-2 review binds its exact bytes
+with `submission_sha256` and each original record with `record_sha256`. Provide
+an approval reference and an authorized reviewer alias. The team policy lists
+allowed reviewers, current criteria snapshots, permitted use, withdrawals and
+shared task-family splits. Use the [policy template](templates/team-policy.json).
+Never recompute approval hashes to hide edits made after review.
 
-For an approved team example, explicitly record the team scope and current team
-criterion version in the reviewed copy. Preserve the original personal scope in
-the review mapping. The named reviewer must confirm that the target represents
-the team criterion; do not relabel personal records as team-approved automatically.
+The validated exporter derives namespaced record IDs and applies the reviewer's
+shared task family without rewriting originals. Use one family for the same issue,
+PR or derived scenario across contributors. A reviewer must explicitly establish
+the team scope; personal records are not relabeled automatically.
 
 For DPO, the reviewer must approve the comparison as well as the preferred answer.
 Both alternatives need the same available facts and instructions. New requirements
@@ -92,12 +99,23 @@ contributors; the exporter detects exact overlap but cannot identify every relat
 task. The [option-8 procedure](../skills/align/references/training-data.md#export-on-request)
 describes the exporter and the supported record shape.
 
-The exporter validates record labels and produces SFT, eligible DPO and evaluation
-JSONL plus a private provenance manifest. The team intake files are a manual review
-contract: the current exporter does not enforce `submission.json` or `review.json`.
-Run it only on the reviewed copy. The text formats match
-[TRL's dataset formats](https://huggingface.co/docs/trl/dataset_formats); the selected
-training stack may need an adapter. Tool-call trajectories need additional support.
+Use the [version-2 contract and commands](../skills/align/references/team-training.md)
+for team submissions. The bundled `export_team_dataset.py` checks batch and artifact
+hashes, reviewer declarations against the selected policy, approved record hashes,
+required context, criterion versions, withdrawals and split assignments. It rejects
+contradictory preference cycles and stops before writing on invalid input. It does
+not authenticate reviewers or independently execute the submitted tests.
+
+Prefer `sft-completion.jsonl`, which separates input from the selected target.
+The export also includes text DPO, held-out evaluation and a private provenance
+manifest. Selected tool actions retain schemas/calls/results; code examples need
+recorded passing checks and hashed evidence. The legacy text exporter remains for
+personal records and must not substitute for team approval validation.
+
+The formats follow [TRL dataset formats](https://huggingface.co/docs/trl/dataset_formats).
+Run the bundled local-tokenizer checker, then check the actual training stack's
+labels, tool argument schemas and context limits. Tool-action compatibility is
+model-specific, and full-run trajectory learning is not implemented.
 
 The team chooses the training model, provider and training run. Compare the same
 base coding model with the same ALIGNS.md and tools before and after fine-tuning.
@@ -113,13 +131,14 @@ Deleting a record does not erase Git history, remote copies or learned weights.
 
 ## What is available and what remains
 
-Available now: option-8 collection guidance, local text-data export, this manual
-submission/review contract, and a team-owned storage route chosen by the user.
+Available now: collection guidance, version-2 templates, validated manual batch
+exports, selected-target SFT, text DPO, code evidence checks, selected tool-action
+export, output hashes and a local-tokenizer boundary checker.
 
-Before an actual pilot, the team still needs to select contributors, reviewers,
-scope, storage and cadence. Automatic intake validation, duplicate resolution
-across submissions, a review interface, model training and a measured team benchmark
-are separate implementation work. No shared data store is created by installing
+Before a real pilot, choose contributors, reviewers, scope, private storage,
+cadence and a target model. Reviewer authentication, semantic duplicate/conflict
+review, isolated code execution, trainer integration, model training and measured
+team outcomes remain the team's work. No shared data store is created by installing
 the skill.
 
 Suggested request at the manual checkpoint:

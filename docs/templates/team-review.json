@@ -1,5 +1,5 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "batch_id": null,
   "reviewer_alias": null,
   "reviewer_authority": null,
@@ -13,6 +13,8 @@
     "team_target_confirmed": false,
     "same_context_pair_confirmed": false,
     "shared_task_family_id": null,
-    "output_record_id": null
-  }
+    "record_sha256": null
+  },
+  "submission_sha256": null,
+  "review_ref": null
 }

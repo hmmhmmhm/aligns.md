@@ -1,0 +1,89 @@
+{
+  "schema_version": 1,
+  "fixtures": "Invented reconstructed examples only.",
+  "scope": "Dataset loading and tokenizer boundaries; no trainer, weights, training or team outcomes.",
+  "packages": {
+    "transformers": "5.20.1",
+    "datasets": "5.1.0",
+    "tokenizers": "0.23.3",
+    "jinja2": "3.1.6"
+  },
+  "sources": {
+    "tests/audits/mlops_smoke.py": "d1be001fd7a37a06b58cc4558e791bf2df591c258498e6ca7700231ad4ee046a",
+    "tests/test_team_training.py": "b096619658be6ab95434b2cff6e4db84996d588a23d93644c1832277d6dce9e4",
+    "skills/align/scripts/export_training_data.py": "ad57e877e8a1ee5924bc837ece9a9cb0384d9d27731a5cd0116fc50fea10cbfa",
+    "skills/align/scripts/export_team_dataset.py": "604d1268f7742f97b685fb174ff6ffe9f1178653c0d6172ff3bb7f58b5fe1ef4",
+    "skills/align/scripts/check_training_adapter.py": "5fa647c1e366e1d148559d2feff41544cf4625e58f070a723b28c05b60c46154"
+  },
+  "tokenizer_files": {
+    "config.json": "18e18afcaccafade98daf13a54092927904649e1dd4eba8299ab717d5d94ff45",
+    "merges.txt": "599bab54075088774b1733fde865d5bd747cbcc7a547c5bc12610e874e26f5e3",
+    "tokenizer.json": "c0382117ea329cdf097041132f6d735924b697924d6f6fc3945713e96ce87539",
+    "tokenizer_config.json": "5b5d4f65d0acd3b2d56a35b56d374a36cbc1c8fa5cf3b3febbbfabf22f359583",
+    "vocab.json": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910"
+  },
+  "loaded": {
+    "sft-completion": {
+      "rows": 3,
+      "columns": [
+        "prompt",
+        "completion",
+        "tools"
+      ]
+    },
+    "dpo": {
+      "rows": 2,
+      "columns": [
+        "prompt",
+        "chosen",
+        "rejected"
+      ]
+    }
+  },
+  "token_rows": [
+    {
+      "row": 0,
+      "prompt_tokens": 41,
+      "completion_tokens": 12,
+      "total_tokens": 53,
+      "prompt_masked": true
+    },
+    {
+      "row": 1,
+      "prompt_tokens": 41,
+      "completion_tokens": 34,
+      "total_tokens": 75,
+      "prompt_masked": true
+    },
+    {
+      "row": 2,
+      "prompt_tokens": 164,
+      "completion_tokens": 22,
+      "total_tokens": 186,
+      "prompt_masked": true
+    }
+  ],
+  "arrow_loaded_token_rows": [
+    {
+      "row": 0,
+      "prompt_tokens": 41,
+      "completion_tokens": 12,
+      "total_tokens": 53,
+      "prompt_masked": true
+    },
+    {
+      "row": 1,
+      "prompt_tokens": 41,
+      "completion_tokens": 34,
+      "total_tokens": 75,
+      "prompt_masked": true
+    },
+    {
+      "row": 2,
+      "prompt_tokens": 164,
+      "completion_tokens": 22,
+      "total_tokens": 186,
+      "prompt_masked": true
+    }
+  ]
+}

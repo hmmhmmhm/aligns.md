@@ -1,0 +1,29 @@
+{
+  "schema_version": 2,
+  "id": null,
+  "group_id": null,
+  "recorded_at": null,
+  "scope": null,
+  "criteria_version": null,
+  "source_refs": [],
+  "origin": null,
+  "context": null,
+  "response": null,
+  "correction": null,
+  "accepted_response": null,
+  "confirmation": null,
+  "verification": null,
+  "status": "candidate",
+  "privacy_reviewed": false,
+  "kind": "decision",
+  "context_reviewed": false,
+  "required_context": [],
+  "input_snapshot_sha256": null,
+  "training": {
+    "prompt": [],
+    "chosen": [],
+    "target_confirmed": false,
+    "pair_confirmed": false,
+    "same_context": false
+  }
+}

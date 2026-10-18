@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.11.0
+
+- Add a validated manual team-data export: reviewer policy, bound approvals, artifact hashes, context snapshots, withdrawals and shared task families.
+- Export selected prompt/completion targets, detect preference cycles, and validate timezone timestamps. Keep the legacy text file for compatibility.
+- Add code-evidence records, selected tool-action export and a local-tokenizer boundary checker without executing submitted code or training models.
+- Publish a technical adoption brief, synthetic validation evidence and multilingual site links for sharing it.
+
 ## 0.10.0
 
 - Add optional path 8 for scoped training-data collection, review and local SFT, DPO and evaluation exports. Training, Git commits and uploads remain separate choices.

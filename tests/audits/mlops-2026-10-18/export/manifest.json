@@ -1,0 +1,168 @@
+{
+  "schema_version": 1,
+  "plan": {
+    "schema_version": 1,
+    "current_criteria": {
+      "team:fictional": "v1"
+    },
+    "include_origins": [
+      "reconstructed"
+    ],
+    "groups": {
+      "task-a": "train",
+      "task-b": "eval"
+    }
+  },
+  "included": [
+    {
+      "id": "decision:example",
+      "group_id": "task-a",
+      "scope": "team:fictional",
+      "criteria_version": "v1",
+      "origin": "reconstructed",
+      "source_refs": [
+        "fixture:invented"
+      ],
+      "recorded_at": "2026-10-18T00:00:00Z",
+      "confirmation": "Invented reviewer confirmed the target.",
+      "verification": "Fictional evidence, not executed code.",
+      "split": "train",
+      "kind": "decision",
+      "rows": {
+        "sft": 0,
+        "sft-completion": 0,
+        "dpo": 0
+      },
+      "input_snapshot_sha256": "dd90c4a1f8b9877cf5eae2e5211c7fcf9725470155537b8ec3f96049b67caf90"
+    },
+    {
+      "id": "code:example",
+      "group_id": "task-a",
+      "scope": "team:fictional",
+      "criteria_version": "v1",
+      "origin": "reconstructed",
+      "source_refs": [
+        "fixture:invented"
+      ],
+      "recorded_at": "2026-10-18T00:00:00Z",
+      "confirmation": "Invented reviewer confirmed the target.",
+      "verification": "Fictional evidence, not executed code.",
+      "split": "train",
+      "kind": "code",
+      "rows": {
+        "sft": 1,
+        "sft-completion": 1,
+        "dpo": 1
+      },
+      "input_snapshot_sha256": "dd90c4a1f8b9877cf5eae2e5211c7fcf9725470155537b8ec3f96049b67caf90",
+      "code": {
+        "repository": "fixture:repository",
+        "base_commit": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "environment": "fixture:python",
+        "patch": "--- a/a.py\n+++ b/a.py\n@@ -1 +1 @@\n-return values[0]\n+return values[0] if values else None\n",
+        "checks": [
+          {
+            "command": [
+              "python",
+              "-m",
+              "unittest"
+            ],
+            "exit_code": 0,
+            "checked_at": "2026-10-18T00:01:00Z",
+            "evidence_path": "checks/test.txt"
+          }
+        ]
+      }
+    },
+    {
+      "id": "tool_action:example",
+      "group_id": "task-a",
+      "scope": "team:fictional",
+      "criteria_version": "v1",
+      "origin": "reconstructed",
+      "source_refs": [
+        "fixture:invented"
+      ],
+      "recorded_at": "2026-10-18T00:00:00Z",
+      "confirmation": "Invented reviewer confirmed the target.",
+      "verification": "Fictional evidence, not executed code.",
+      "split": "train",
+      "kind": "tool_action",
+      "rows": {
+        "sft-completion": 2
+      },
+      "input_snapshot_sha256": "1f6b6234c68145d243e0d432dff7e83b982c1822b3a3861f8a002e562f1a2c25",
+      "dpo_exclusion": "no_confirmed_same_context_pair"
+    }
+  ],
+  "excluded": [],
+  "adapter": "align-text-and-action-v2",
+  "training_note": "Use sft-completion with completion-only loss; verify token masks and truncation on the target tokenizer. Legacy sft includes history.",
+  "counts": {
+    "sft": 2,
+    "sft-completion": 3,
+    "dpo": 2,
+    "evaluation": 0,
+    "excluded": 0
+  },
+  "team": {
+    "policy_sha256": "48e006eedc8a9005cdb7d2ea3b1ffbf12b34c08a56a1a071cb034d7cba1b9a26",
+    "batches": [
+      {
+        "batch_id": "decision",
+        "submission_sha256": "f55244e98f8743ec5f4b7ccc06ec3103623cc49e328a96e41547b30ff03c8a87",
+        "review_sha256": "d0e272e2bcedab373993e09085af500b38cea6ae39150fe107b8e60052fb3848",
+        "files": {
+          "records.jsonl": "aea5cda5a46ffc34020ac1a589ebb2c9953cff0215d24224ed0a1d33a83e968e",
+          "checks/test.txt": "eed78b995466079bbd1a3a9091129d1af8428a440089ca06cf825cf1ad91128e"
+        },
+        "reviewer_alias": "fixture-reviewer",
+        "review_ref": "fixture:explicit-approval"
+      },
+      {
+        "batch_id": "code",
+        "submission_sha256": "c79ca8ec4b7f712c55835aab32ffbb79d32601b3fd36638f1f1eb9ec5d892d4f",
+        "review_sha256": "d0dacff9523657fc320282a2e02f10d309dd9aa15b3a8419ed7cc24142b2e627",
+        "files": {
+          "records.jsonl": "bfdeda7a6b39f99bac7cb57e11dfbd4270030a64cddaea165eaf4d73496109be",
+          "checks/test.txt": "eed78b995466079bbd1a3a9091129d1af8428a440089ca06cf825cf1ad91128e"
+        },
+        "reviewer_alias": "fixture-reviewer",
+        "review_ref": "fixture:explicit-approval"
+      },
+      {
+        "batch_id": "tool_action",
+        "submission_sha256": "8dc2dc09496f52f298984c199cedde96f56a041dc555e23c01ac0bf927cb50bd",
+        "review_sha256": "40f4730e808f027ba9b59412fcbe1b99c909f26033de7e245788fb6a143c3f24",
+        "files": {
+          "records.jsonl": "305c50276e78c5022c95fc6fa2ae3bccbe43473abff58d3f609c92eed8daf2e9",
+          "checks/test.txt": "eed78b995466079bbd1a3a9091129d1af8428a440089ca06cf825cf1ad91128e"
+        },
+        "reviewer_alias": "fixture-reviewer",
+        "review_ref": "fixture:explicit-approval"
+      }
+    ],
+    "verification": "Approval declarations and artifact integrity checked; reviewer identity and test execution not independently authenticated."
+  },
+  "quality": {
+    "approved_unique_records": 3,
+    "task_families": 1,
+    "by_kind": {
+      "decision": 1,
+      "code": 1,
+      "tool_action": 1
+    },
+    "by_origin": {
+      "observed": 0,
+      "hypothetical": 0,
+      "reconstructed": 3
+    },
+    "exclusion_reasons": {}
+  },
+  "files": {
+    "sft.jsonl": "9c81160c1b5bcc6e682742b1b3593a0e44670f918b02dce707e09b8cdbaa5554",
+    "sft-completion.jsonl": "02ec7c0cefb19f18331205df263094b0895f4bbe33baf3acb04c8cdedc0f23da",
+    "dpo.jsonl": "6373cc81782e216834731be78c850fab5acfd8259bc71481c0e963dcbea02a55",
+    "evaluation.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+}

@@ -108,11 +108,12 @@ when requested, using reviewed current examples. DPO pairs need a confirmed choi
 between alternatives under the same context. Hold out whole task families for
 evaluation, including any variants derived from them.
 
-The bundled exporter produces text-only SFT, eligible DPO and evaluation JSONL files,
+The bundled exporter produces selected-target SFT, eligible text DPO and evaluation JSONL files,
 plus a separate private manifest with provenance and exclusions. It checks labels,
 criterion versions and exact prompt overlap, but cannot establish label truth,
-remove secrets automatically, or detect all semantic leakage. It does not support
-tool-call trajectories in this version. A review count is not proof of readiness
+remove secrets automatically, or detect all semantic leakage. Version-2 team records support code evidence and selected tool actions through
+the [team contract](../skills/align/references/team-training.md); full-run tool
+trajectories still need an adapter. A review count is not proof of readiness
 for training. See the [collection procedure and export command](../skills/align/references/training-data.md).
 
 You can stop collection, change its scope, review candidates or request deletion.

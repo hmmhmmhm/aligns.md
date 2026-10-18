@@ -5,6 +5,10 @@ or export personal training examples. Preparing data does not train a model or
 demonstrate a performance gain. ALIGNS.md already affects inference when read;
 this path prepares material for later user-run fine-tuning.
 
+For selected team submissions, load [team training data](team-training.md). Use its
+version-2 records and validated batch exporter rather than treating personal
+confirmation flags as team approval.
+
 ## Agree on collection once
 
 Reuse settings and authorization already given. Otherwise establish:
@@ -75,9 +79,10 @@ preference between those alternatives under the same context. Record the evidenc
 in `confirmation`; do not mark examples accepted by model judgment alone.
 
 Keep relevant code, patches and check results when the example depends on code.
-This first exporter handles text decision examples. Preserve tool schemas and
-visible calls separately when needed; do not flatten tool trajectories into fake
-text exchanges or claim the exporter supports them.
+Version-1 records handle text decisions. Version-2 team records also support
+code evidence and selected tool actions; follow the team reference for their
+requirements. Preserve unsupported trajectories separately rather than flattening
+them into fake text exchanges.
 
 ## Review before export
 
@@ -122,7 +127,8 @@ python3 <skill-dir>/scripts/export_training_data.py \
   --output <new-local-export-directory>
 ```
 
-It creates text-only `sft.jsonl` (`messages`), `dpo.jsonl`
+It creates `sft-completion.jsonl` (`prompt`, `completion`), legacy text-only
+`sft.jsonl` (`messages`), `dpo.jsonl`
 (`prompt`, `chosen`, `rejected`), `evaluation.jsonl`, and `manifest.json`.
 The manifest retains example IDs, source references, scope, origin and exclusion
 reasons outside the trainer files. It is private data too. The exporter refuses
@@ -131,6 +137,11 @@ examples, and exact prompt overlap between train and evaluation. It filters
 unreviewed, unconfirmed, stale or privacy-unreviewed records and duplicate
 prompt/target examples. It does not verify
 the truth of labels, strip secrets for you, or establish enough data for training.
+
+Prefer `sft-completion.jsonl` with completion-only loss so earlier rejected
+assistant turns remain context rather than training targets. Check actual token
+masks and length limits on the selected model. The exporter also rejects invalid
+timezone timestamps and preference cycles for identical contexts and criteria.
 
 Check the counts and samples, report unsupported/omitted examples, and note an
 empty train or evaluation set. No fixed count proves readiness. User-selected

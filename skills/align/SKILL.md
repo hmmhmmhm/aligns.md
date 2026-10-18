@@ -3,7 +3,7 @@ name: align
 description: Establish and maintain project or optional cross-project personal alignment in ALIGNS.md, including review of selected personal documents, PR feedback, or conversations for scoped criteria. Use for natural-language self-alignment requests such as “자가정렬 진행해봅시다” or “Let’s do a self-alignment check,” or when goals or priorities are unclear, important decisions diverge from the user's expectations, repeated corrections expose a missing criterion, or a long autonomous run needs judgment calibration. Also use for requested collection or export of confirmed alignment decision examples for personal fine-tuning. Apply existing agreements without reopening routine decisions.
 license: MIT
 metadata:
-  version: "0.10.0"
+  version: "0.11.0"
 ---
 
 # Align
@@ -98,7 +98,8 @@ Option 7 follows [README badge](references/badge.md). Selection authorizes the
 scoped README edit, not publishing, remote changes, or a new alignment interview.
 Recheck before editing and skip an existing badge without duplication.
 
-Option 8 follows [training data](references/training-data.md). Selection opens
+Option 8 follows [training data](references/training-data.md). For explicitly requested
+team batches, also use [team training data](references/team-training.md). Selection opens
 setup or review; agree on sources, scope, storage and review mode before collection.
 Reuse existing authorization without enabling unrelated collection. Keep data
 separate from ALIGNS.md. Do not train a model, commit, upload, or start a background

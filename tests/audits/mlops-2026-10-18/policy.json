@@ -1,0 +1,24 @@
+{
+  "schema_version": 2,
+  "intended_use": "training_and_evaluation",
+  "allowed_reviewers": [
+    "fixture-reviewer"
+  ],
+  "criteria_text": {
+    "team:fictional": "Keep the public API unchanged."
+  },
+  "withdrawn_ids": [],
+  "export_plan": {
+    "schema_version": 1,
+    "current_criteria": {
+      "team:fictional": "v1"
+    },
+    "include_origins": [
+      "reconstructed"
+    ],
+    "groups": {
+      "task-a": "train",
+      "task-b": "eval"
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "schema_version": 2,
+  "intended_use": "training_and_evaluation",
+  "allowed_reviewers": [],
+  "criteria_text": {},
+  "withdrawn_ids": [],
+  "export_plan": {
+    "schema_version": 1,
+    "current_criteria": {},
+    "groups": {},
+    "include_origins": [
+      "observed"
+    ]
+  }
+}

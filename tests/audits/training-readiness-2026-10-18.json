@@ -1,0 +1,121 @@
+{
+  "schema_version": 1,
+  "purpose": "Offline contract audit, not a training or performance benchmark.",
+  "fixtures": "Entirely invented; observed flags exercise exporter branches only.",
+  "exporter_sha256": "d4d957e2fb6130a13a47bb097219b4a9bf8cc407db0bab068e03113b3f04b40d",
+  "probe_sha256": "595250b724cb0de6326a185cc8b26f36bad0bfdbe29e04d33f3f4ee83496da71",
+  "cases": [
+    {
+      "case": "text_format",
+      "outcome": "exported",
+      "counts": {
+        "sft": 1,
+        "dpo": 1,
+        "evaluation": 0,
+        "excluded": 0
+      },
+      "observation": {
+        "sft_fields": [
+          "messages"
+        ],
+        "dpo_fields": [
+          "chosen",
+          "prompt",
+          "rejected"
+        ]
+      }
+    },
+    {
+      "case": "context_only_in_evidence",
+      "outcome": "exported",
+      "counts": {
+        "sft": 1,
+        "dpo": 1,
+        "evaluation": 0,
+        "excluded": 0
+      },
+      "observation": {
+        "constraint_present_in_trainer_rows": false
+      }
+    },
+    {
+      "case": "bad_assistant_history",
+      "outcome": "exported",
+      "counts": {
+        "sft": 1,
+        "dpo": 1,
+        "evaluation": 0,
+        "excluded": 0
+      },
+      "observation": {
+        "bad_turn_present_in_sft": true,
+        "explicit_target_mask_present": false
+      }
+    },
+    {
+      "case": "opposite_preferences_same_context",
+      "outcome": "exported",
+      "counts": {
+        "sft": 2,
+        "dpo": 2,
+        "evaluation": 0,
+        "excluded": 0
+      },
+      "observation": null
+    },
+    {
+      "case": "unverified_code_and_invalid_timestamp",
+      "outcome": "exported",
+      "counts": {
+        "sft": 1,
+        "dpo": 1,
+        "evaluation": 0,
+        "excluded": 0
+      },
+      "observation": null
+    },
+    {
+      "case": "no_submission_or_team_review_file",
+      "outcome": "exported",
+      "counts": {
+        "sft": 1,
+        "dpo": 1,
+        "evaluation": 0,
+        "excluded": 0
+      },
+      "observation": null
+    },
+    {
+      "case": "tool_call_target",
+      "outcome": "rejected",
+      "reason": "only text role/content messages are supported"
+    },
+    {
+      "case": "exact_prompt_across_splits",
+      "outcome": "rejected",
+      "reason": "same prompt appears in train and evaluation"
+    },
+    {
+      "case": "related_prompt_different_family",
+      "outcome": "exported",
+      "counts": {
+        "sft": 1,
+        "dpo": 1,
+        "evaluation": 1,
+        "excluded": 0
+      },
+      "observation": null
+    },
+    {
+      "case": "unreviewed_candidate",
+      "outcome": "exported",
+      "counts": {
+        "sft": 0,
+        "dpo": 0,
+        "evaluation": 0,
+        "excluded": 1
+      },
+      "observation": null
+    }
+  ]
+}

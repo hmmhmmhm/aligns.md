@@ -9,6 +9,16 @@ a referenced ALIGNS.md, and the complete maintained skill setup. Its protocol,
 actor evidence, model judgments, context correction, and offline verification
 are separate from the earlier development checks below.
 
+## Team-data checks (0.11.0)
+
+On 2026-10-18, 67 repository tests passed, including 23 new team-data tests and
+13 existing exporter tests. The [named outcomes and source hashes](../tests/audits/team-validation-2026-10-18.json)
+cover the actual local run. [Three invented examples](../tests/audits/mlops-2026-10-18/)
+also loaded through Hugging Face Datasets and passed a selected-target boundary
+check using a pinned Qwen tokenizer. No model weights, trainer step or fine-tuning
+outcome was tested. The [MLOps brief](team-mlops-brief.md) separates these checks
+from the existing preference-retention benchmark and remaining team responsibilities.
+
 ## Training-data export checks (0.10.0)
 
 On 2026-10-18, the local Python suite passed 44 tests, including 13 new tests

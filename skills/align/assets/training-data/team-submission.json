@@ -1,0 +1,15 @@
+{
+  "schema_version": 2,
+  "batch_id": null,
+  "contributor_alias": null,
+  "team_scope": null,
+  "criteria_version": null,
+  "prepared_at": null,
+  "intended_use": null,
+  "record_ids": [],
+  "files": [],
+  "source_use_confirmed": false,
+  "privacy_reviewed": false,
+  "approved_destination": null,
+  "submission_confirmed_at": null
+}
