@@ -3,7 +3,7 @@ name: align
 description: Establish and maintain personal project alignment in ALIGNS.md, including selected PR or conversation history review for scoped taste invariants. Use when goals or priorities are unclear, important decisions diverge from the user's expectations, repeated corrections expose a missing criterion, or a long autonomous run needs judgment calibration. Apply existing agreements without reopening routine decisions.
 license: MIT
 metadata:
-  version: "0.6.1"
+  version: "0.6.2"
 ---
 
 # Align
@@ -37,6 +37,10 @@ At initial setup, or after the user changes tools, read
 and whether it is the current client. Reuse explicit context; ask once if it
 is unclear. Do not infer the main client just from a filename or installed binary.
 Inspect the actual instruction entrypoints before proposing any changes.
+For setup or discovery repair, verify the required skills from the actual session
+workspace using the environment reference. When connecting project instructions,
+make align required for alignment work and preserve the user's other scoped skill
+requirements. A recommendation or installed skill is not automatically required.
 For an open-purpose invocation, defer setup questions until a path is selected.
 
 ## Start with a numbered choice when the purpose is open

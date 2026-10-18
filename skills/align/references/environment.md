@@ -32,9 +32,46 @@ pointer requiring the agent to read the canonical file. Keep tool-specific
 settings where the tool expects them. Report fallback instead of claiming a
 single file is automatically loaded everywhere.
 
+## Required skills and actual discovery
+
+In the canonical instruction file, require align for explicit alignment requests
+and focused reviews. Preserve other skills the user or project already requires,
+with their task scope. For each, record its invocation or host-visible name and a
+trusted source or installation route when known. Do not turn companion-skill
+recommendations into mandatory dependencies. Keep this setup information in the
+instruction file; personal decision criteria remain in ALIGNS.md.
+
+At setup, workspace/client changes, or a discovery failure:
+
+1. Compare the session's actual starting directory with the target repository.
+   A repository skill can be outside the discovery roots when the session starts
+   in a parent workspace or a sibling directory. Check the client's current rules.
+2. Check the current skill catalog, selector, or supported discovery diagnostic,
+   allowing host namespaces. Verify relevant instruction overrides, disabled skills,
+   and broken links. A valid SKILL.md or symlink proves only that files are present.
+3. Load the required method when its task scope applies. Read only its relevant
+   references and verify any resources needed for that task. Do not infer use
+   from a listing, UI label, or an instruction saying the skill is mandatory.
+4. If native discovery fails but the trusted local method and needed resources
+   are readable, use them as an explicitly disclosed manual fallback. Otherwise
+   report the affected step and continue independent work. Do not claim that
+   alignment was completed with the skill when the method was never loaded.
+5. Repair within the authorized scope using the existing route. Prefer correcting
+   the starting directory or a scoped link over a duplicate or global installation.
+   Keep a parent-workspace instruction pointer limited to the intended project.
+   Verify again from the actual workspace; if a fresh session is needed, distinguish
+   that result from what the current session has loaded.
+
+During ordinary work, check applicable requirements once per session and reuse
+that evidence unless the environment changes or loading fails. Do not run an
+installation check, update, interview, or approval question on every task.
+Instructions guide the agent; they do not install skills or create runtime hooks.
+
 ## Optional deterministic helper
 
-Requires Python 3. Run from a known project path. Default mode only reports a plan:
+Requires Python 3. Run from a known project path. Default mode only reports a plan.
+The helper connects instruction files; it does not verify the client's skill catalog
+or prove that the current session loaded a skill:
 
 ```sh
 python3 <installed-skill>/scripts/connect_project.py --project <project> --primary codex --also claude-code

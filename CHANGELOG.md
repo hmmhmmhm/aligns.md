@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.6.2
+
+- Require align for alignment work and check applicable required skills from the actual session workspace.
+- Distinguish files on disk, client discovery, and loading the method; disclose manual fallback and blocked steps accurately.
+- Preserve scoped specialist requirements without turning recommendations into dependencies or checking installations on every task.
+
 ## 0.6.1
 
 - Carry confirmed personal criteria into specialist-skill briefs and result reviews.

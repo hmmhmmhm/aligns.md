@@ -140,6 +140,24 @@ permission changes and migrations need separate handling. If a client requires a
 restart, report that the new method is not active yet. None of these updates
 change your criteria, confirmation timestamps, or project files automatically.
 
+## Required skills and discovery checks
+
+The connected instruction block requires align for alignment requests and focused
+reviews. At the first relevant task in a session, the agent checks the current
+client's skill list and loads the method. Other required skills keep their own
+task scopes; installing or recommending a skill does not make it mandatory.
+
+A file on disk is only part of setup. If a conversation starts above the repository,
+its local skill may fall outside the client's search path. Verify discovery from
+the actual conversation workspace, not just from a terminal inside the repository.
+The current session's skill list and a fresh diagnostic are separate evidence.
+
+When a trusted local method is usable, the agent can read it directly and disclose
+that fallback. If the method or a needed dependency is unavailable, it reports the
+affected step and continues independent work. It does not claim successful skill
+use, silently install another copy, or repeat the warning on every turn. Routine
+work can still follow ALIGNS.md without starting an alignment session.
+
 ## Connect project instructions
 
 Keep the primary CLI's instruction file as the canonical source. For Codex this
