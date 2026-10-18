@@ -76,7 +76,9 @@ npx skills add hmmhmmhm/aligns.md --skill align
 
 Then ask: **Use the align skill to set up ongoing alignment for this project.**
 
-Call `$align` with no specific request to choose a starting point by number: project criteria, a decision that missed expectations, history review, rehearsal before a long run, or a recommendation. The agent outlines the steps and guides you through them. If you already say what you need, it skips the menu.
+Call `$align` with no specific request to choose a starting point by number: project criteria, a decision that missed expectations, history review, rehearsal before a long run, a recommendation, or optional personal defaults across projects. The agent outlines the steps and guides you through them. If you already say what you need, it skips the menu.
+
+Use `$align 6` to set up a personal ALIGNS.md, optionally drawing on an existing PERSONA.md. Keep common preferences separate from workplace rules. Store the file locally, or connect a separate personal repository only if you want one. [Personal setup and storage](docs/usage.md#personal-defaults-across-projects).
 
 Native plugin installation is available for Codex and Claude Code. Claude Code
 can update this marketplace automatically when enabled. Other routes can use a

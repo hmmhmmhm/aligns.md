@@ -89,3 +89,11 @@ that a client actually loaded it. Report precisely which checks were performed.
 Do not modify global client configuration or install persistent hooks as a side
 effect of a project-file connection. Plugin hooks belong to the chosen explicit
 plugin installation and its documented lifecycle.
+
+## Optional personal scope
+
+A personal agreement can be connected through user-level instructions when the
+user chooses personal setup. Follow [personal alignment](personal.md) for source
+review, storage, private connection, and separate confirmation. Global skill
+installation alone does not enable personal criteria. The project helper remains
+project-scoped and must not be repurposed to configure a home directory.

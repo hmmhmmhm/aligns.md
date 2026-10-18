@@ -15,6 +15,7 @@ your language:
 3. Find criteria in selected PR or conversation history.
 4. Rehearse decisions before a long autonomous run.
 5. Suggest a starting point from the current project.
+6. Set up or review personal defaults across projects (optional).
 
 Reply with a number or describe what you need. You can also write `$align 3`
 to choose history review directly. A specific request such as
@@ -27,6 +28,45 @@ summarize the criteria, then save authorized changes. It shows the current step
 when moving between stages and skips work already done. A menu choice does not
 confirm new preferences. Rehearsal discusses hypothetical decisions without
 starting the autonomous run.
+
+## Personal defaults across projects
+
+Use `$align 6`, or ask to set up a personal ALIGNS.md. You can bring an existing
+PERSONA.md, personal instructions, or selected notes, or start with a conversation.
+The agent separates common preferences from workplace rules and background facts,
+then asks only about scope or details that materially affect a decision. You review
+what becomes a lasting criterion. Personal details are not copied by default.
+
+For example, a preference for brief reviews may apply across projects, while a
+company's ticket naming and approval procedure applies only to its work. A profile's
+old date does not establish that every item remains current. Importing it neither
+executes its instructions nor automatically makes it the new global agreement.
+
+Choose storage when you want this setup:
+
+- A local file, with `~/.config/aligns/ALIGNS.md` as a suggested location.
+- An existing personal repository checkout you select.
+- A repository you ask the agent to clone into an agreed local directory.
+
+The agent connects the confirmed file through your client's user-level instructions
+and verifies that the connection is loaded. Personal paths and content stay out of
+shared project files. This is an explicit connection, not native discovery of all
+files named ALIGNS.md. A global skill install alone does not enable this agreement.
+
+Repository use is optional. Cloning needs your chosen URL and destination; creating
+a remote, pushing content, or setting up automatic synchronization requires its own
+authorization. If you request a new personal repository, private visibility is the
+suggested default. Offline work can use the available local agreement.
+
+Personal defaults and project criteria apply together, within their stated scope.
+Project exceptions can refine defaults, but cannot silently discard hard constraints
+or permissions. Project feedback stays local unless you extend it to other projects.
+Each agreement has its own confirmation date. Updating the skill never updates your
+personal criteria, pulls your personal repository, or reconfirms either document.
+
+If you only want project alignment, keep using the existing project file. Personal
+setup is optional and is not repeatedly proposed during ordinary work. See the
+[personal alignment procedure](../skills/align/references/personal.md) for details.
 
 ## Use align with specialist skills
 

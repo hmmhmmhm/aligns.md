@@ -125,6 +125,21 @@ align without a clear purpose. Accept numbers and natural-language requests.
 When the purpose is already clear, begin that work without repeating the menu
 or asking the user to choose again. Keep the detailed procedure in the skill.
 
+## Optional personal scope
+
+User-requested scope update: 2026-10-18 (Asia/Seoul). Partial confirmation only.
+
+Offer personal defaults across projects as an optional sixth alignment path,
+keeping existing menu numbers stable. Let users bring PERSONA.md or selected
+personal instructions, separating common criteria from workplace rules and
+unneeded biographical details. Keep each agreement's scope and confirmation
+independent. Never publish a user's profile as shared skill content or fixtures.
+
+Support local storage and, only when requested, an existing or cloned personal
+repository. Keep private agreements outside shared project repositories. A method
+update or project correction must not silently change personal defaults or enable
+remote synchronization. Preserve project-only use without recurring setup prompts.
+
 ## Working with other skills
 
 Make align useful alongside specialist skills for development, design, review,

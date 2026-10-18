@@ -47,6 +47,12 @@ identify the blocked step. Repair only within authorized scope, preserving the
 chosen installation route; do not silently add a duplicate, install globally,
 or claim a required skill was used when it was not.
 
+If user-level instructions explicitly link a personal ALIGNS.md, apply its relevant
+confirmed defaults alongside this project's criteria and agreed exceptions. Keep
+private content out of shared files. Do not search for unlinked profiles or promote
+project feedback to global rules. Use align's personal-scope procedure when the
+user requests personal setup or a consequential scope conflict remains unresolved.
+
 Read `ALIGNS.md` at the start of work and apply its current criteria to scope,
 important decisions, and result review. At an alignment session, follow its
 recorded method-update policy once before loading the skill; preserve pinned

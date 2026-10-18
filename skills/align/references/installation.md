@@ -70,3 +70,10 @@ This is conditional delivery through the host, not a guarantee that every
 installed copy updates while idle. Never upload ALIGNS.md, conversations, or
 reflection answers to improve the shared method. A user can separately choose
 to submit feedback with only the information they authorize.
+
+## Personal agreements are separate
+
+A user-scoped skill installation makes the method available across projects; it
+does not create or enable a global personal agreement. Use the optional personal
+setup path in [personal alignment](personal.md) when requested. Its storage,
+repository synchronization, and confirmation are independent of method updates.

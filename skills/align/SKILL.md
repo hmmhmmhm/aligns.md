@@ -1,16 +1,17 @@
 ---
 name: align
-description: Establish and maintain personal project alignment in ALIGNS.md, including selected PR or conversation history review for scoped taste invariants. Use when goals or priorities are unclear, important decisions diverge from the user's expectations, repeated corrections expose a missing criterion, or a long autonomous run needs judgment calibration. Apply existing agreements without reopening routine decisions.
+description: Establish and maintain project or optional cross-project personal alignment in ALIGNS.md, including selected persona, PR, or conversation review for scoped criteria. Use when goals or priorities are unclear, important decisions diverge from the user's expectations, repeated corrections expose a missing criterion, or a long autonomous run needs judgment calibration. Apply existing agreements without reopening routine decisions.
 license: MIT
 metadata:
-  version: "0.6.2"
+  version: "0.7.0"
 ---
 
 # Align
 
 Help a user and their agent agree on what good work means and keep decisions
 consistent with that agreement. The maintained skill supplies the method;
-project-root `ALIGNS.md` holds the user's current criteria. Updating the skill
+project-root `ALIGNS.md` holds project criteria. An optional, explicitly linked
+personal ALIGNS.md holds confirmed defaults across projects. Updating the skill
 must never replace, reconfirm, or migrate those criteria automatically.
 Use the user's language and project conventions. Do not import preferences
 from the skill's source repository.
@@ -53,6 +54,7 @@ their language after reading the available project context. Keep numbers stable:
 3. Find candidate criteria in selected PR or conversation history.
 4. Rehearse judgment before a long autonomous run.
 5. Recommend a starting point from the current project context.
+6. Set up or review personal ALIGNS.md defaults across projects (optional).
 
 Accept an explicit numbered invocation such as `$align 3` as that starting path
 without showing the menu again. Otherwise ask for a number or a free-form answer.
@@ -72,6 +74,11 @@ history to recommend.
 Option 3 opens the source, scope and time-estimate choice in
 [history review](references/history.md);
 it does not authorize reading unspecified logs or all PRs. Reuse scope already given.
+
+Option 6 follows [personal alignment](references/personal.md). Offer existing
+PERSONA.md or user-selected instructions as input, and local storage or an optional
+personal repository. Selection alone does not authorize cloning, publishing, or
+promoting source content to confirmed global criteria. Keep project-only use simple.
 
 After selecting a path, give one brief outline of the relevant steps:
 **check context → clarify unresolved choices → summarize criteria → save authorized
@@ -98,6 +105,14 @@ environment setup or instruction-file connection when needed for the selected ta
 For drift, uncertainty, or autonomous work, read
 [recurring alignment](references/recurring.md). A suggestion is not a new
 scheduled task or permission to run unattended.
+
+## Personal and project scope
+
+When personal setup is requested or a personal agreement is explicitly linked,
+read [personal alignment](references/personal.md). Apply relevant confirmed
+personal defaults alongside project criteria and agreed exceptions. Do not scan
+for unlinked profiles, copy private criteria into shared repositories, or promote
+project feedback to global rules. Confirm and update only the affected scope.
 
 ## Work with specialist skills
 

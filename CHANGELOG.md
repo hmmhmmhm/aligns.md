@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.7.0
+
+- Add optional menu choice 6 for personal alignment across projects; keep choices 1-5 stable.
+- Review selected PERSONA.md or personal instructions for scoped criteria without importing private details or workplace rules indiscriminately.
+- Support local files, selected checkouts, and user-requested clones through a private user-level pointer, with separate synchronization authorization.
+- Keep personal defaults, project exceptions, and confirmation dates independent; retain project-only use.
+
 ## 0.6.2
 
 - Require align for alignment work and check applicable required skills from the actual session workspace.
