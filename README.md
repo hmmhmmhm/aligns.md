@@ -27,6 +27,8 @@ ALIGNS.md records the goals and trade-offs you want your agent to use. The **ali
 
 Keep personal criteria in ALIGNS.md and the reusable alignment method in the skill. Connect the agreement through your primary agent instruction file, such as AGENTS.md or CLAUDE.md. Use Git history when available. Updating the skill never rewrites your agreement.
 
+Use specialist skills within those criteria. Their default style does not become your personal preference; choices already settled in ALIGNS.md do not need another question.
+
 <p align="center">
   <img src="assets/keep-expectations-separate.png" alt="Three distinct connected panels represent execution, instructions, and expectations" width="100%">
 </p>

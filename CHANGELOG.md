@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.6.1
+
+- Carry confirmed personal criteria into specialist-skill briefs and result reviews.
+- Keep specialist defaults separate from user preferences and resolve settled conflicts without another question.
+- Preserve instruction hierarchy and permissions; report exceptions to specialist checks without changing criteria or claiming a pass.
+
 ## 0.6.0
 
 - Offer five numbered starting points when align is invoked without a clear purpose. Accept numbers or free-form answers.

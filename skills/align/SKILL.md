@@ -3,7 +3,7 @@ name: align
 description: Establish and maintain personal project alignment in ALIGNS.md, including selected PR or conversation history review for scoped taste invariants. Use when goals or priorities are unclear, important decisions diverge from the user's expectations, repeated corrections expose a missing criterion, or a long autonomous run needs judgment calibration. Apply existing agreements without reopening routine decisions.
 license: MIT
 metadata:
-  version: "0.6.0"
+  version: "0.6.1"
 ---
 
 # Align
@@ -94,6 +94,30 @@ environment setup or instruction-file connection when needed for the selected ta
 For drift, uncertainty, or autonomous work, read
 [recurring alignment](references/recurring.md). A suggestion is not a new
 scheduled task or permission to run unattended.
+
+## Work with specialist skills
+
+When another skill is relevant, carry the applicable confirmed criteria from
+ALIGNS.md into its brief and result review. Pass only what affects this task,
+including scope and agreed exceptions; do not copy private history or the entire
+agreement into external services. Use the specialist's method within those
+criteria. Do not install, invoke, or replace a specialist merely because align
+is active.
+
+Keep the specialist's defaults, house style and scores separate from the user's
+preferences. Using a skill or accepting one result does not make all its defaults
+lasting criteria. Save a preference only when the user explicitly requests or
+confirms it; do not rewrite ALIGNS.md to make a specialist's output pass review.
+
+Resolve conflicts using the current request, confirmed criteria and applicable
+instruction hierarchy. Adjust discretionary defaults when the existing agreement
+settles the choice; do not ask again. An agreement does not override permissions,
+required technical constraints or higher-priority instructions. If a specialist's
+check cannot accept an authorized exception, report the exception and actual
+check result instead of claiming a pass or silently changing the user's criterion.
+Ask only when a consequential choice remains unresolved, and continue independent
+work. Review the result against both the agreed criteria and applicable specialist
+checks. Correct known implementation errors without another alignment interview.
 
 ## Learn from selected history
 

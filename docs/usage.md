@@ -28,6 +28,25 @@ when moving between stages and skips work already done. A menu choice does not
 confirm new preferences. Rehearsal discusses hypothetical decisions without
 starting the autonomous run.
 
+## Use align with specialist skills
+
+ALIGNS.md supplies the personal criteria for a task. A design, coding or writing
+skill supplies its own method. The agent includes the relevant confirmed criteria
+in that skill's brief and checks the result against them. This is an instruction
+for the agent, not an automatic integration or a dependency on another skill.
+
+For example, if you have agreed that the opening text must be visible immediately,
+a design skill such as Taste Skill should work within that constraint. The agent
+can keep animation elsewhere without asking the same question again. It reports
+any exception to the specialist's checks rather than claiming every check passed.
+
+A specialist's preferred style is not automatically your preference. Accepting a
+page does not mean you want all of that skill's rules saved in ALIGNS.md. Only
+preferences you explicitly request or confirm become lasting criteria. When the
+existing agreement does not settle an important choice, the agent asks about
+that choice and continues the work it can already do. Permissions and the
+applicable instruction hierarchy still apply.
+
 ## Ask your agent to install it
 
 Copy the [installation request](install-request.txt), or say:

@@ -44,6 +44,13 @@ already delegated judgments within authorized scope. Repeated context-related
 misunderstandings can warrant a focused align review of when to ask. Do not
 infer a lasting preference from brevity or from a task-specific answer.
 
+When using specialist skills, carry relevant confirmed ALIGNS.md criteria into
+the task brief and result review. Keep skill defaults separate from user
+preferences. Resolve conflicts already settled by the agreement without asking
+again; clarify only consequential unresolved choices. Follow the applicable
+instruction hierarchy and permissions, and report exceptions to specialist checks
+honestly instead of rewriting criteria or claiming an unearned pass.
+
 Reuse existing answers. Fix clear execution errors directly. Ask only about
 consequential uncertainty, continue independent work, and do not reopen a declined
 or resolved review without new evidence. A new method version does not change
