@@ -19,6 +19,31 @@ not saved. An item can also conclude that no criterion change is needed. Reopen
 completed work only at the user's request or when relevant new evidence warrants
 it, naming what changed instead of recommending the same task again.
 
+Before choosing follow-ups, account for all six paths from available conversation:
+completed, declined, deferred (with revisit condition), available, not yet explored,
+or blocked by a known prerequisite. Keep a short reason for exclusions. Unknown
+is not completed, declined, or inapplicable. A general project check does not
+complete history review, mismatch review, rehearsal, or personal setup.
+
+- Path 1: project criteria review completes only the agreed scope.
+- Path 2: if no mismatch has been mentioned, offer “Review a decision that missed
+  expectations, if you have an example.” Ask for the example only if selected;
+  do not assert that a mismatch exists. If the user says there is none, exclude it.
+- Path 3: an unchosen source is not a reason to omit history review. Offer source
+  selection first; do not read logs or collect PRs before sources and scope are chosen.
+- Path 4: completing a rehearsal does not complete the other paths.
+- Path 5: mark starting-point guidance as used once it routes to a path. It is
+  navigation, not another alignment exercise or evidence that all paths are done.
+- Path 6: personal defaults remain an optional unexplored path until selected,
+  declined, deferred, completed for the agreed scope, or excluded by a project-only
+  request. Lack of a personal file or repository is not an exclusion reason.
+
+At the first item completion and before recommending finish as the only option,
+show a compact coverage summary using the stable path numbers. For example:
+“Done: 1, 4. Still available: 2 (if you have an example), 3, 6. Starting-point
+recommendation: 5 already used.” On later transitions show only changed status
+unless the user asks for the full view. This is conversational state, not a file.
+
 At meaningful transitions give a short progress cue, such as “Project criteria
 saved and instruction connection verified. Next: choose another alignment topic.”
 Do not repeat the entire checklist on every reply or invent progress percentages.
@@ -38,7 +63,10 @@ question or a supported description field. Keep ordinary-language answers valid.
 Respect tool limits on option counts, headers, free text, and pending questions.
 For the initial six-path menu, use text if the tool cannot show all choices; do
 not silently drop paths or split one decision into several unrelated questions.
-For follow-up choices, show up to two eligible topics plus “0. Finish here.”
+For follow-up choices, show every remaining available or unexplored path plus
+“0. Finish here,” with one recommendation. Do not cap the menu at two topics.
+If the tool cannot fit the full remaining set, use one numbered text question
+instead; do not hide paths behind free text or make the user guess they exist.
 Do not add a synthetic Other option when the tool already supplies free text.
 
 Ask once. With an asynchronous tool, keep the choice pending while doing only
@@ -69,10 +97,10 @@ Then, unless the user said stop or “only this item”:
 2. Remove completed, declined, and currently deferred topics from next choices.
    Do not repeat a settled question under a different label. Reintroduce a deferred
    topic only when its agreed revisit condition occurs or the user requests it.
-3. Rank eligible remaining topics using current context, dependencies and expected
-   usefulness. Recommend one, explaining why now. Do not rank topics merely by
+3. Include not-yet-explored paths in the remaining set. Rank topics using current
+   context, dependencies and expected usefulness. Recommend one, explaining why now. Do not rank topics merely by
    their menu number. Do not perform extra history collection to choose a topic.
-4. Present the recommendation, at most one alternative, and “0. Finish here,”
+4. Present the recommendation, every other remaining path, and “0. Finish here,”
    using the supported question interface. Preserve path IDs 1-6; 0 always ends
    the session. Path 5 is a routing aid, not a recurring recommendation once a
    starting point has been selected.
@@ -87,7 +115,15 @@ after it was declined, or imply that every user must complete all six paths.
 History source selection and personal repository authorization still apply after
 the user chooses those paths.
 
-If no topic is eligible, say what is complete and recommend finishing. Offer
+Only recommend finish as the sole option after accounting for all paths: each
+substantive path must be completed for the agreed scope, explicitly declined or
+deferred, outside the user's stated scope, or blocked by a known prerequisite.
+Name any blocked or excluded paths and why; do not call them completed. Not having
+seen a problem or source yet is not enough to hide an unexplored path. A user's
+explicit stop still ends the flow immediately without a coverage interview.
+
+If no topic remains after that check, say what is complete and recommend finishing.
+Offer
 “0. Finish here” with free text for a user-named topic, or an equivalent text
 question. Do not fabricate another task. Once the user chooses finish, give a
 brief outcome and the one-line invitation for a future session, then stop without
@@ -98,8 +134,8 @@ alone does not imply that the user chose to finish the session.
 ## Example: project criteria are saved
 
 Context: path 1 is complete, no further items were authorized, and the user has
-not declined rehearsal or personal setup. The current criteria include stopping
-boundaries that have not been tried in a scenario.
+not reviewed history, reported a mismatch, or declined personal setup. The current
+criteria include stopping boundaries that have not been tried in a scenario.
 
 Completion: “The project criteria are saved, and the instruction link is verified.”
 
@@ -107,6 +143,8 @@ Question: “Testing a few hypothetical decisions would help check the stopping
 boundaries we just agreed on. What would you like to do next?”
 
 - 4. Rehearse decisions (recommended)
+- 2. Review a decision that missed expectations, if you have an example
+- 3. Choose PR or conversation history to review
 - 6. Review personal defaults across projects
 - 0. Finish here
 

@@ -148,7 +148,10 @@ Carry setup answers and menu choices into the next authorized step. Ask to save 
 concrete item when needed, reusing existing authorization. After completing an
 alignment item, summarize completion and offer a next choice, excluding completed,
 declined, or currently deferred topics. Recommend the best eligible next topic
-with a reason, or recommend finishing when none remain. Include a finish option.
+with a reason and show all other remaining paths, including those not yet explored.
+A general review or rehearsal does not complete the other paths. Account for all
+six paths and explain exclusions before offering finish alone. Path 5 is navigation;
+the other paths remain optional and retain their scope requirements. Include a finish option.
 Use the client's supported structured-question UI when available in the active
 mode, with numbered text as fallback. Track progress in the conversation, not a
 new log. Continue already requested work; let the user choose before expanding

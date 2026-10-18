@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.8.4
+
+- Keep every remaining alignment path visible, including unexplored history review and optional personal setup, instead of limiting follow-ups to two topics.
+- Account for all six paths before offering finish alone; distinguish unknown context from completed or inapplicable work.
+- Preserve optional paths, source selection, explicit stopping, and scope boundaries; fall back to a full numbered list when a question UI cannot fit the choices.
+
 ## 0.8.3
 
 - Use “Let’s do a self-alignment check” in English return invitations and accept both “self alignment” and “self-alignment” requests.

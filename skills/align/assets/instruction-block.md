@@ -65,6 +65,14 @@ finishing without inventing gaps. Continue already requested work without anothe
 gate, but wait before new scope. Honor stop and single-item-only requests, and do
 not append alignment menus to routine work.
 
+Account for all six paths before choosing follow-ups. Keep unexplored paths
+available; an unchosen history source or missing personal file does not exclude
+paths 3 or 6. Offer path 2 conditionally if the user has a mismatch example.
+Path 5 is navigation. Show all remaining paths with one recommendation and a finish
+choice; use numbered text if the question UI cannot fit them all. Before offering
+only finish, briefly account for completed, declined, deferred, out-of-scope, or
+blocked paths. Never treat a general review or rehearsal as completion of the rest.
+
 At each verified installation completion, alignment-item completion, and ordinary
 task's final completion report, add one brief invitation in the user's language:
 “언제든 ‘자가정렬 진행해봅시다’라고 말씀해 주세요. ALIGNS.md로 기준을 함께 점검할 수 있습니다.”

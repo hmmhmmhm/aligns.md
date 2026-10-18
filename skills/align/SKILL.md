@@ -3,7 +3,7 @@ name: align
 description: Establish and maintain project or optional cross-project personal alignment in ALIGNS.md, including review of selected personal documents, PR feedback, or conversations for scoped criteria. Use for natural-language self-alignment requests such as “자가정렬 진행해봅시다” or “Let’s do a self-alignment check,” or when goals or priorities are unclear, important decisions diverge from the user's expectations, repeated corrections expose a missing criterion, or a long autonomous run needs judgment calibration. Apply existing agreements without reopening routine decisions.
 license: MIT
 metadata:
-  version: "0.8.3"
+  version: "0.8.4"
 ---
 
 # Align
@@ -131,9 +131,14 @@ After completing an item in an active alignment session, always provide a next-c
 step unless the user requested stopping or only that item. Follow
 [session flow](references/session-flow.md): summarize completion, exclude already
 completed or declined topics, recommend the best remaining eligible topic with a
-reason, and offer a finish choice. Use the supported question UI or a numbered
-text fallback. Do not silently end because the selected item is finished. If no
-eligible topic remains, recommend finishing and offer space for a user-named topic;
+reason, show all other remaining paths, and offer a finish choice. Account for
+all six paths before filtering: not yet explored is not completed or inapplicable.
+An unchosen history source or personal setup remains an optional next direction;
+a mismatch review can invite an example without asserting that one exists. Path 5
+is navigation, not another exercise. Use the supported question UI, or one numbered
+text question if it cannot fit every remaining path. Do not silently end because
+the selected item is finished. If no eligible topic remains after the coverage check in session flow, explain the
+exclusions, recommend finishing and offer space for a user-named topic;
 do not invent a gap or restart the menu.
 
 Continue already authorized multi-item work without another selection gate.
