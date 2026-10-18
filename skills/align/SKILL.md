@@ -1,9 +1,9 @@
 ---
 name: align
-description: Establish and maintain project or optional cross-project personal alignment in ALIGNS.md, including review of selected personal documents, PR feedback, or conversations for scoped criteria. Use for natural-language self-alignment requests such as “자가정렬 진행해봅시다” or “Let’s do a self-alignment check,” or when goals or priorities are unclear, important decisions diverge from the user's expectations, repeated corrections expose a missing criterion, or a long autonomous run needs judgment calibration. Apply existing agreements without reopening routine decisions.
+description: Establish and maintain project or optional cross-project personal alignment in ALIGNS.md, including review of selected personal documents, PR feedback, or conversations for scoped criteria. Use for natural-language self-alignment requests such as “자가정렬 진행해봅시다” or “Let’s do a self-alignment check,” or when goals or priorities are unclear, important decisions diverge from the user's expectations, repeated corrections expose a missing criterion, or a long autonomous run needs judgment calibration. Also use for requested collection or export of confirmed alignment decision examples for personal fine-tuning. Apply existing agreements without reopening routine decisions.
 license: MIT
 metadata:
-  version: "0.9.1"
+  version: "0.10.0"
 ---
 
 # Align
@@ -14,8 +14,9 @@ project-root `ALIGNS.md` holds project criteria. An optional, explicitly linked
 personal ALIGNS.md holds confirmed defaults across projects. Updating the skill
 must never replace, reconfirm, or migrate those criteria automatically.
 Here, self-alignment means helping the user clarify their preferences and decision
-criteria and checking the agent’s work against them. It does not mean retraining
-the model or letting the agent set its own values.
+criteria and checking the agent’s work against them. The optional data path
+prepares examples for user-run fine-tuning; this skill does not train models or
+let the agent set its own values.
 Use the user's language and project conventions. Do not import preferences
 from the skill's source repository.
 
@@ -59,6 +60,7 @@ their language after reading the available project context. Keep numbers stable:
 5. Recommend a starting point from the current project context.
 6. Set up or review personal ALIGNS.md defaults across projects (optional).
 7. Add the ALIGNS.md badge to this project's README (only when absent).
+8. Set up or review personal training-data collection and export (optional).
 
 Before offering path 7, inspect the target README using [README badge](references/badge.md).
 Omit it when the badge is already present, declined, deferred, or outside the
@@ -96,12 +98,21 @@ Option 7 follows [README badge](references/badge.md). Selection authorizes the
 scoped README edit, not publishing, remote changes, or a new alignment interview.
 Recheck before editing and skip an existing badge without duplication.
 
+Option 8 follows [training data](references/training-data.md). Selection opens
+setup or review; agree on sources, scope, storage and review mode before collection.
+Reuse existing authorization without enabling unrelated collection. Keep data
+separate from ALIGNS.md. Do not train a model, commit, upload, or start a background
+collector merely because this path was selected. Developing this skill does not
+authorize collecting the developer's conversations as training data.
+
 After selecting a path, give one brief outline of the relevant steps:
 **check context → clarify unresolved choices → summarize criteria → save authorized
 changes**. Name the current step at meaningful transitions, not on every reply.
 Adapt the outline: history review starts with source/scope selection and evidence;
 rehearsal uses hypothetical decisions without executing the run; badge setup checks
-for an existing badge, adds it if absent, and verifies the README. Skip completed
+for an existing badge, adds it if absent, and verifies the README; training-data
+setup agrees on collection settings, records authorized candidates, and reviews
+examples before a requested export. Skip completed
 steps and do not add confirmation gates. Saving follows the authorization rules
 below; selecting a path alone does not confirm lasting criteria. If no criterion
 changes, report that outcome without rewriting the agreement, then use the
@@ -143,7 +154,7 @@ step unless the user requested stopping or only that item. Follow
 [session flow](references/session-flow.md): summarize completion, exclude already
 completed or declined topics, recommend the best remaining eligible topic with a
 reason, show all other remaining paths, and offer a finish choice. Account for
-all seven paths before filtering: not yet explored is not completed or inapplicable.
+all eight paths before filtering: not yet explored is not completed or inapplicable.
 Path 7 is an exception: offer it only after confirming the README badge is absent.
 An unchosen history source or personal setup remains an optional next direction;
 a mismatch review can invite an example without asserting that one exists. Path 5
@@ -166,25 +177,21 @@ In routine non-alignment work, apply existing criteria without a follow-up menu.
 
 ## Make it easy to return
 
-At every verified installation completion, alignment-item completion, and final
-completion report for an ordinary task, include one short invitation in the user's
-language. In Korean use: “언제든 ‘자가정렬 진행해봅시다’라고 말씀해 주세요. ALIGNS.md로 기준을 함께 점검할 수 있습니다.”
-English: “Whenever you want to revisit your criteria, say ‘Let’s do a self-alignment check.’”
-Japanese: “判断基準を見直したくなったら、いつでも「自分の基準をすり合わせましょう」と声をかけてください。”
-These are examples, not required command syntax.
+Offer a brief return invitation only when closing a session that actually used
+align to perform self-alignment. Show it at most once per session, not after each
+item. For example: “언제든 ‘자가정렬 진행해봅시다’라고 말씀해 주세요.”
+English: “Whenever you want to revisit your criteria, say ‘Let’s do a
+self-alignment check.’” Adapt naturally for other languages. Omit it during
+ordinary project work, installation-only work, and skill development or editing.
+Reading the skill or applying existing criteria does not count as a self-alignment
+session. Honor requests to omit reminders. Never load align just to add one.
+Keep required next choices and pending answers intact; an invitation must not
+close an unfinished session. Do not promise native routing or availability that
+has not been verified.
 
-Show it once per completion response, even when several items finish together.
-Do not repeat it in progress updates or duplicate it around an asynchronous choice.
-During alignment, include it with the completion summary before the next-choice
-step; it does not replace that step or interrupt already authorized work. At final
-closure it is an invitation for later, not a question or a new session. Honor a
-request to omit reminders. If discovery or loading is broken, report the repair
-needed instead of implying the skill is ready. Do not guarantee client routing.
-
-Routine-task reminders are carried by the installed project or personal instruction
-block. Updating the method alone does not refresh existing instruction blocks;
-reconcile them during an authorized setup or instruction refresh, preserving other
-instructions. Do not load the full alignment workflow just to show the reminder.
+During authorized instruction refresh, replace older managed blocks that ask for
+ordinary-task reminders. A method update alone does not refresh existing blocks.
+Preserve other instructions and personal criteria.
 
 ## Choose the smallest useful alignment
 

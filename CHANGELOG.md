@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.10.0
+
+- Add optional path 8 for scoped training-data collection, review and local SFT, DPO and evaluation exports. Training, Git commits and uploads remain separate choices.
+- Keep evidence, user confirmation, current criteria and export eligibility distinct; preserve task groups across training and evaluation.
+- Limit return invitations to actual self-alignment session closure, at most once per session. Remove them from ordinary tasks, installation-only work and skill development.
+- Refresh instruction templates and synchronize English, Korean and Japanese usage guidance.
+
 ## 0.9.1
 
 - Keep required Codex async choices pending instead of immediately issuing a completion response; wait through supported mechanisms and resume from the answer.

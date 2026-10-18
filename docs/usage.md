@@ -23,6 +23,7 @@ the purpose is open, the agent offers these choices in your language:
 5. Suggest a starting point from the current project.
 6. Set up or review personal defaults across projects (optional).
 7. Add the ALIGNS.md badge to the project README (only when absent).
+8. Set up or review personal training-data collection and export (optional).
 
 The agent checks the README before offering 7. If the badge is already there,
 it leaves that option out and keeps the other numbers unchanged. Choosing 7 adds
@@ -58,7 +59,7 @@ remaining topic with a reason, shows all other available or unexplored paths, an
 includes a finish option. A project review and rehearsal do not complete history
 review or personal setup. The agent offers history source selection even if no
 source has been chosen, and can offer mismatch review if you have an example.
-Before offering finish alone, it accounts for all seven paths and explains what was
+Before offering finish alone, it accounts for all eight paths and explains what was
 completed, declined, deferred, outside your requested scope, or blocked. Path 5 is
 navigation, not another exercise. You do not need to complete every path.
 
@@ -70,22 +71,53 @@ option is not an answer. The agent waits for your choice before starting new sco
 
 For example, after project criteria are saved, it might offer **4. Rehearse decisions
 (recommended)**, **2. Review a mismatch, if you have an example**, **3. Choose
-history to review**, **6. Personal defaults**, and **0. Finish here**. The choices depend
+history to review**, **6. Personal defaults**, **8. Training data (optional)**, and **0. Finish here**. The choices depend
 on what you have already done and what remains useful. It does not ask you to repeat
-completed work or require you to complete all seven paths.
+completed work or require you to complete all eight paths.
 
 Already requested items continue without another permission question. A stop or
 “only this item” request ends the flow directly. The agent keeps session progress
 in the conversation, without creating another log or background task. See the
 [session flow procedure](../skills/align/references/session-flow.md) for details.
 
-At installation completion, alignment-item completion, and the final report for an
-ordinary task, the agent gives a short reminder: “Whenever you want to revisit your
-criteria, say ‘Let’s do a self-alignment check.’” In Korean, you can say “자가정렬 진행해봅시다.”
-The reminder does not start an interview or replace the next-choice step. You can
-ask the agent to omit it. Ordinary-task reminders require the updated project or
-personal instruction block; a skill update alone does not replace existing blocks.
+The return invitation appears at most once when a session that actually performed
+self-alignment closes. It is omitted after ordinary project tasks, installation-only
+work, intermediate items, and skill development. Reading the skill or applying
+existing criteria does not qualify. You can omit invitations entirely. During an
+authorized instruction refresh, replace old managed blocks that require ordinary-task
+reminders; updating the method alone does not replace those blocks.
 Natural-language routing depends on the client discovering and loading the skill.
+
+## Personal training data
+
+Choose **8** or ask “Help me collect reviewed examples for personal fine-tuning.”
+The agent agrees on sources, project/personal scope, storage and a review checkpoint.
+It can record small candidates during authorized active work or extract examples
+only when asked. It cannot monitor unavailable conversations or run while idle.
+Selecting the option does not authorize scanning every log or uploading data.
+
+By default, keep the data in a local directory outside shared repositories. You
+can choose a project folder or separate repository, with Git tracking, commits and
+uploads as separate decisions. No model training is performed. Developing ALIGNS.md
+itself does not enable collection of the developer's conversations.
+
+Candidates preserve context, corrections, confirmed choices, provenance and criterion
+versions. Review them in batches; agreement on a rule does not confirm an invented
+ideal response. Hypothetical and reconstructed examples remain labeled. Export only
+when requested, using reviewed current examples. DPO pairs need a confirmed choice
+between alternatives under the same context. Hold out whole task families for
+evaluation, including any variants derived from them.
+
+The bundled exporter produces text-only SFT, eligible DPO and evaluation JSONL files,
+plus a separate private manifest with provenance and exclusions. It checks labels,
+criterion versions and exact prompt overlap, but cannot establish label truth,
+remove secrets automatically, or detect all semantic leakage. It does not support
+tool-call trajectories in this version. A review count is not proof of readiness
+for training. See the [collection procedure and export command](../skills/align/references/training-data.md).
+
+You can stop collection, change its scope, review candidates or request deletion.
+Changing the agreement can make older examples stale. Deleting source examples does
+not remove them from Git history, remote copies or previously trained models.
 
 ## Codex question windows
 

@@ -74,28 +74,31 @@ hosts without a wait mechanism. Include “Answer questions” / “질문에 �
 only when an official resume URL is supplied or documented; never invent a link.
 Resume the selected step after the answer, without another invocation request.
 
-Account for all seven paths before choosing follow-ups. Keep unexplored paths
+Account for all eight paths before choosing follow-ups. Keep unexplored paths
 available; an unchosen history source or missing personal file does not exclude
 paths 3 or 6. Offer path 2 conditionally if the user has a mismatch example.
 Path 7 adds a README badge: offer it only after inspecting the target README and
 confirming an ALIGNS.md badge is absent. Exclude existing badges and personal-only
 sessions without a project; a missing or unreadable README is a prerequisite gap.
+Path 8 optionally sets up personal training-data collection or export. Keep it
+available without enabling collection; follow the training-data reference only
+when selected or already authorized. Declining it does not limit other paths.
 Path 5 is navigation. Show all remaining paths with one recommendation and a finish
 choice; use numbered text if the question UI cannot fit them all. Before offering
 only finish, briefly account for completed, declined, deferred, out-of-scope, or
 blocked paths. Never treat a general review or rehearsal as completion of the rest.
 
-At each verified installation completion, alignment-item completion, and ordinary
-task's final completion report, add one brief invitation in the user's language:
-“언제든 ‘자가정렬 진행해봅시다’라고 말씀해 주세요. ALIGNS.md로 기준을 함께 점검할 수 있습니다.”
-For English, use “Whenever you want to revisit your criteria, say ‘Let’s do a
-self-alignment check.’” Adapt naturally for other languages. Treat that request as explicit
-alignment intent and resume from available progress. Show the invitation once per
-completion response, not during progress updates. Keep any required next-choice
-step; do not start a review, repeat a pending question, or interrupt authorized work
-because of this reminder. Honor requests to omit it. If the skill is unavailable,
-give the repair needed instead of suggesting it is ready. Native routing depends
-on the client; this invitation is not a guarantee of automatic invocation.
+Offer a brief return invitation only when closing a session that actually used
+align to perform self-alignment. Show it at most once per session, not after each
+item. For example: “언제든 ‘자가정렬 진행해봅시다’라고 말씀해 주세요.”
+English: “Whenever you want to revisit your criteria, say ‘Let’s do a
+self-alignment check.’” Adapt naturally for other languages. Omit it during
+ordinary project work, installation-only work, and skill development or editing.
+Reading the skill or applying existing criteria does not count as a self-alignment
+session. Honor requests to omit reminders. Never load align just to add one.
+Keep required next choices and pending answers intact; an invitation must not
+close an unfinished session. Do not promise native routing or availability that
+has not been verified.
 
 Reuse existing answers. Fix clear execution errors directly. Ask only about
 consequential uncertainty, continue independent work, and do not reopen a declined

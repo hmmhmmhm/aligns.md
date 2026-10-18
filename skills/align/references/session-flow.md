@@ -19,7 +19,7 @@ not saved. An item can also conclude that no criterion change is needed. Reopen
 completed work only at the user's request or when relevant new evidence warrants
 it, naming what changed instead of recommending the same task again.
 
-Before choosing follow-ups, account for all seven paths from available conversation:
+Before choosing follow-ups, account for all eight paths from available conversation:
 completed, declined, deferred (with revisit condition), available, not yet explored,
 or blocked by a known prerequisite. Keep a short reason for exclusions. Unknown
 is not completed, declined, or inapplicable. A general project check does not
@@ -43,9 +43,16 @@ complete history review, mismatch review, rehearsal, or personal setup.
   A missing or unreadable README is a known prerequisite gap, not proof that a
   badge should be added. Personal-only sessions without a project exclude this path.
 
+- Path 8: keep optional training-data setup available until selected, declined,
+  deferred, or excluded by explicit scope. Do not recommend it solely because
+  conversations exist. Recommend it when the user expresses interest in model
+  personalization or dataset export. Completed setup does not authorize a new
+  source, export, training run, commit, or upload. Reuse saved settings and offer
+  review/export only when requested or at an agreed review checkpoint.
+
 At the first item completion and before recommending finish as the only option,
 show a compact coverage summary using the stable path numbers. For example:
-“Done: 1, 4. Still available: 2 (if you have an example), 3, 6. Starting-point
+“Done: 1, 4. Still available: 2 (if you have an example), 3, 6, 8 (optional training data). Starting-point
 recommendation: 5 already used. Badge: 7 already present.” On later transitions show only changed status
 unless the user asks for the full view. This is conversational state, not a file.
 
@@ -66,7 +73,7 @@ Keep question text self-contained. Put the recommended choice first and label it
 as recommended, preserving the stable path number. Include a short reason in the
 question or a supported description field. Keep ordinary-language answers valid.
 Respect tool limits on option counts, headers, free text, and pending questions.
-For the initial seven-path menu, use text if the tool cannot show all choices; do
+For the initial eight-path menu, use text if the tool cannot show all choices; do
 not silently drop paths or split one decision into several unrelated questions.
 For follow-up choices, show every remaining available or unexplored path plus
 “0. Finish here,” with one recommendation. Do not cap the menu at two topics.
@@ -125,9 +132,8 @@ confirmation dates and report errors rather than claiming success.
 
 Then, unless the user said stop or “only this item”:
 
-1. Summarize the item completed and the actual save/verification result, including
-   the short return invitation once as specified in the skill. It does not replace
-   the next-choice step.
+1. Summarize the item completed and the actual save/verification result. Save the
+   return invitation for final session closure; do not repeat it between items.
 2. Remove completed, declined, and currently deferred topics from next choices.
    Do not repeat a settled question under a different label. Reintroduce a deferred
    topic only when its agreed revisit condition occurs or the user requests it.
@@ -135,17 +141,17 @@ Then, unless the user said stop or “only this item”:
    context, dependencies and expected usefulness. Recommend one, explaining why now. Do not rank topics merely by
    their menu number. Do not perform extra history collection to choose a topic.
 4. Present the recommendation, every other remaining path, and “0. Finish here,”
-   using the supported question interface. Preserve path IDs 1-7; 0 always ends
+   using the supported question interface. Preserve path IDs 1-8; 0 always ends
    the session. Path 5 is a routing aid, not a recurring recommendation once a
    starting point has been selected.
 5. Wait for a choice before opening a new scope. For already requested multi-item
    work, state the next item and proceed instead of adding a new permission gate.
 
-Use the seven paths as possible next directions, not mandatory stages. For example,
+Use the eight paths as possible next directions, not mandatory stages. For example,
 after path 1, path 4 may help test newly agreed criteria; path 3 may help when the
 user has mentioned useful feedback; path 6 is an optional cross-project setup.
 Do not claim a mismatch exists just to offer path 2. Do not recommend global setup
-after it was declined, or imply that every user must complete all seven paths.
+after it was declined, or imply that every user must complete all eight paths.
 History source selection and personal repository authorization still apply after
 the user chooses those paths.
 
@@ -160,7 +166,7 @@ If no topic remains after that check, say what is complete and recommend finishi
 Offer
 “0. Finish here” with free text for a user-named topic, or an equivalent text
 question. Do not fabricate another task. Once the user chooses finish, give a
-brief outcome and the one-line invitation for a future session, then stop without
+brief outcome and, at most once in the session, the return invitation, then stop without
 another next-topic recommendation or question. A stop or single-item-only
 request permits direct closure without this finish picker. Completing an item
 alone does not imply that the user chose to finish the session.
@@ -181,6 +187,7 @@ boundaries we just agreed on. What would you like to do next?”
 - 2. Review a decision that missed expectations, if you have an example
 - 3. Choose PR or conversation history to review
 - 6. Review personal defaults across projects
+- 8. Set up personal training-data collection (optional)
 - 0. Finish here
 
 Use the client's question tool for these choices when supported. If path 4 was

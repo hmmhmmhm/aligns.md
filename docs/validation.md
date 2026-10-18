@@ -9,6 +9,20 @@ a referenced ALIGNS.md, and the complete maintained skill setup. Its protocol,
 actor evidence, model judgments, context correction, and offline verification
 are separate from the earlier development checks below.
 
+## Training-data export checks (0.10.0)
+
+On 2026-10-18, the local Python suite passed 44 tests, including 13 new tests
+using invented decision examples. The exporter checks task-family separation,
+exact prompt overlap, duplicate examples, stale criteria, unconfirmed targets,
+privacy review, explicit inclusion of hypothetical/reconstructed examples, and
+same-context preference pairs. Tests also cover source preservation, refusing
+existing output directories, and no output after validation failure.
+
+These are deterministic export checks. They do not verify the truth of user labels,
+semantic overlap, model training quality, or the full path-8 conversation in every
+client. The return-invitation changes were reviewed in the skill, instruction
+blocks and translations; no cross-client behavioral test is claimed.
+
 ## Package checks
 
 - The Skill Creator validator accepted the skill frontmatter and structure.

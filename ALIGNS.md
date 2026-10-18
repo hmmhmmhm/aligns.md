@@ -130,6 +130,24 @@ Add path 7 for placing the ALIGNS.md badge in a project's README. Recommend it
 only after confirming that the badge is absent. Reuse the provided badge, preserve
 existing README layout and translations, and do not duplicate an existing badge.
 
+## Optional training data
+
+User-requested scope update: 2026-10-18 (Asia/Seoul). Partial confirmation only.
+
+Add optional path 8 for collecting and reviewing decision examples, then exporting
+SFT, eligible DPO pairs, and held-out evaluation data for user-run fine-tuning.
+Agree on sources, scope, storage and review checkpoints before collecting. Prefer
+small candidate records at confirmed decision moments and batch review/export.
+Keep evidence and datasets separate from the current agreement. Distinguish actual,
+hypothetical and reconstructed examples, confirmed criteria, accepted answers and
+verified outcomes. Do not infer preference from silence or fabricate human labels.
+
+Default to local storage outside shared repositories. Let the user choose Git
+tracking and remote upload separately. Do not train models or enable background
+logging. Skill development does not authorize collecting this user's records.
+A dataset supports later training; it does not itself change model weights or
+establish improved performance. Preserve task-group separation for evaluation.
+
 ## Optional personal scope
 
 User-requested scope update: 2026-10-18 (Asia/Seoul). Partial confirmation only.
@@ -155,17 +173,20 @@ alignment item, summarize completion and offer a next choice, excluding complete
 declined, or currently deferred topics. Recommend the best eligible next topic
 with a reason and show all other remaining paths, including those not yet explored.
 A general review or rehearsal does not complete the other paths. Account for all
-seven paths and explain exclusions before offering finish alone. Path 5 is navigation;
+eight paths and explain exclusions before offering finish alone. Path 5 is navigation;
 the other paths remain optional and retain their scope requirements. Include a finish option.
 Use the client's supported structured-question UI when available in the active
 mode, with numbered text as fallback. Track progress in the conversation, not a
 new log. Continue already requested work; let the user choose before expanding
 scope. Honor stopping and single-item-only requests. Use natural-language
-invitations instead of requiring command syntax. At installation completion,
-alignment-item completion, and ordinary task completion, include a short reminder
-that users can return by saying “자가정렬 진행해봅시다.” Show it once per completion
-response, without opening an interview or repeating it during progress updates.
-Honor requests to omit reminders and describe unavailable skills honestly.
+invitations instead of requiring command syntax. Include a return invitation at
+most once when closing a session that actually performed self-alignment. Omit it
+from ordinary project work, installation-only work, skill development, and
+intermediate item completions. Reading the skill or applying existing criteria
+alone does not qualify. Honor requests to omit reminders and describe unavailable
+skills honestly.
+
+Return-invitation policy confirmed: 2026-10-18 (Asia/Seoul). Partial confirmation only.
 
 In Codex, preserve the chance to answer a required choice instead of sending a
 completion response immediately after dispatch. Wait using supported mechanisms;

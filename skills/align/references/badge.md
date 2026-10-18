@@ -51,6 +51,6 @@ once in the intended badge location. Check the image and destination link when
 network access is available; otherwise state that remote availability was not
 verified. Do not claim a rendered check without rendering. Mark the item completed
 only after the edit and available checks, then use the usual remaining-path choices
-and completion invitation. A badge edit does not change agreement criteria or
+and session closure rules. A badge edit does not change agreement criteria or
 confirmation dates. If the badge appeared before the edit, skip the write and
 report it as already satisfied.
