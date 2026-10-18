@@ -84,4 +84,8 @@ When installation or repair is part of a request to establish alignment, verify
 discovery and continue that request: review available criteria, ask about a real
 gap, or show a concrete draft for confirmation. Do not finish by telling the user
 to invoke the skill again. If they requested installation only, report that result
-without starting an unrequested alignment interview.
+without starting an unrequested alignment interview. Include the short return
+invitation from the skill’s “Make it easy to return” section after verified
+installation. During authorized setup or instruction refresh, reconcile the
+managed instruction block so ordinary task completions also carry that invitation.
+Do not claim that a method update alone has changed existing project instructions.

@@ -153,7 +153,11 @@ Use the client's supported structured-question UI when available in the active
 mode, with numbered text as fallback. Track progress in the conversation, not a
 new log. Continue already requested work; let the user choose before expanding
 scope. Honor stopping and single-item-only requests. Use natural-language
-invitations instead of requiring command syntax.
+invitations instead of requiring command syntax. At installation completion,
+alignment-item completion, and ordinary task completion, include a short reminder
+that users can return by saying “자가정렬 진행해봅시다.” Show it once per completion
+response, without opening an interview or repeating it during progress updates.
+Honor requests to omit reminders and describe unavailable skills honestly.
 
 ## Working with other skills
 

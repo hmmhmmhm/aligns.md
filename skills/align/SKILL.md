@@ -1,9 +1,9 @@
 ---
 name: align
-description: Establish and maintain project or optional cross-project personal alignment in ALIGNS.md, including review of selected personal documents, PR feedback, or conversations for scoped criteria. Use when goals or priorities are unclear, important decisions diverge from the user's expectations, repeated corrections expose a missing criterion, or a long autonomous run needs judgment calibration. Apply existing agreements without reopening routine decisions.
+description: Establish and maintain project or optional cross-project personal alignment in ALIGNS.md, including review of selected personal documents, PR feedback, or conversations for scoped criteria. Use for natural-language self-alignment requests such as “자가정렬 진행해봅시다” or “Let’s review my alignment,” or when goals or priorities are unclear, important decisions diverge from the user's expectations, repeated corrections expose a missing criterion, or a long autonomous run needs judgment calibration. Apply existing agreements without reopening routine decisions.
 license: MIT
 metadata:
-  version: "0.8.1"
+  version: "0.8.2"
 ---
 
 # Align
@@ -98,7 +98,9 @@ environment setup or instruction-file connection when needed for the selected ta
 
 Users can ask in ordinary language whenever the skill is available: “Help me align
 this project's criteria,” “That decision missed what I meant,” or “Let's organize
-my preferences across projects.” No exact phrase or command is required. Resolve
+my preferences across projects.” Treat “자가정렬 진행해봅시다” as an explicit
+request to start or resume alignment, using available session progress. No exact
+phrase or command is required. Resolve
 intent from the conversation; unrelated uses of words like alignment do not trigger
 an interview. Do not promise invocation when the client cannot discover or load
 the skill.
@@ -133,6 +135,28 @@ Otherwise wait for the user's choice before starting new scope. Reuse an answere
 selection without asking for an invocation or “continue.” Respect tool availability
 and mode restrictions, and do not equate a default selection with an answer.
 In routine non-alignment work, apply existing criteria without a follow-up menu.
+
+## Make it easy to return
+
+At every verified installation completion, alignment-item completion, and final
+completion report for an ordinary task, include one short invitation in the user's
+language. In Korean use: “언제든 ‘자가정렬 진행해봅시다’라고 말씀해 주세요. ALIGNS.md로 기준을 함께 점검할 수 있습니다.”
+English: “Whenever you want to revisit your criteria, say ‘Let’s review my alignment.’”
+Japanese: “判断基準を見直したくなったら、いつでも「自分の基準をすり合わせましょう」と声をかけてください。”
+These are examples, not required command syntax.
+
+Show it once per completion response, even when several items finish together.
+Do not repeat it in progress updates or duplicate it around an asynchronous choice.
+During alignment, include it with the completion summary before the next-choice
+step; it does not replace that step or interrupt already authorized work. At final
+closure it is an invitation for later, not a question or a new session. Honor a
+request to omit reminders. If discovery or loading is broken, report the repair
+needed instead of implying the skill is ready. Do not guarantee client routing.
+
+Routine-task reminders are carried by the installed project or personal instruction
+block. Updating the method alone does not refresh existing instruction blocks;
+reconcile them during an authorized setup or instruction refresh, preserving other
+instructions. Do not load the full alignment workflow just to show the reminder.
 
 ## Choose the smallest useful alignment
 

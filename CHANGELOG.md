@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.8.2
+
+- Recognize “자가정렬 진행해봅시다” as a natural-language request to start or resume alignment.
+- Add a short return invitation at installation, alignment-item, and ordinary task completion through the skill and instruction templates.
+- Keep ongoing choices intact, avoid duplicate reminders, and distinguish refreshed instructions from a method-only update.
+
 ## 0.8.1
 
 - Separate item completion from session completion with a next-choice step and an explicit finish option.

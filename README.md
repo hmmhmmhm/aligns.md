@@ -78,6 +78,8 @@ Then ask: **Use the align skill to set up ongoing alignment for this project.**
 
 Once the skill is available, ask “Help me align this project” whenever you need it. No command or exact phrase is required. If the purpose is open, choose a starting point by number: project criteria, a decision that missed expectations, history review, rehearsal before a long run, a recommendation, or optional personal defaults across projects. The agent outlines the steps and guides you through them. If you already say what you need, it skips the menu. It asks before saving when needed, then offers remaining topics and a finish choice. Completed or declined topics are left out, and the next useful step is recommended. It uses your client's choice interface when supported, or numbered text otherwise.
 
+After installation and each completed task, the agent reminds you that you can return by saying “Let’s review my alignment.” This does not start another interview. Ordinary-task reminders use the project or personal instruction block set up with the skill; existing blocks need an authorized refresh.
+
 Ask “Help me organize my preferences across projects” to set up a personal ALIGNS.md, optionally drawing on personal documents or notes you choose. No particular filename or format is required. Keep common preferences separate from workplace rules. Store the file locally, or connect a separate personal repository only if you want one. [Personal setup and storage](docs/usage.md#personal-defaults-across-projects).
 
 Native plugin installation is available for Codex and Claude Code. Claude Code

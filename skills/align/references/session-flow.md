@@ -63,7 +63,9 @@ confirmation dates and report errors rather than claiming success.
 
 Then, unless the user said stop or “only this item”:
 
-1. Summarize the item completed and the actual save/verification result.
+1. Summarize the item completed and the actual save/verification result, including
+   the short return invitation once as specified in the skill. It does not replace
+   the next-choice step.
 2. Remove completed, declined, and currently deferred topics from next choices.
    Do not repeat a settled question under a different label. Reintroduce a deferred
    topic only when its agreed revisit condition occurs or the user requests it.
@@ -88,7 +90,8 @@ the user chooses those paths.
 If no topic is eligible, say what is complete and recommend finishing. Offer
 “0. Finish here” with free text for a user-named topic, or an equivalent text
 question. Do not fabricate another task. Once the user chooses finish, give a
-brief outcome and stop without another recommendation. A stop or single-item-only
+brief outcome and the one-line invitation for a future session, then stop without
+another next-topic recommendation or question. A stop or single-item-only
 request permits direct closure without this finish picker. Completing an item
 alone does not imply that the user chose to finish the session.
 

@@ -58,6 +58,14 @@ Already requested items continue without another permission question. A stop or
 in the conversation, without creating another log or background task. See the
 [session flow procedure](../skills/align/references/session-flow.md) for details.
 
+At installation completion, alignment-item completion, and the final report for an
+ordinary task, the agent gives a short reminder: “Whenever you want to revisit your
+criteria, say ‘Let’s review my alignment.’” In Korean, you can say “자가정렬 진행해봅시다.”
+The reminder does not start an interview or replace the next-choice step. You can
+ask the agent to omit it. Ordinary-task reminders require the updated project or
+personal instruction block; a skill update alone does not replace existing blocks.
+Natural-language routing depends on the client discovering and loading the skill.
+
 ## Personal defaults across projects
 
 Ask “Help me organize my preferences across projects.” You can use personal
