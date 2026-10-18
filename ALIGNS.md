@@ -190,6 +190,27 @@ execution error directly; ask only about unresolved judgment criteria.
 The method must not imply that it can wake a stopped agent or that a review
 alone authorizes restarting work or expanding its scope.
 
+## Verification and delivery
+
+Confirmed from conversation and hypothetical rehearsal: 2026-10-18 16:58 (Asia/Seoul). Partial confirmation only.
+
+For interaction changes, prioritize the reported environment and affected user
+flow. Check whether the user can see the feature, operate it, and reach the next
+step. Distinguish simulations, tool acceptance, and observed runtime behavior;
+report unverified environments explicitly. This does not require testing every
+platform for every change.
+
+Distinguish repository changes, deployment or package updates, and application
+in existing installations. State the minimum steps the user must take when a
+separate refresh is needed. Do not claim propagation to environments that have
+not been checked, or overwrite user settings to make a method update take effect.
+
+When deployment has already been requested and the change is limited to reversible
+visual effects, deploy using the available successful checks even if the reported
+environment is inaccessible. Report that environment as unverified and explain how
+to roll back. Do not claim the original issue is verified fixed there. This default
+does not extend to data changes or work that is difficult to reverse.
+
 ## Evidence and communication
 
 Emphasize how carrying confirmed preferences forward reduces the user's effort
