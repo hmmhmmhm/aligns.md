@@ -10,9 +10,9 @@
 
 <p align="center">
   <a href="../../LICENSE"><img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="라이선스: MIT"></a>
-  <a href="https://github.com/hmmhmmhm/aligns.md/stargazers"><img src="https://img.shields.io/github/stars/hmmhmmhm/aligns.md?style=flat&amp;logo=github" alt="GitHub 스타"></a>
+  <a href="https://github.com/hmmhmmhm/aligns.md/stargazers"><img src="../../assets/badges/github-star.svg" alt="GitHub 스타"></a>
   <a href="#install-align"><img src="https://img.shields.io/badge/Format-Markdown-222222.svg?logo=markdown" alt="문서 형식: Markdown"></a>
-  <a href="https://skills.sh/hmmhmmhm/aligns.md/align"><img src="https://skills.sh/b/hmmhmmhm/aligns.md" alt="skills.sh에서 설치"></a>
+  <a href="https://skills.sh/hmmhmmhm/aligns.md/align"><img src="../../assets/badges/skills-sh.svg" alt="skills.sh에서 설치"></a>
 </p>
 
 ## 좋은 결과의 기준을 정하세요

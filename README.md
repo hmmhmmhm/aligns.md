@@ -10,9 +10,9 @@
 
 <p align="center">
   <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="License: MIT"></a>
-  <a href="https://github.com/hmmhmmhm/aligns.md/stargazers"><img src="https://img.shields.io/github/stars/hmmhmmhm/aligns.md?style=flat&amp;logo=github" alt="GitHub stars"></a>
+  <a href="https://github.com/hmmhmmhm/aligns.md/stargazers"><img src="assets/badges/github-star.svg" alt="GitHub stars"></a>
   <a href="#install-align"><img src="https://img.shields.io/badge/Format-Markdown-222222.svg?logo=markdown" alt="Format: Markdown"></a>
-  <a href="https://skills.sh/hmmhmmhm/aligns.md/align"><img src="https://skills.sh/b/hmmhmmhm/aligns.md" alt="Available on skills.sh"></a>
+  <a href="https://skills.sh/hmmhmmhm/aligns.md/align"><img src="assets/badges/skills-sh.svg" alt="Available on skills.sh"></a>
 </p>
 
 ## Define what good means

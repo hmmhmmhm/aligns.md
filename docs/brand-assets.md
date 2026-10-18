@@ -24,3 +24,10 @@ does not add it to user projects automatically.
 The English, Korean and Japanese READMEs include a preview and a Markdown snippet
 using the hosted SVG. To host it yourself, copy the SVG into your project and
 change the image URL to that file's path. Keep the link to the ALIGNS.md repository.
+
+## README link badges
+
+The README uses local SVGs for the [skills.sh listing](../assets/badges/skills-sh.svg)
+and [GitHub star link](../assets/badges/github-star.svg). These are static links;
+they do not display install or star counts. Keeping the images in this repository
+avoids errors from the external badge endpoints. Both use the repository's MIT License.

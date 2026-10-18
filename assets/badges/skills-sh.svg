@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="98" height="20" viewBox="0 0 98 20" role="img" aria-labelledby="title">
+  <title id="title">skills.sh: align</title>
+  <path fill="#555" d="M0 0h58v20H0z"/>
+  <path fill="#111" d="M58 0h40v20H58z"/>
+  <g fill="#fff" text-anchor="middle" font-family="Verdana,DejaVu Sans,sans-serif" font-size="11">
+    <text x="29" y="14">skills.sh</text>
+    <text x="78" y="14">align</text>
+  </g>
+</svg>

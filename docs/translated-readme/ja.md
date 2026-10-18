@@ -10,9 +10,9 @@
 
 <p align="center">
   <a href="../../LICENSE"><img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="ライセンス: MIT"></a>
-  <a href="https://github.com/hmmhmmhm/aligns.md/stargazers"><img src="https://img.shields.io/github/stars/hmmhmmhm/aligns.md?style=flat&amp;logo=github" alt="GitHubスター"></a>
+  <a href="https://github.com/hmmhmmhm/aligns.md/stargazers"><img src="../../assets/badges/github-star.svg" alt="GitHubスター"></a>
   <a href="#install-align"><img src="https://img.shields.io/badge/Format-Markdown-222222.svg?logo=markdown" alt="形式: Markdown"></a>
-  <a href="https://skills.sh/hmmhmmhm/aligns.md/align"><img src="https://skills.sh/b/hmmhmmhm/aligns.md" alt="skills.shでインストール"></a>
+  <a href="https://skills.sh/hmmhmmhm/aligns.md/align"><img src="../../assets/badges/skills-sh.svg" alt="skills.shでインストール"></a>
 </p>
 
 ## よい結果の基準を決める
