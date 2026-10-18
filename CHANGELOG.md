@@ -1,9 +1,14 @@
 # Changelog
 
+## 0.7.1
+
+- Describe optional source material as user-selected personal documents or notes, with no required filename or format.
+- Synchronize this wording across the skill, usage guide, and English, Korean, and Japanese READMEs.
+
 ## 0.7.0
 
 - Add optional menu choice 6 for personal alignment across projects; keep choices 1-5 stable.
-- Review selected PERSONA.md or personal instructions for scoped criteria without importing private details or workplace rules indiscriminately.
+- Review selected personal documents or notes for scoped criteria without importing private details or workplace rules indiscriminately.
 - Support local files, selected checkouts, and user-requested clones through a private user-level pointer, with separate synchronization authorization.
 - Keep personal defaults, project exceptions, and confirmation dates independent; retain project-only use.
 

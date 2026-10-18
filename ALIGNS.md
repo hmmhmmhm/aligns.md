@@ -130,8 +130,8 @@ or asking the user to choose again. Keep the detailed procedure in the skill.
 User-requested scope update: 2026-10-18 (Asia/Seoul). Partial confirmation only.
 
 Offer personal defaults across projects as an optional sixth alignment path,
-keeping existing menu numbers stable. Let users bring PERSONA.md or selected
-personal instructions, separating common criteria from workplace rules and
+keeping existing menu numbers stable. Let users bring personal documents or notes they choose,
+without requiring a filename or format, separating common criteria from workplace rules and
 unneeded biographical details. Keep each agreement's scope and confirmation
 independent. Never publish a user's profile as shared skill content or fixtures.
 

@@ -1,9 +1,9 @@
 ---
 name: align
-description: Establish and maintain project or optional cross-project personal alignment in ALIGNS.md, including selected persona, PR, or conversation review for scoped criteria. Use when goals or priorities are unclear, important decisions diverge from the user's expectations, repeated corrections expose a missing criterion, or a long autonomous run needs judgment calibration. Apply existing agreements without reopening routine decisions.
+description: Establish and maintain project or optional cross-project personal alignment in ALIGNS.md, including review of selected personal documents, PR feedback, or conversations for scoped criteria. Use when goals or priorities are unclear, important decisions diverge from the user's expectations, repeated corrections expose a missing criterion, or a long autonomous run needs judgment calibration. Apply existing agreements without reopening routine decisions.
 license: MIT
 metadata:
-  version: "0.7.0"
+  version: "0.7.1"
 ---
 
 # Align
@@ -75,8 +75,8 @@ Option 3 opens the source, scope and time-estimate choice in
 [history review](references/history.md);
 it does not authorize reading unspecified logs or all PRs. Reuse scope already given.
 
-Option 6 follows [personal alignment](references/personal.md). Offer existing
-PERSONA.md or user-selected instructions as input, and local storage or an optional
+Option 6 follows [personal alignment](references/personal.md). Offer user-selected
+personal documents or notes as input, and local storage or an optional
 personal repository. Selection alone does not authorize cloning, publishing, or
 promoting source content to confirmed global criteria. Keep project-only use simple.
 

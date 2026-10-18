@@ -11,8 +11,8 @@ criteria across projects. It can work outside a Git repository. If the request
 already specifies this purpose, skip the start menu. If a personal agreement is
 already connected, review it instead of repeating onboarding.
 
-Offer an existing PERSONA.md, personal instructions, or another user-selected
-source as optional input. Reuse supplied text or a clear path; do not search the
+Offer personal documents or notes selected by the user as optional input.
+No particular filename, template, or document format is required. Reuse supplied text or a clear path; do not search the
 home directory, private repositories, or conversation logs for more material.
 A user can start from conversation alone. Declining personal setup leaves
 project alignment unchanged; do not keep proposing it during ordinary tasks.

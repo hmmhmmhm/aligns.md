@@ -31,8 +31,9 @@ starting the autonomous run.
 
 ## Personal defaults across projects
 
-Use `$align 6`, or ask to set up a personal ALIGNS.md. You can bring an existing
-PERSONA.md, personal instructions, or selected notes, or start with a conversation.
+Use `$align 6`, or ask to set up a personal ALIGNS.md. You can use personal
+documents or notes you choose, or start with a conversation. No particular filename
+or format is required.
 The agent separates common preferences from workplace rules and background facts,
 then asks only about scope or details that materially affect a decision. You review
 what becomes a lasting criterion. Personal details are not copied by default.
