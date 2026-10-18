@@ -2,7 +2,7 @@
 
 엔지니어링 리더, 모델 개발팀, MLOps 팀을 위한 도입 검토 문서입니다.
 
-[English](../team-mlops-brief.md) · [수동 제출 가이드](../team-training-data.md) · [데이터 규격](../../skills/align/references/team-training.md)
+[English](../team-mlops-brief.md) · **한국어** · [日本語](ja.md) · [수동 제출 가이드](../team-training-data.md) · [데이터 규격](../../skills/align/references/team-training.md)
 
 ## 무엇을 도입하는가
 

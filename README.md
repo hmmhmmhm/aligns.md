@@ -59,39 +59,27 @@ Brief requests work too. The agent checks existing context, then asks only about
 
 ## Install align
 
-Paste this request into your agent. It sets up the maintained skill and an update
-policy, then connects it to your project.
+Paste this request into your agent:
 
 ```text
-Set up the maintained align skill from https://github.com/hmmhmmhm/aligns.md for this project. Read its current installation guide, check the existing installation and agent instructions, and use the supported installation route for my primary CLI. Ask which CLI I mainly use, and whether it is this one, only if that is unclear.
-
-Enable supported automatic method updates. If the client has no native auto-update option, use a targeted update at the start of each alignment session, preserving the installation scope. Keep a working installed version when offline. Explain which update mode is active; do not add a scheduler or update unrelated packages.
-
-Use the skill to establish or review ALIGNS.md and connect the primary instruction file to it. Preserve existing rules and distinct files; propose safe links for any other clients I use. Record the invocation and update policy in ALIGNS.md. Reuse clear answers, and suggest a focused alignment check after important judgment mismatches, before untested long autonomous work, or when I am unsure of the next direction. Method updates must never rewrite my personal criteria or count as agreement.
+Set up the maintained align skill from https://github.com/hmmhmmhm/aligns.md using its current installation guide. Check my existing setup, use the supported route for my primary CLI, connect ALIGNS.md to this project, and configure supported method updates. Preserve existing instructions and my confirmed criteria; ask only about unresolved choices.
 ```
 
-Or install the portable skill directly:
+Or install it directly:
 
 ```sh
 npx skills add hmmhmmhm/aligns.md --skill align
 ```
 
-Then ask: **Use the align skill to set up ongoing alignment for this project.**
+Then ask: **Let's do a self-alignment check for this project.** No command or exact phrase is required.
 
-Once the skill is available, ask “Help me align this project” whenever you need it. No command or exact phrase is required. If the purpose is open, choose a starting point by number: project criteria, a decision that missed expectations, history review, rehearsal before a long run, a recommendation, optional personal defaults across projects, adding the README badge when it is missing, or optional training-data collection and export. The agent outlines the steps and guides you through them. If you already say what you need, it skips the menu. It asks before saving when needed, then offers remaining topics and a finish choice. Completed or declined topics are left out. All remaining paths stay visible, including those not yet explored, with one recommended next step. Before offering finish alone, the agent accounts for all eight paths and explains any exclusions. It uses your client's choice interface when all choices fit, or a numbered list otherwise.
+[Installation, updates and the eight starting points](docs/usage.md)
 
-A short return invitation appears at most once when a self-alignment session ends. It does not appear after ordinary project tasks, installation-only work, or changes to the skill itself. You can ask to omit it entirely.
+## For teams
 
-Ask “Help me organize my preferences across projects” to set up a personal ALIGNS.md, optionally drawing on personal documents or notes you choose. No particular filename or format is required. Keep common preferences separate from workplace rules. Store the file locally, or connect a separate personal repository only if you want one. [Personal setup and storage](docs/usage.md#personal-defaults-across-projects).
+Prepare reviewed decisions from code reviews and agent conversations as training data for your coding agent. Your team handles training and evaluation.
 
-Option **8** helps you collect decision examples for personal model training. Choose the sources, scope, storage and review checkpoints before collection starts. Review candidates, then request an SFT, eligible DPO, or evaluation export. Local storage outside the repository is the default; Git commits and uploads are separate choices. The skill does not train models or monitor every session in the background. [Training-data setup and export](docs/usage.md#personal-training-data). Teams can use a [manual submission and review workflow](docs/team-training-data.md) to prepare examples around shared criteria. The team handles training and evaluation. [MLOps and team adoption brief](docs/team-mlops-brief.md) includes the data contract, validation results and a pilot plan.
-
-Native plugin installation is available for Codex and Claude Code. Claude Code
-can update this marketplace automatically when enabled. Other routes can use a
-user-authorized update at the start of an alignment session. No background
-updater or universal automatic activation is assumed.
-
-[Installation and updates](docs/usage.md) · [Behavioral benchmark](BENCHMARK.md) · [Intervention pilot](EFFORT_BENCHMARK.md) · [Preference transfer](DISCOVERY_BENCHMARK.md) · [Preference retention](RETENTION_BENCHMARK.md) · [Validation](docs/validation.md) · [Distribution](docs/distribution.md)
+[MLOps and team adoption brief](docs/team-mlops-brief.md) · [Manual submission guide](docs/team-training-data.md)
 
 ## Add the badge to your project
 

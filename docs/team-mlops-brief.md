@@ -2,7 +2,7 @@
 
 A technical and adoption brief for engineering leaders, model teams and MLOps.
 
-[한국어](translated-briefs/ko.md) · [Manual submission guide](team-training-data.md) · [Data contract](../skills/align/references/team-training.md)
+**English** · [한국어](translated-briefs/ko.md) · [日本語](translated-briefs/ja.md) · [Manual submission guide](team-training-data.md) · [Data contract](../skills/align/references/team-training.md)
 
 ## The decision this supports
 
