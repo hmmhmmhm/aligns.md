@@ -87,8 +87,8 @@ implying a full review.
 ## Project name
 
 Use ALIGNS.md for the project and agreement file, and hmmhmmhm/aligns.md for the
-repository. Keep `align` as the skill name. The acquired aligns.md domain will
-be connected separately after DNS propagation. Preserve historical benchmark
+repository. Keep `align` as the skill name. Use https://aligns.md as the official website. The custom domain and SSL are
+active; keep public site links and metadata on this domain. Preserve historical benchmark
 evidence and its hashes when updating current branding.
 
 ## Presentation and Licensing

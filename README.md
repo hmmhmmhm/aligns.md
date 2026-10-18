@@ -4,6 +4,8 @@
 
 <h1 align="center">ALIGNS.md</h1>
 
+<p align="center"><a href="https://aligns.md/en/">aligns.md</a></p>
+
 <p align="center">
   <strong lang="en">English</strong> · <a href="docs/translated-readme/ko.md" lang="ko">한국어</a> · <a href="docs/translated-readme/ja.md" lang="ja">日本語</a>
 </p>
