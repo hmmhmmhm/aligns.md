@@ -4,7 +4,9 @@ At setup, inspect relevant existing files before proposing a layout. Ask which
 CLI is primary and whether it is the current one only if context does not answer.
 For equally used clients, propose AGENTS.md as the neutral canonical file. Record
 the choice in ALIGNS.md; do not ask again until the user changes tools or evidence
-shows the mapping is broken.
+shows the mapping is broken. A client answer completes a setup question, not the
+whole request. Resume the pending authorized connection or alignment step in the
+same turn; do not send the user back to a command or the start menu.
 
 ## Inspect, propose, connect, verify
 

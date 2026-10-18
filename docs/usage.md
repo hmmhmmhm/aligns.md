@@ -6,9 +6,10 @@ project instructions, and use it again when there is something worth aligning.
 
 ## Choose where to start
 
-Invoke `$align` in Codex, `/align:align` with the Claude Code plugin, or ask to
-use the align skill. If the purpose is open, the agent offers these choices in
-your language:
+Once the skill is available in your client, you can ask in ordinary language at
+any time: “Help me align this project's criteria,” or “That result missed what I
+meant; let's revisit the criteria.” No command or exact phrase is required. If
+the purpose is open, the agent offers these choices in your language:
 
 1. Set or review project direction and personal criteria.
 2. Review a decision that missed your expectations.
@@ -17,8 +18,7 @@ your language:
 5. Suggest a starting point from the current project.
 6. Set up or review personal defaults across projects (optional).
 
-Reply with a number or describe what you need. You can also write `$align 3`
-to choose history review directly. A specific request such as
+Reply with a number or describe what you need. A specific request such as
 “Use align to review my recent PR feedback” skips the start menu. History review
 still lets you choose sources and scope with time estimates before collection.
 Choosing option 3 does not select all your records.
@@ -29,9 +29,27 @@ when moving between stages and skips work already done. A menu choice does not
 confirm new preferences. Rehearsal discusses hypothetical decisions without
 starting the autonomous run.
 
+## Continue from each answer
+
+Choosing a client, source, or storage location completes one step. The agent uses
+your answer and continues the work you already requested, without asking you to
+invoke the skill again. If something consequential is missing, it asks that specific
+question. If you asked only for installation, it stops after verifying installation.
+
+Before saving an item, the agent shows the criterion and where it belongs. It asks
+for confirmation when needed and reuses permission you have already given. After
+saving and verification, it reports the result and recommends one useful next topic
+if there is an unresolved gap. You can accept, choose another topic, or stop.
+Already requested items continue without another permission question. New topics,
+personal setup, and extra history review wait for your choice.
+
+For example: “The completion criteria are saved. Would you like to decide when a
+long-running task should pause next?” If nothing useful remains, the agent closes
+the session. You can ask to revisit your criteria later in your own words.
+
 ## Personal defaults across projects
 
-Use `$align 6`, or ask to set up a personal ALIGNS.md. You can use personal
+Ask “Help me organize my preferences across projects.” You can use personal
 documents or notes you choose, or start with a conversation. No particular filename
 or format is required.
 The agent separates common preferences from workplace rules and background facts,
@@ -109,8 +127,8 @@ codex plugin marketplace add hmmhmmhm/aligns.md --ref main
 codex plugin add aligns-md@aligns-md
 ```
 
-Open a new session if the skill is not yet visible. Select **align** or use
-`$align`. The repository includes a Codex marketplace and plugin manifest;
+Open a new session if the skill is not yet visible. Select **align** or ask
+“Help me review this project's ALIGNS.md.” The repository includes a Codex marketplace and plugin manifest;
 it is not a claim of inclusion in OpenAI's official directory.
 
 To refresh the marketplace snapshot and installed package:
@@ -134,7 +152,7 @@ Inside Claude Code:
 /plugin install align@aligns-md
 ```
 
-Invoke `/align:align`. The plugin includes a static SessionStart reminder for
+Ask to review your alignment criteria, or select the installed align skill. The plugin includes a static SessionStart reminder for
 startup, resume, clear and compact. It performs no networking, file changes or
 project-data collection. It does not start an alignment interview on every task.
 
@@ -317,8 +335,8 @@ See [history review and collector commands](../skills/align/references/history.m
 
 ## Upgrading from ALIGN.md
 
-The project and agreement file are now named ALIGNS.md. The skill command is still
-`$align`. Read the existing `ALIGN.md` before migrating it. Once the rename is
+The project and agreement file are now named ALIGNS.md. The skill name remains
+`align`, and you can ask to use it in ordinary language. Read the existing `ALIGN.md` before migrating it. Once the rename is
 authorized, move it to `ALIGNS.md` and update references in the project instruction
 files. Preserve its criteria and confirmation date. If both files exist, resolve
 the differences before changing either.

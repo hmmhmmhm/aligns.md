@@ -84,7 +84,7 @@ implying a full review.
 ## Project name
 
 Use ALIGNS.md for the project and agreement file, and hmmhmmhm/aligns.md for the
-repository. Keep `$align` as the action name. The acquired aligns.md domain will
+repository. Keep `align` as the skill name. The acquired aligns.md domain will
 be connected separately after DNS propagation. Preserve historical benchmark
 evidence and its hashes when updating current branding.
 
@@ -139,6 +139,17 @@ Support local storage and, only when requested, an existing or cloned personal
 repository. Keep private agreements outside shared project repositories. A method
 update or project correction must not silently change personal defaults or enable
 remote synchronization. Preserve project-only use without recurring setup prompts.
+
+## Conversation continuity
+
+User-requested scope update: 2026-10-18 (Asia/Seoul). Partial confirmation only.
+
+Carry setup answers and menu choices into the next authorized step. Ask to save a
+concrete item when needed, reusing existing authorization. After completing an
+alignment item, recommend one useful next topic based on the actual context.
+Continue already requested work; let the user choose before expanding scope.
+Respect stopping and avoid inventing gaps or repeatedly offering declined topics.
+Use natural-language invitations and examples instead of requiring command syntax.
 
 ## Working with other skills
 
@@ -195,8 +206,8 @@ method in the skill and confirmed current criteria in ALIGNS.md.
 ## Revisit Alignment
 
 Primary client: Codex. Canonical instruction file: AGENTS.md.
-Use `$align`, or ask “Use the align skill to review this project's ALIGNS.md with me.”
-For a direction and criteria review, use `$align 1`. A clear request skips the menu.
+Ask “Help me review this project's ALIGNS.md,” or describe the criteria you want
+to revisit in ordinary language. No command is required. A clear request skips the menu.
 This development repository discovers its local skill through
 `.agents/skills/align`, linked to `skills/align`. Method changes are maintained
 in this repository's Git history; do not install a second plugin copy here or

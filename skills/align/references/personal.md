@@ -118,3 +118,12 @@ extend it across projects. Global changes must not be inferred from repetition.
 Update only the agreed scope. Keep each file's Last aligned time independent;
 confirming a project or importing an older profile does not reconfirm the personal
 file. Keep current criteria in each agreement and use existing Git history.
+
+## Continue the selected setup
+
+After a source or storage answer, resume the selected personal setup without
+repeating the menu or requiring another invocation. Ask about saving a concrete
+scoped criterion only if it has not already been authorized. After saving and
+verifying the connection, offer one relevant next topic under the main skill's
+continuation rule. A project-level follow-up is optional unless already requested;
+never spread the new personal criterion to other projects automatically.

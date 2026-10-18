@@ -7,10 +7,10 @@ manager. Do not install multiple copies of `align` for the same client.
 ## Choose a route
 
 - **Codex plugin:** add the repository's `aligns-md` marketplace and install
-  `aligns-md@aligns-md`. Invoke `$align` or select the installed skill. The package
+  `aligns-md@aligns-md`. Ask naturally to review the project criteria or select the installed skill. The package
   has no Codex lifecycle hook. Project instructions supply recurring triggers.
 - **Claude Code plugin:** add `hmmhmmhm/aligns.md` as a marketplace, install
-  `align@aligns-md`, and invoke `/align:align`. This installation includes a
+  `align@aligns-md`, and ask to review your alignment criteria. This installation includes a
   static SessionStart reminder. It reads no project data, makes no network
   requests, and changes no files. A third-party marketplace's native auto-update
   is off by default; enable it only within the user's installation/update request.
@@ -77,3 +77,11 @@ A user-scoped skill installation makes the method available across projects; it
 does not create or enable a global personal agreement. Use the optional personal
 setup path in [personal alignment](personal.md) when requested. Its storage,
 repository synchronization, and confirmation are independent of method updates.
+
+## Resume after installation
+
+When installation or repair is part of a request to establish alignment, verify
+discovery and continue that request: review available criteria, ask about a real
+gap, or show a concrete draft for confirmation. Do not finish by telling the user
+to invoke the skill again. If they requested installation only, report that result
+without starting an unrequested alignment interview.

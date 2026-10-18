@@ -3,7 +3,7 @@ name: align
 description: Establish and maintain project or optional cross-project personal alignment in ALIGNS.md, including review of selected personal documents, PR feedback, or conversations for scoped criteria. Use when goals or priorities are unclear, important decisions diverge from the user's expectations, repeated corrections expose a missing criterion, or a long autonomous run needs judgment calibration. Apply existing agreements without reopening routine decisions.
 license: MIT
 metadata:
-  version: "0.7.1"
+  version: "0.8.0"
 ---
 
 # Align
@@ -22,7 +22,7 @@ The agreement filename is now `ALIGNS.md`. If a project still has `ALIGN.md`,
 read it as the existing agreement. When migration is authorized, rename the file
 and update its instruction references without changing its criteria or confirmation
 date. If both files exist, compare them with the user before choosing or merging;
-never silently overwrite either. `$align` remains the invocation.
+never silently overwrite either. The skill name remains `align`; users can request it in natural language.
 
 ## Read before asking
 
@@ -56,8 +56,9 @@ their language after reading the available project context. Keep numbers stable:
 5. Recommend a starting point from the current project context.
 6. Set up or review personal ALIGNS.md defaults across projects (optional).
 
-Accept an explicit numbered invocation such as `$align 3` as that starting path
-without showing the menu again. Otherwise ask for a number or a free-form answer.
+Accept a numbered choice or a clear natural-language request as the starting
+path without showing the menu again. Preserve existing command aliases for users
+who already use them, but do not require or suggest a command to continue. Otherwise ask for a number or a free-form answer.
 If the client offers choice buttons, keep the numbers in their labels; plain
 text is sufficient. Treat a number as
 an answer to the most recent pending menu, including a history-scope menu.
@@ -87,8 +88,50 @@ Adapt the outline: history review starts with source/scope selection and evidenc
 rehearsal uses hypothetical decisions without executing the run. Skip completed
 steps and do not add confirmation gates. Saving follows the authorization rules
 below; selecting a path alone does not confirm lasting criteria. If no criterion
-changes, close with the outcome instead of rewriting the agreement. Only include
+changes, report that outcome without rewriting the agreement, then use the
+continuation rule below. Only include
 environment setup or instruction-file connection when needed for the selected task.
+
+## Keep the conversation moving
+
+Users can ask in ordinary language whenever the skill is available: “Help me align
+this project's criteria,” “That decision missed what I meant,” or “Let's organize
+my preferences across projects.” No exact phrase or command is required. Resolve
+intent from the conversation; unrelated uses of words like alignment do not trigger
+an interview. Do not promise invocation when the client cannot discover or load
+the skill.
+
+Treat menu answers, client selection, source selection, and storage choices as
+intermediate steps in the active request. Keep the chosen purpose, scope, answered
+questions, and pending step in conversation context. After an answer, resume that
+step in the same turn: do the authorized work or ask the next consequential question.
+Do not end with “this path is suitable,” “run the skill,” or “say continue” when the
+user already asked for that work. Installation or discovery repair is a substep
+when setup and alignment were requested together; return to the alignment work
+after verifying it. An installation-only request does not authorize an interview.
+
+When an item is ready to save, show the concrete criterion and destination scope,
+and ask once if saving has not already been authorized. Reuse clear authorization;
+do not ask again for each sentence or treat a pending answer as consent. After
+confirmation, save the item, complete its authorized connection and verification,
+and state what was actually saved. A single-item confirmation updates only that
+item's confirmation annotation, not the whole document's Last aligned time.
+
+After completing an item in an active alignment session, recommend at most one
+useful next alignment topic with a short reason based on the available context.
+For example: “The completion criteria are saved. We have not settled when the
+agent should pause a long run. Would you like to review that next?” Use natural
+language, and accept a brief answer without restarting the menu. If the next item
+is already part of an authorized multi-item request, continue instead of asking
+again. Otherwise, wait for the user's choice before starting a new topic, reading
+additional history, or configuring personal scope.
+
+Do not invent gaps to keep the session alive. If nothing consequential remains,
+close with the result and mention once that the user can ask to revisit criteria
+later. Honor stop, decline, and “only this item” requests without a follow-up pitch.
+An unanswered recommendation stays optional; it does not create a loop, reminder,
+or background task. In routine non-alignment work, apply the agreement without
+appending an alignment recommendation to every response.
 
 ## Choose the smallest useful alignment
 
@@ -237,7 +280,8 @@ repairing discovery, or updating. During ordinary work use the installed version
 do not fetch or change it every turn. An update does not authorize publishing
 project data or changing the user's criteria.
 
-Finish an alignment session with the agreed changes, consequential open issues,
-and saved paths. In routine work, return to the task without a closing approval
-question. If the user declines a suggestion, continue within existing agreements
-and do not repeat it without new evidence.
+Finish each alignment item with the agreed changes, consequential open issues,
+and saved paths, then follow the continuation rule above. Finish the session when
+the requested work is complete and no useful next topic remains, or when the user
+chooses to stop. In routine work, return to the task without a closing approval
+question. Do not repeat declined suggestions without new evidence.

@@ -85,6 +85,14 @@ again; clarify only consequential unresolved choices. Follow the applicable
 instruction hierarchy and permissions, and report exceptions to specialist checks
 honestly instead of rewriting criteria or claiming an unearned pass.
 
+During an alignment session, carry each answer into the next authorized step;
+do not stop at a recommendation to invoke the skill again. Show a concrete item
+and ask to save it only if saving is not already authorized. After saving and
+verification, recommend one useful next topic if there is a real unresolved gap.
+Continue already requested items; wait for the user's choice before new scope.
+Use natural-language invitations, honor stopping, and do not add recommendations
+to routine work or manufacture gaps to keep a session going.
+
 Reuse existing answers. Fix clear execution errors directly. Ask only about
 consequential uncertainty, continue independent work, and do not reopen a declined
 or resolved review without new evidence. A new method version does not change

@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.8.0
+
+- Resume authorized alignment work after menu, client, source, and storage answers instead of ending with another invocation suggestion.
+- Confirm concrete saves when needed, reuse existing authorization, and offer one relevant next topic after completing an alignment item.
+- Preserve scope choices and stopping; do not invent follow-ups or turn routine work into an interview.
+- Use natural-language requests throughout current skill guidance, UI prompt, and all README translations while retaining the skill name and existing aliases.
+
 ## 0.7.1
 
 - Describe optional source material as user-selected personal documents or notes, with no required filename or format.
