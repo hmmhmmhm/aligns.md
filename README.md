@@ -78,7 +78,7 @@ npx skills add hmmhmmhm/aligns.md --skill align
 
 Then ask: **Use the align skill to set up ongoing alignment for this project.**
 
-Once the skill is available, ask “Help me align this project” whenever you need it. No command or exact phrase is required. If the purpose is open, choose a starting point by number: project criteria, a decision that missed expectations, history review, rehearsal before a long run, a recommendation, or optional personal defaults across projects. The agent outlines the steps and guides you through them. If you already say what you need, it skips the menu. It asks before saving when needed, then offers remaining topics and a finish choice. Completed or declined topics are left out. All remaining paths stay visible, including those not yet explored, with one recommended next step. Before offering finish alone, the agent accounts for all six paths and explains any exclusions. It uses your client's choice interface when all choices fit, or a numbered list otherwise.
+Once the skill is available, ask “Help me align this project” whenever you need it. No command or exact phrase is required. If the purpose is open, choose a starting point by number: project criteria, a decision that missed expectations, history review, rehearsal before a long run, a recommendation, optional personal defaults across projects, or adding the README badge when it is missing. The agent outlines the steps and guides you through them. If you already say what you need, it skips the menu. It asks before saving when needed, then offers remaining topics and a finish choice. Completed or declined topics are left out. All remaining paths stay visible, including those not yet explored, with one recommended next step. Before offering finish alone, the agent accounts for all seven paths and explains any exclusions. It uses your client's choice interface when all choices fit, or a numbered list otherwise.
 
 After installation and each completed task, the agent reminds you that you can return by saying “Let’s do a self-alignment check.” This does not start another interview. Ordinary-task reminders use the project or personal instruction block set up with the skill; existing blocks need an authorized refresh.
 
@@ -93,7 +93,7 @@ updater or universal automatic activation is assumed.
 
 ## Add the badge to your project
 
-Use this badge in your README if your project uses ALIGNS.md. Copy the Markdown below.
+Use this badge in your README if your project uses ALIGNS.md. Ask the agent to add it or choose option 7 when offered. The agent offers this option only when the badge is missing. You can also copy the Markdown below.
 
 [![Uses ALIGNS.md](assets/badges/uses-aligns.svg)](https://github.com/hmmhmmhm/aligns.md)
 

@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.9.0
+
+- Add optional path 7 to place the ALIGNS.md badge in a project README, offered only after confirming that it is absent.
+- Reuse the provided badge and existing layout, distinguish displayed badges from code examples, and skip duplicates.
+- Extend session coverage and instruction templates to seven paths while preserving existing numbers and optional scope.
+
 ## 0.8.4
 
 - Keep every remaining alignment path visible, including unexplored history review and optional personal setup, instead of limiting follow-ups to two topics.

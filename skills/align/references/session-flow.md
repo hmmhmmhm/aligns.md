@@ -19,7 +19,7 @@ not saved. An item can also conclude that no criterion change is needed. Reopen
 completed work only at the user's request or when relevant new evidence warrants
 it, naming what changed instead of recommending the same task again.
 
-Before choosing follow-ups, account for all six paths from available conversation:
+Before choosing follow-ups, account for all seven paths from available conversation:
 completed, declined, deferred (with revisit condition), available, not yet explored,
 or blocked by a known prerequisite. Keep a short reason for exclusions. Unknown
 is not completed, declined, or inapplicable. A general project check does not
@@ -37,11 +37,16 @@ complete history review, mismatch review, rehearsal, or personal setup.
 - Path 6: personal defaults remain an optional unexplored path until selected,
   declined, deferred, completed for the agreed scope, or excluded by a project-only
   request. Lack of a personal file or repository is not an exclusion reason.
+- Path 7: inspect the target README before offering badge setup. Recommend it only
+  when the rendered ALIGNS.md badge is absent, following [README badge](badge.md).
+  An existing badge counts as already satisfied; exclude it without rewriting it.
+  A missing or unreadable README is a known prerequisite gap, not proof that a
+  badge should be added. Personal-only sessions without a project exclude this path.
 
 At the first item completion and before recommending finish as the only option,
 show a compact coverage summary using the stable path numbers. For example:
 “Done: 1, 4. Still available: 2 (if you have an example), 3, 6. Starting-point
-recommendation: 5 already used.” On later transitions show only changed status
+recommendation: 5 already used. Badge: 7 already present.” On later transitions show only changed status
 unless the user asks for the full view. This is conversational state, not a file.
 
 At meaningful transitions give a short progress cue, such as “Project criteria
@@ -61,7 +66,7 @@ Keep question text self-contained. Put the recommended choice first and label it
 as recommended, preserving the stable path number. Include a short reason in the
 question or a supported description field. Keep ordinary-language answers valid.
 Respect tool limits on option counts, headers, free text, and pending questions.
-For the initial six-path menu, use text if the tool cannot show all choices; do
+For the initial seven-path menu, use text if the tool cannot show all choices; do
 not silently drop paths or split one decision into several unrelated questions.
 For follow-up choices, show every remaining available or unexplored path plus
 “0. Finish here,” with one recommendation. Do not cap the menu at two topics.
@@ -101,17 +106,17 @@ Then, unless the user said stop or “only this item”:
    context, dependencies and expected usefulness. Recommend one, explaining why now. Do not rank topics merely by
    their menu number. Do not perform extra history collection to choose a topic.
 4. Present the recommendation, every other remaining path, and “0. Finish here,”
-   using the supported question interface. Preserve path IDs 1-6; 0 always ends
+   using the supported question interface. Preserve path IDs 1-7; 0 always ends
    the session. Path 5 is a routing aid, not a recurring recommendation once a
    starting point has been selected.
 5. Wait for a choice before opening a new scope. For already requested multi-item
    work, state the next item and proceed instead of adding a new permission gate.
 
-Use the six paths as possible next directions, not mandatory stages. For example,
+Use the seven paths as possible next directions, not mandatory stages. For example,
 after path 1, path 4 may help test newly agreed criteria; path 3 may help when the
 user has mentioned useful feedback; path 6 is an optional cross-project setup.
 Do not claim a mismatch exists just to offer path 2. Do not recommend global setup
-after it was declined, or imply that every user must complete all six paths.
+after it was declined, or imply that every user must complete all seven paths.
 History source selection and personal repository authorization still apply after
 the user chooses those paths.
 
@@ -136,6 +141,7 @@ alone does not imply that the user chose to finish the session.
 Context: path 1 is complete, no further items were authorized, and the user has
 not reviewed history, reported a mismatch, or declined personal setup. The current
 criteria include stopping boundaries that have not been tried in a scenario.
+The README already has an ALIGNS.md badge, so path 7 is excluded.
 
 Completion: “The project criteria are saved, and the instruction link is verified.”
 

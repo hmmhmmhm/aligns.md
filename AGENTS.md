@@ -95,9 +95,12 @@ finishing without inventing gaps. Continue already requested work without anothe
 gate, but wait before new scope. Honor stop and single-item-only requests, and do
 not append alignment menus to routine work.
 
-Account for all six paths before choosing follow-ups. Keep unexplored paths
+Account for all seven paths before choosing follow-ups. Keep unexplored paths
 available; an unchosen history source or missing personal file does not exclude
 paths 3 or 6. Offer path 2 conditionally if the user has a mismatch example.
+Path 7 adds a README badge: offer it only after inspecting the target README and
+confirming an ALIGNS.md badge is absent. Exclude existing badges and personal-only
+sessions without a project; a missing or unreadable README is a prerequisite gap.
 Path 5 is navigation. Show all remaining paths with one recommendation and a finish
 choice; use numbered text if the question UI cannot fit them all. Before offering
 only finish, briefly account for completed, declined, deferred, out-of-scope, or

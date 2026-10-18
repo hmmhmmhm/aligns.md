@@ -22,6 +22,14 @@ the purpose is open, the agent offers these choices in your language:
 4. Rehearse decisions before a long autonomous run.
 5. Suggest a starting point from the current project.
 6. Set up or review personal defaults across projects (optional).
+7. Add the ALIGNS.md badge to the project README (only when absent).
+
+The agent checks the README before offering 7. If the badge is already there,
+it leaves that option out and keeps the other numbers unchanged. Choosing 7 adds
+the badge using the existing README layout and translation rules, then verifies
+the image and link. It does not publish changes or restart an alignment interview.
+A copyable snippet in a code block does not count as a displayed badge. See the
+[badge procedure](../skills/align/references/badge.md).
 
 Reply with a number or describe what you need. A specific request such as
 “Use align to review my recent PR feedback” skips the start menu. History review
@@ -32,7 +40,8 @@ The agent briefly explains the path: check context, ask about unresolved choices
 summarize the criteria, then save authorized changes. It shows the current step
 when moving between stages and skips work already done. A menu choice does not
 confirm new preferences. Rehearsal discusses hypothetical decisions without
-starting the autonomous run.
+starting the autonomous run. Badge setup checks the README, adds the missing badge,
+and verifies the result without asking preference questions.
 
 ## Continue from each answer
 
@@ -49,7 +58,7 @@ remaining topic with a reason, shows all other available or unexplored paths, an
 includes a finish option. A project review and rehearsal do not complete history
 review or personal setup. The agent offers history source selection even if no
 source has been chosen, and can offer mismatch review if you have an example.
-Before offering finish alone, it accounts for all six paths and explains what was
+Before offering finish alone, it accounts for all seven paths and explains what was
 completed, declined, deferred, outside your requested scope, or blocked. Path 5 is
 navigation, not another exercise. You do not need to complete every path.
 
@@ -63,7 +72,7 @@ For example, after project criteria are saved, it might offer **4. Rehearse deci
 (recommended)**, **2. Review a mismatch, if you have an example**, **3. Choose
 history to review**, **6. Personal defaults**, and **0. Finish here**. The choices depend
 on what you have already done and what remains useful. It does not ask you to repeat
-completed work or require you to complete all six paths.
+completed work or require you to complete all seven paths.
 
 Already requested items continue without another permission question. A stop or
 “only this item” request ends the flow directly. The agent keeps session progress

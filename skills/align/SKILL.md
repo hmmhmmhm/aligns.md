@@ -3,7 +3,7 @@ name: align
 description: Establish and maintain project or optional cross-project personal alignment in ALIGNS.md, including review of selected personal documents, PR feedback, or conversations for scoped criteria. Use for natural-language self-alignment requests such as “자가정렬 진행해봅시다” or “Let’s do a self-alignment check,” or when goals or priorities are unclear, important decisions diverge from the user's expectations, repeated corrections expose a missing criterion, or a long autonomous run needs judgment calibration. Apply existing agreements without reopening routine decisions.
 license: MIT
 metadata:
-  version: "0.8.4"
+  version: "0.9.0"
 ---
 
 # Align
@@ -58,6 +58,12 @@ their language after reading the available project context. Keep numbers stable:
 4. Rehearse judgment before a long autonomous run.
 5. Recommend a starting point from the current project context.
 6. Set up or review personal ALIGNS.md defaults across projects (optional).
+7. Add the ALIGNS.md badge to this project's README (only when absent).
+
+Before offering path 7, inspect the target README using [README badge](references/badge.md).
+Omit it when the badge is already present, declined, deferred, or outside the
+requested scope; preserve the other numbers. If the README cannot be inspected,
+report that limitation rather than guessing that a badge is missing.
 
 Accept a numbered choice or a clear natural-language request as the starting
 path without showing the menu again. Preserve existing command aliases for users
@@ -86,11 +92,16 @@ personal documents or notes as input, and local storage or an optional
 personal repository. Selection alone does not authorize cloning, publishing, or
 promoting source content to confirmed global criteria. Keep project-only use simple.
 
+Option 7 follows [README badge](references/badge.md). Selection authorizes the
+scoped README edit, not publishing, remote changes, or a new alignment interview.
+Recheck before editing and skip an existing badge without duplication.
+
 After selecting a path, give one brief outline of the relevant steps:
 **check context → clarify unresolved choices → summarize criteria → save authorized
 changes**. Name the current step at meaningful transitions, not on every reply.
 Adapt the outline: history review starts with source/scope selection and evidence;
-rehearsal uses hypothetical decisions without executing the run. Skip completed
+rehearsal uses hypothetical decisions without executing the run; badge setup checks
+for an existing badge, adds it if absent, and verifies the README. Skip completed
 steps and do not add confirmation gates. Saving follows the authorization rules
 below; selecting a path alone does not confirm lasting criteria. If no criterion
 changes, report that outcome without rewriting the agreement, then use the
@@ -132,7 +143,8 @@ step unless the user requested stopping or only that item. Follow
 [session flow](references/session-flow.md): summarize completion, exclude already
 completed or declined topics, recommend the best remaining eligible topic with a
 reason, show all other remaining paths, and offer a finish choice. Account for
-all six paths before filtering: not yet explored is not completed or inapplicable.
+all seven paths before filtering: not yet explored is not completed or inapplicable.
+Path 7 is an exception: offer it only after confirming the README badge is absent.
 An unchosen history source or personal setup remains an optional next direction;
 a mismatch review can invite an example without asserting that one exists. Path 5
 is navigation, not another exercise. Use the supported question UI, or one numbered

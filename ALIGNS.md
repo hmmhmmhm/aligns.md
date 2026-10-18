@@ -125,6 +125,11 @@ align without a clear purpose. Accept numbers and natural-language requests.
 When the purpose is already clear, begin that work without repeating the menu
 or asking the user to choose again. Keep the detailed procedure in the skill.
 
+User-requested addition: 2026-10-18 (Asia/Seoul). Partial confirmation only.
+Add path 7 for placing the ALIGNS.md badge in a project's README. Recommend it
+only after confirming that the badge is absent. Reuse the provided badge, preserve
+existing README layout and translations, and do not duplicate an existing badge.
+
 ## Optional personal scope
 
 User-requested scope update: 2026-10-18 (Asia/Seoul). Partial confirmation only.
@@ -150,7 +155,7 @@ alignment item, summarize completion and offer a next choice, excluding complete
 declined, or currently deferred topics. Recommend the best eligible next topic
 with a reason and show all other remaining paths, including those not yet explored.
 A general review or rehearsal does not complete the other paths. Account for all
-six paths and explain exclusions before offering finish alone. Path 5 is navigation;
+seven paths and explain exclusions before offering finish alone. Path 5 is navigation;
 the other paths remain optional and retain their scope requirements. Include a finish option.
 Use the client's supported structured-question UI when available in the active
 mode, with numbered text as fallback. Track progress in the conversation, not a
