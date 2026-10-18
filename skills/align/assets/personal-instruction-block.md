@@ -17,6 +17,15 @@ offer remaining choices and a finish option, excluding completed, declined, or
 currently deferred topics. Recommend an eligible next topic or finishing if none
 remain. Prefer a supported question UI; otherwise use numbered text. Wait before
 new scope and honor stop or single-item-only requests.
+For Codex choice questions, an accepted request is not an answer or proof of UI
+display. Do not send a final/completion response while a required async answer is
+pending. Continue independent authorized work or use supported interruptible waits
+of at most 60 seconds each; do not treat timeout as consent or keep waiting after
+cancellation or a superseding request. Follow align's session-flow guidance for
+hosts without a wait mechanism. Include “Answer questions” / “질문에 대답하기”
+only when an official resume URL is supplied or documented; never invent a link.
+Resume the selected step after the answer, without another invocation request.
+
 Account for all seven paths before choosing follow-ups. Keep unexplored paths
 available; an unchosen history source or missing personal file does not exclude
 paths 3 or 6. Offer path 2 conditionally if the user has a mismatch example.

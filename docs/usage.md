@@ -87,6 +87,15 @@ ask the agent to omit it. Ordinary-task reminders require the updated project or
 personal instruction block; a skill update alone does not replace existing blocks.
 Natural-language routing depends on the client discovering and loading the skill.
 
+## Codex question windows
+
+When a choice is waiting for your answer, the agent should keep it pending instead
+of immediately ending the turn with “I opened the selection screen.” It uses a
+supported wait mechanism and continues from your answer. Request acceptance alone
+does not establish that the question is visible on your device. If the host supplies
+an official resume link, the agent includes “Answer questions”; it does not invent
+a link when none is available. See the [Codex question procedure](../skills/align/references/session-flow.md#codex-keep-questions-open-until-answered).
+
 ## Personal defaults across projects
 
 Ask “Help me organize my preferences across projects.” You can use personal

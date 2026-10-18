@@ -167,6 +167,12 @@ that users can return by saying “자가정렬 진행해봅시다.” Show it o
 response, without opening an interview or repeating it during progress updates.
 Honor requests to omit reminders and describe unavailable skills honestly.
 
+In Codex, preserve the chance to answer a required choice instead of sending a
+completion response immediately after dispatch. Wait using supported mechanisms;
+request acceptance alone does not prove the UI is visible. Provide a question
+resume link only when the host officially supports it, and do not invent one.
+Continue from the user's answer without requiring another invocation.
+
 ## Working with other skills
 
 Make align useful alongside specialist skills for development, design, review,

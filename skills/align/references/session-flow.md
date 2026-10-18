@@ -86,6 +86,35 @@ accepts a uniquely recommended next topic, not every offered action. If several
 meanings remain plausible and change scope, clarify that ambiguity only. Once
 answered, continue the chosen work without repeating the menu.
 
+## Codex: keep questions open until answered
+
+For a pending choice, a response such as `accepted: true` confirms dispatch only.
+It is neither the user's answer nor proof that the question is visible on their
+current device. Do not follow an asynchronous question with a final/completion
+response such as “I opened the selection screen” while its answer is required.
+The reported Codex mobile flow dismissed the question after such a response;
+treat this as an observed session issue, not a claim about every client version.
+
+Continue independent authorized work if any remains. Otherwise use an available,
+interruptible wait mechanism within its documented limits. Keep individual waits
+at most 60 seconds, retain the same pending question, and resume as soon as the
+answer arrives. A wait timeout is not an answer or permission to finish the flow.
+Do not manufacture work, repeatedly send the question, or call a Plan-only tool
+from another mode. Honor a cancellation or a new user direction instead of waiting
+on a superseded question. If the host offers no supported way to wait, explain
+that limitation and give the equivalent numbered question without claiming the
+alignment task is complete.
+
+If the tool or documented host capability supplies an official answer/resume URL
+for this question, include it as “Answer questions” (Korean: “질문에 대답하기”).
+Use only the supplied URL or documented construction and verified identifiers.
+Do not invent a `codex://` route, turn a question ID into a URL, or substitute a
+thread/share link. Without a supported URL, omit the link. Reopen the same choice
+only when requested or when the host explicitly reports that it was dismissed.
+After an answer, continue the selected step rather than asking the user to invoke
+align again. Verify UI display through host evidence or user feedback before
+claiming that the question was shown.
+
 ## Complete an item, then offer the next choice
 
 First finish the current authorized work. Show the concrete criterion and target

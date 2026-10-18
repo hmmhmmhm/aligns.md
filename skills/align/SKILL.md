@@ -3,7 +3,7 @@ name: align
 description: Establish and maintain project or optional cross-project personal alignment in ALIGNS.md, including review of selected personal documents, PR feedback, or conversations for scoped criteria. Use for natural-language self-alignment requests such as “자가정렬 진행해봅시다” or “Let’s do a self-alignment check,” or when goals or priorities are unclear, important decisions diverge from the user's expectations, repeated corrections expose a missing criterion, or a long autonomous run needs judgment calibration. Apply existing agreements without reopening routine decisions.
 license: MIT
 metadata:
-  version: "0.9.0"
+  version: "0.9.1"
 ---
 
 # Align
@@ -157,6 +157,11 @@ Continue already authorized multi-item work without another selection gate.
 Otherwise wait for the user's choice before starting new scope. Reuse an answered
 selection without asking for an invocation or “continue.” Respect tool availability
 and mode restrictions, and do not equate a default selection with an answer.
+In Codex, do not send a final/completion response immediately after an asynchronous
+question whose answer is required. Keep the question pending and use a supported
+interruptible wait. An accepted request does not prove UI display. Follow the
+Codex question-lifecycle guidance in [session flow](references/session-flow.md#codex-keep-questions-open-until-answered);
+include a question-resume link only when officially supplied or documented.
 In routine non-alignment work, apply existing criteria without a follow-up menu.
 
 ## Make it easy to return

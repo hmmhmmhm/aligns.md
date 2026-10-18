@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.9.1
+
+- Keep required Codex async choices pending instead of immediately issuing a completion response; wait through supported mechanisms and resume from the answer.
+- Distinguish dispatch acceptance from visible UI and user input. Honor cancellation and superseding requests.
+- Include a question-resume link only when officially supplied or documented, without guessing routes or IDs.
+
 ## 0.9.0
 
 - Add optional path 7 to place the ALIGNS.md badge in a project README, offered only after confirming that it is absent.
