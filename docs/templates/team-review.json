@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "batch_id": null,
+  "reviewer_alias": null,
+  "reviewer_authority": null,
+  "team_criteria_version": null,
+  "decisions": [],
+  "decision_fields": {
+    "record_id": null,
+    "status": "needs_changes",
+    "reason": null,
+    "reviewed_at": null,
+    "team_target_confirmed": false,
+    "same_context_pair_confirmed": false,
+    "shared_task_family_id": null,
+    "output_record_id": null
+  }
+}

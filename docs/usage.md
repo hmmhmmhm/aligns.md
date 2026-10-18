@@ -119,6 +119,10 @@ You can stop collection, change its scope, review candidates or request deletion
 Changing the agreement can make older examples stale. Deleting source examples does
 not remove them from Git history, remote copies or previously trained models.
 
+For team use, follow the [manual submission and review guide](team-training-data.md).
+It supplies intake templates and review responsibilities; it does not create a
+shared collector or automatically turn personal preferences into team criteria.
+
 ## Codex question windows
 
 When a choice is waiting for your answer, the agent should keep it pending instead

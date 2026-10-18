@@ -22,8 +22,11 @@ while ALIGNS.md remains the source of alignment criteria.
 ## Scope
 
 Focus initially on alignment between an individual user and their
-agents. Multi-user agreements and conflict resolution are outside
-the initial scope.
+agents. Team data pilots may use voluntary manual submissions and human review
+against explicitly agreed team criteria. Automatic multi-user agreement merging
+and conflict resolution remain outside scope. This limited team-data extension
+was requested on 2026-10-18 (Asia/Seoul); it does not authorize collecting any
+team's records or creating shared storage.
 
 Provide an easy-to-use skill that works across new and existing
 projects. Make it discoverable through relevant skill directories
