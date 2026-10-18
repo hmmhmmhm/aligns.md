@@ -31,9 +31,13 @@ Keep personal criteria in ALIGNS.md and the reusable alignment method in the ski
   <img src="assets/keep-expectations-separate.png" alt="Three distinct connected panels represent execution, instructions, and expectations" width="100%">
 </p>
 
-## Fewer follow-up questions
+## Spend less effort explaining your preferences
 
-Across 12 synthetic tasks, an agent starting with generic instructions needed nine clarification replies. With confirmed preferences already in ALIGNS.md and the align skill available, it needed none. Both conditions met the final criteria on all 12 tasks. The chart also includes four assumed setup replies for the ALIGNS condition. [Results and method](RETENTION_BENCHMARK.md).
+The criteria you agree on carry over to the next task. Your agent uses the preferences it already knows, so you spend less time explaining how you want things done or making each choice yourself.
+
+When a result misses what you had in mind, revise the criteria together and use them in the next task.
+
+[Results and method](RETENTION_BENCHMARK.md)
 
 <p align="center">
   <a href="RETENTION_BENCHMARK.md"><img src="assets/benchmarks/retention-comparison.svg" alt="Synthetic benchmark: nine task replies with generic instructions versus zero with saved preferences and align; four assumed setup replies included separately; final fit 12 of 12 in both conditions" width="100%"></a>
