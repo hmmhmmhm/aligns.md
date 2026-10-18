@@ -50,8 +50,6 @@ status rather than assuming universal coverage.
 
 ## Questions when context is missing
 
-User-confirmed scope update: 2026-10-17 (Asia/Seoul). Partial confirmation only.
-
 When my request is brief, use the existing conversation and project documents
 first. Ask only for missing information that would materially change the result
 or scope, grouping related questions. Make minor reversible choices and already
@@ -85,7 +83,6 @@ implying a full review.
 
 ## Project name
 
-User-confirmed naming update: 2026-10-17 (Asia/Seoul). Partial confirmation only.
 Use ALIGNS.md for the project and agreement file, and hmmhmmhm/aligns.md for the
 repository. Keep `$align` as the action name. The acquired aligns.md domain will
 be connected separately after DNS propagation. Preserve historical benchmark
@@ -93,16 +90,16 @@ evidence and its hashes when updating current branding.
 
 ## Presentation and Licensing
 
-- Write repository documentation in English.
+- Keep English as the source of truth for repository documentation. Maintain
+  Korean and Japanese README translations in the same change when shared content
+  changes, preserving claims, instructions, section order, and images.
+- Apply the appropriate humanizer skill to English, Korean, and Japanese prose.
 - Do not use em dashes or emoji.
 - Keep the README brief, with a centered title, useful badges,
   and a copyable installation request.
 - Publish the project publicly under the MIT License.
 
 ## Maintained Skill and Recurring Use
-
-User-requested scope update recorded: 2026-10-14 (Asia/Seoul).
-This is a partial update, not a full reconfirmation.
 
 Distribute the alignment method as a maintained skill. README and site copy
 should guide users to install it, rather than preserving a standalone interview
@@ -121,9 +118,53 @@ native instruction file canonical, safely linking other compatible entrypoints
 when needed. Preserve distinct and nested instructions. Record the skill's
 invocation and update policy in project ALIGNS.md documents.
 
-## History-informed alignment
+## Choosing an alignment path
 
-User-confirmed scope update: 2026-10-15 (Asia/Seoul). Partial confirmation only.
+Offer numbered choices and a brief outline of the steps when the user invokes
+align without a clear purpose. Accept numbers and natural-language requests.
+When the purpose is already clear, begin that work without repeating the menu
+or asking the user to choose again. Keep the detailed procedure in the skill.
+
+## Working with other skills
+
+Make align useful alongside specialist skills for development, design, review,
+and writing. Apply the relevant confirmed personal criteria to their work.
+Keep a specialist's default style separate from the user's preferences, and
+reuse decisions already settled in ALIGNS.md. Maintain a separate document of
+recommended companion skills with sources and reasons to use them together.
+
+## Loop and goal mismatches
+
+Include incorrectly configured goals and unexpected loop stops among the
+occasions for focused alignment. Compare the requested outcome with the
+configured objective, stopping conditions, and actual result. Repair a known
+execution error directly; ask only about unresolved judgment criteria.
+The method must not imply that it can wake a stopped agent or that a review
+alone authorizes restarting work or expanding its scope.
+
+## Evidence and communication
+
+Emphasize how carrying confirmed preferences forward reduces the user's effort
+in explaining preferences and correcting work. Use accessible benefit-focused
+copy in the README and landing page, with links to public benchmark evidence.
+Keep experiment methods and results available for independent review. Distinguish
+synthetic results from measured human effort and retain the original evidence.
+
+## Landing page presentation
+
+Maintain English, Korean, and Japanese versions, defaulting to the browser's
+language and allowing manual language selection. Use the dark theme with a black,
+paper-textured background. Use Pretendard with sufficient font weight, and apply
+word-break and text-balance treatment across languages, including document examples.
+
+Keep scrolling illustrations and text coordinated on desktop and mobile. Bound
+hero image proportions on wide screens while using the available space well.
+Keep the first screen's text readable without scroll-driven typing or focus;
+apply those text effects after the first section. Keep scroll animation enabled
+without an animation or theme toggle. Offer reusable project badges and use a
+GitHub icon for GitHub calls to action.
+
+## History-informed alignment
 
 Support full paginated PR feedback collection and recent-first review. Offer
 accessible project conversations, including supported Codex and Claude records,
@@ -139,11 +180,12 @@ method in the skill and confirmed current criteria in ALIGNS.md.
 ## Revisit Alignment
 
 Primary client: Codex. Canonical instruction file: AGENTS.md.
-Use `$align`, or ask “Use the align skill to review this project's ALIGNS.md.”
+Use `$align`, or ask “Use the align skill to review this project's ALIGNS.md with me.”
+For a direction and criteria review, use `$align 1`. A clear request skips the menu.
 This development repository discovers its local skill through
 `.agents/skills/align`, linked to `skills/align`. Method changes are maintained
 in this repository's Git history; do not install a second plugin copy here or
 automatically pull over local development changes.
 Source and user installation guide: https://github.com/hmmhmmhm/aligns.md .
 
-Last aligned: 2026-10-12 09:24 (Asia/Seoul).
+Last aligned: 2026-10-18 12:51 (Asia/Seoul).
