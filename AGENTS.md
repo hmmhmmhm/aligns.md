@@ -98,8 +98,8 @@ not append alignment menus to routine work.
 At each verified installation completion, alignment-item completion, and ordinary
 task's final completion report, add one brief invitation in the user's language:
 “언제든 ‘자가정렬 진행해봅시다’라고 말씀해 주세요. ALIGNS.md로 기준을 함께 점검할 수 있습니다.”
-For English, use “Whenever you want to revisit your criteria, say ‘Let’s review my
-alignment.’” Adapt naturally for other languages. Treat that request as explicit
+For English, use “Whenever you want to revisit your criteria, say ‘Let’s do a
+self-alignment check.’” Adapt naturally for other languages. Treat that request as explicit
 alignment intent and resume from available progress. Show the invitation once per
 completion response, not during progress updates. Keep any required next-choice
 step; do not start a review, repeat a pending question, or interrupt authorized work

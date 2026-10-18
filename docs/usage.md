@@ -4,6 +4,11 @@ The skill contains the evolving alignment method. Your project's ALIGNS.md
 contains your criteria. Install the skill once through one route, connect your
 project instructions, and use it again when there is something worth aligning.
 
+Here, **self-alignment** means clarifying your preferences and decision criteria
+with your agent and checking its work against them. Ask “Let’s do a self-alignment
+check” or “Help me with self alignment.” Either spelling works as a request; no
+exact phrase is required.
+
 ## Choose where to start
 
 Once the skill is available in your client, you can ask in ordinary language at
@@ -60,7 +65,7 @@ in the conversation, without creating another log or background task. See the
 
 At installation completion, alignment-item completion, and the final report for an
 ordinary task, the agent gives a short reminder: “Whenever you want to revisit your
-criteria, say ‘Let’s review my alignment.’” In Korean, you can say “자가정렬 진행해봅시다.”
+criteria, say ‘Let’s do a self-alignment check.’” In Korean, you can say “자가정렬 진행해봅시다.”
 The reminder does not start an interview or replace the next-choice step. You can
 ask the agent to omit it. Ordinary-task reminders require the updated project or
 personal instruction block; a skill update alone does not replace existing blocks.

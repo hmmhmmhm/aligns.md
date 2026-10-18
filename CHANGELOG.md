@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.8.3
+
+- Use “Let’s do a self-alignment check” in English return invitations and accept both “self alignment” and “self-alignment” requests.
+- Define self-alignment as clarifying user criteria and checking agent work against them, with matching explanations in all README languages.
+
 ## 0.8.2
 
 - Recognize “자가정렬 진행해봅시다” as a natural-language request to start or resume alignment.

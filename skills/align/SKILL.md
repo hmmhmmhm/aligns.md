@@ -1,9 +1,9 @@
 ---
 name: align
-description: Establish and maintain project or optional cross-project personal alignment in ALIGNS.md, including review of selected personal documents, PR feedback, or conversations for scoped criteria. Use for natural-language self-alignment requests such as “자가정렬 진행해봅시다” or “Let’s review my alignment,” or when goals or priorities are unclear, important decisions diverge from the user's expectations, repeated corrections expose a missing criterion, or a long autonomous run needs judgment calibration. Apply existing agreements without reopening routine decisions.
+description: Establish and maintain project or optional cross-project personal alignment in ALIGNS.md, including review of selected personal documents, PR feedback, or conversations for scoped criteria. Use for natural-language self-alignment requests such as “자가정렬 진행해봅시다” or “Let’s do a self-alignment check,” or when goals or priorities are unclear, important decisions diverge from the user's expectations, repeated corrections expose a missing criterion, or a long autonomous run needs judgment calibration. Apply existing agreements without reopening routine decisions.
 license: MIT
 metadata:
-  version: "0.8.2"
+  version: "0.8.3"
 ---
 
 # Align
@@ -13,6 +13,9 @@ consistent with that agreement. The maintained skill supplies the method;
 project-root `ALIGNS.md` holds project criteria. An optional, explicitly linked
 personal ALIGNS.md holds confirmed defaults across projects. Updating the skill
 must never replace, reconfirm, or migrate those criteria automatically.
+Here, self-alignment means helping the user clarify their preferences and decision
+criteria and checking the agent’s work against them. It does not mean retraining
+the model or letting the agent set its own values.
 Use the user's language and project conventions. Do not import preferences
 from the skill's source repository.
 
@@ -99,7 +102,10 @@ environment setup or instruction-file connection when needed for the selected ta
 Users can ask in ordinary language whenever the skill is available: “Help me align
 this project's criteria,” “That decision missed what I meant,” or “Let's organize
 my preferences across projects.” Treat “자가정렬 진행해봅시다” as an explicit
-request to start or resume alignment, using available session progress. No exact
+request to start or resume alignment, using available session progress. Accept
+“self alignment” and “self-alignment” in requests such as “Let’s do a self-alignment
+check” or “Help me with self alignment.” Keep earlier natural-language examples
+valid, including “Let’s review my alignment.” No exact
 phrase or command is required. Resolve
 intent from the conversation; unrelated uses of words like alignment do not trigger
 an interview. Do not promise invocation when the client cannot discover or load
@@ -141,7 +147,7 @@ In routine non-alignment work, apply existing criteria without a follow-up menu.
 At every verified installation completion, alignment-item completion, and final
 completion report for an ordinary task, include one short invitation in the user's
 language. In Korean use: “언제든 ‘자가정렬 진행해봅시다’라고 말씀해 주세요. ALIGNS.md로 기준을 함께 점검할 수 있습니다.”
-English: “Whenever you want to revisit your criteria, say ‘Let’s review my alignment.’”
+English: “Whenever you want to revisit your criteria, say ‘Let’s do a self-alignment check.’”
 Japanese: “判断基準を見直したくなったら、いつでも「自分の基準をすり合わせましょう」と声をかけてください。”
 These are examples, not required command syntax.
 

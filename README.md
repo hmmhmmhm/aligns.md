@@ -47,6 +47,8 @@ When a result misses what you had in mind, revise the criteria together and use 
 
 ## Continuous self-alignment
 
+Self-alignment means clarifying your preferences and decision criteria with your agent, then checking its work against them.
+
 Return to alignment when an important decision misses your intent, repeated corrections reveal a missing criterion, or you are unsure what to do next. You can also review selected PR feedback and accessible project conversations to find recurring criteria, called taste invariants, with their scope and exceptions. Choose recent or full history after seeing the estimated time. Before a long autonomous run, rehearse a few hypothetical choices. Clear errors get fixed directly; settled questions stay settled.
 
 Brief requests work too. The agent checks existing context, then asks only about gaps that would materially change the result. You can agree on when it should ask and when it should proceed. Only confirmed lasting preferences go into ALIGNS.md.
@@ -78,7 +80,7 @@ Then ask: **Use the align skill to set up ongoing alignment for this project.**
 
 Once the skill is available, ask “Help me align this project” whenever you need it. No command or exact phrase is required. If the purpose is open, choose a starting point by number: project criteria, a decision that missed expectations, history review, rehearsal before a long run, a recommendation, or optional personal defaults across projects. The agent outlines the steps and guides you through them. If you already say what you need, it skips the menu. It asks before saving when needed, then offers remaining topics and a finish choice. Completed or declined topics are left out, and the next useful step is recommended. It uses your client's choice interface when supported, or numbered text otherwise.
 
-After installation and each completed task, the agent reminds you that you can return by saying “Let’s review my alignment.” This does not start another interview. Ordinary-task reminders use the project or personal instruction block set up with the skill; existing blocks need an authorized refresh.
+After installation and each completed task, the agent reminds you that you can return by saying “Let’s do a self-alignment check.” This does not start another interview. Ordinary-task reminders use the project or personal instruction block set up with the skill; existing blocks need an authorized refresh.
 
 Ask “Help me organize my preferences across projects” to set up a personal ALIGNS.md, optionally drawing on personal documents or notes you choose. No particular filename or format is required. Keep common preferences separate from workplace rules. Store the file locally, or connect a separate personal repository only if you want one. [Personal setup and storage](docs/usage.md#personal-defaults-across-projects).
 
