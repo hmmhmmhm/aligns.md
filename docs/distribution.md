@@ -15,24 +15,26 @@ Do not describe a pending or unverified listing as published.
 
 ## Service status
 
-Directory evidence was checked on 2026-10-12 under the former name `ALIGN.md`.
-The repository was renamed to `ALIGNS.md` on 2026-10-17. Third-party listings
-and their cached names have not been reverified since the rename. The URLs below
-preserve actual receipts; a new repository name does not prove a directory update.
+The repository was renamed to `ALIGNS.md` on 2026-10-17. Skills.sh, askill,
+Agent Skill Hub, and Skillstore were checked again on 2026-11-02 against source
+commit `43f2c30522085600883f4438ac2231ea076e87e2`, method version `0.11.0`.
+Other rows retain their earlier evidence and are not newly verified.
+The URLs below preserve actual receipts. A renamed listing or accepted refresh
+does not prove that its downloadable files have changed.
 The maintained source now includes native Codex and Claude Code marketplaces.
 These custom marketplaces are separate from official platform directory listings.
 
 | Service | Route | Current evidence |
 | --- | --- | --- |
 | GitHub | Public source and release | Public source and the installable skill are available. Release packages include a skill ZIP and SHA-256 checksum. See the [latest release](https://github.com/hmmhmmhm/aligns.md/releases/latest). |
-| [skills.sh](https://skills.sh/docs/faq) | Installation telemetry and directory indexing | Public [skill page](https://skills.sh/hmmhmmhm/align.md/align) verified. One real remote installation succeeded for Codex, Claude Code, and Cursor in a test project. |
-| [askill](https://askill.sh/submit) | Submit GitHub URL | Submitted and indexed one skill. Public [listing](https://askill.sh/skills/704509) verified. |
+| [skills.sh](https://skills.sh/docs/faq) | Installation telemetry and directory indexing | The [current page](https://skills.sh/hmmhmmhm/aligns.md/align) works, and the old URL redirects to it. On 2026-11-02, its [download snapshot](https://skills.sh/api/download/hmmhmmhm/aligns.md/align) still contained method `0.6.1` and 12 files, compared with `0.11.0` and 25 tracked files in the source. No supported publisher refresh endpoint was found. The directory snapshot remains stale. This is separate from direct installation from GitHub. |
+| [askill](https://askill.sh/submit) | Submit GitHub URL | Reindexed the renamed source on 2026-11-02. The [current listing](https://askill.sh/skills/704733) shows method `0.11.0` and the eight alignment paths. The [legacy listing](https://askill.sh/skills/704509) was also submitted for reindexing, but its public page still showed the initial content at the follow-up check. Use the current listing. Supporting-file download completeness was not verified. |
 | [OpenAgentSkill](https://www.openagentskill.com/submit) | Public submission queue | Submission accepted and marked public. [Listing](https://www.openagentskill.com/skills/hmmhmmhm-align-md-align) verified; static checks passed, not AI-reviewed. |
-| [Agent Skill Hub](https://doc.agentskillhub.dev/guide/publishing) | GitHub import API | Imported as `hmmhmmhm/align`, version `2026.10.12`. Public [record](https://agentskillhub.dev/api/v1/u/hmmhmmhm/skills/align) and search for `ALIGN.md` verified at the original check. Source commit: `86e1ecc`. |
+| [Agent Skill Hub](https://doc.agentskillhub.dev/guide/publishing) | Source refresh API | Refreshed the existing `hmmhmmhm/align` record on 2026-11-02 through the documented `refresh-from-source` endpoint. The [public record](https://agentskillhub.dev/api/v1/u/hmmhmmhm/skills/align) reports version `2026.11.02` and source commit `43f2c30`. Its SKILL.md matches the maintained source, and all 25 tracked skill paths are present in the manifest. Supporting-file contents were not individually compared. |
 | [SkillsMP](https://skillsmp.com/about) | Public GitHub indexing | Public indexing documented; no self-service submission route found in the inspected site and documentation. A live search for the former `hmmhmmhm/align.md` returned no matches; listing is not yet verified. |
 | [Skills Directory](https://skillsdir.dev/add) | GitHub issue submission | The site's linked repository and issue template both return 404. Submission currently unavailable. |
 | [ClawHub](https://docs.openclaw.ai/clawhub) | Authenticated skill publication | CLI dry-run accepted `align-md` v0.1.0 with all three package files. The device authorization expired without login; a fresh owner authorization is required. Dry-run is not publication. |
-| [Skillstore](https://skillstore.io/submit) | Submit GitHub URL for audit and review | Submission processed successfully and [registration PR #3749](https://github.com/aiskillstore/marketplace/pull/3749) created. The service's automated report marks the skill safe, and all three PR checks passed. The PR remains open pending final review. [Submission status](https://skillstore.io/ko/submissions/3c6ca451-04aa-435e-95c3-5c51e1094fec). Publication is not yet confirmed. |
+| [Skillstore](https://skillstore.io/submit) | Submit GitHub URL for audit and review | The [existing listing](https://skillstore.io/skills/hmmhmmhm-align) is public, and [registration PR #3749](https://github.com/aiskillstore/marketplace/pull/3749) was merged on 2026-10-12. It still serves the initial snapshot. The [2026-11-02 refresh submission](https://skillstore.io/ko/submissions/220241ba-a49c-49ed-ae1b-f3eca9c223cb) failed before security review because the published source identity uses the former repository name. [Workflow evidence](https://github.com/aiskillstore/marketplace/actions/runs/41374403057). In [issue #4038](https://github.com/aiskillstore/marketplace/issues/4038#issuecomment-6576959897), the maintainer confirmed on 2026-11-02 that source migration is unsupported and closed the issue. The final instruction is to request removal of the old listing, wait for removal, then submit the renamed source. The 2026-11-05 attempt stopped at GitHub sign-in. No removal request or replacement submission was completed. Latest-version publication remains unconfirmed. |
 | [Skills Directory](https://www.skillsdirectory.com/submit) | Authenticated submission | The submission route requires sign-in. The owner login request timed out with the sign-in page unchanged; no submission made. This is a different service from `skillsdir.dev`. |
 
 ## Platform directories

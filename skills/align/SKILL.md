@@ -1,9 +1,9 @@
 ---
 name: align
-description: Establish and maintain project or optional cross-project personal alignment in ALIGNS.md, including review of selected personal documents, PR feedback, or conversations for scoped criteria. Use for natural-language self-alignment requests such as “자가정렬 진행해봅시다” or “Let’s do a self-alignment check,” or when goals or priorities are unclear, important decisions diverge from the user's expectations, repeated corrections expose a missing criterion, or a long autonomous run needs judgment calibration. Also use for requested collection or export of confirmed alignment decision examples for personal fine-tuning. Apply existing agreements without reopening routine decisions.
+description: Establish and maintain project or optional cross-project personal alignment in ALIGNS.md, including review of selected personal documents, PR feedback, or conversations for scoped criteria. Use for natural-language self-alignment requests such as “자가정렬 진행해봅시다” or “Let’s do a self-alignment check,” or when goals or priorities are unclear, important decisions diverge from the user's expectations, repeated corrections expose a missing criterion, a long autonomous run needs judgment calibration, open-ended work lacks a clear scope or finish condition, or repeated attempts stop producing new evidence. Also use for requested collection or export of confirmed alignment decision examples for personal fine-tuning. Apply existing agreements without reopening routine decisions.
 license: MIT
 metadata:
-  version: "0.11.0"
+  version: "0.12.0"
 ---
 
 # Align
@@ -53,10 +53,10 @@ For an open-purpose invocation, defer setup questions until a path is selected.
 When the user invokes align without a clear purpose, show this short menu in
 their language after reading the available project context. Keep numbers stable:
 
-1. Set or review the project's direction and personal criteria.
+1. Set or review the project's direction, scope, completion criteria, and personal criteria.
 2. Review a recent decision that missed expectations.
 3. Find candidate criteria in selected PR or conversation history.
-4. Rehearse judgment before a long autonomous run.
+4. Review execution boundaries and rehearse judgment before a long autonomous run.
 5. Recommend a starting point from the current project context.
 6. Set up or review personal ALIGNS.md defaults across projects (optional).
 7. Add the ALIGNS.md badge to this project's README (only when absent).
@@ -205,6 +205,11 @@ Preserve other instructions and personal criteria.
 | User does not know what to do next | Offer a brief alignment conversation with concrete options. Do not invent a roadmap or start work without a direction. |
 | Long autonomous or repeated run | Check agreed boundaries and offer a short hypothetical rehearsal if consequential judgments are untested. |
 | Loop or goal configured, stopped, or marked complete against expectations | Compare the request, configured objective, actual state, and results. Repair known errors; clarify only unresolved scope, completion, or stopping criteria. |
+
+When open-ended work needs a bounded goal, the remaining scope is unclear, or
+repetition stops producing useful evidence, follow
+[work scope and goals](references/recurring.md#work-scope-and-goals). Use paths 1
+and 4 without adding a menu step or restarting an interview.
 
 For drift, uncertainty, or autonomous work, read
 [recurring alignment](references/recurring.md). A suggestion is not a new

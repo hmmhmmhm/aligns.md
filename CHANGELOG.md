@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.12.0
+
+- Suggest bounded goals when open-ended work needs a clear outcome and finish condition. Preserve the existing eight paths.
+- Review available scope, remaining effort, completed work and overlapping assignments before proposing more work.
+- Check stalled repetition against new evidence and agreed boundaries, while preserving useful iteration and existing execution permissions.
+
 ## 0.11.0
 
 - Add a validated manual team-data export: reviewer policy, bound approvals, artifact hashes, context snapshots, withdrawals and shared task families.

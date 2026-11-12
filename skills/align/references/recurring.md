@@ -48,6 +48,68 @@ scope, supporting evidence and counterexamples. Apply already confirmed criteria
 ask only about inferred or conflicting ones. A missed instruction still needs a
 repair, not another preference interview.
 
+## Work scope and goals
+
+Use this review when an open-ended request has no clear finish condition, work
+spans several dependent steps, the remaining scope is uncertain, or repeated
+attempts no longer produce useful evidence. Apply existing agreements first.
+A routine bounded task needs neither a goal proposal nor another interview.
+
+Read the relevant request, project plans, available issue or run state, and work
+already completed or assigned to another agent. Describe the scope supported by
+those sources: delivered work, remaining outcomes, exclusions, dependencies and
+known blockers. Name coverage gaps; do not claim a complete inventory from a
+partial checkout or unavailable tracker. Broader conversation collection still
+uses the source and scope choice in [history review](history.md).
+Reuse verified results and coordinate overlapping assignments instead of doing
+completed work again. Recheck only when changes, failures or uncertainty justify it.
+
+Break substantial work into verifiable outcomes. Explain likely effort and the
+uncertainty that affects it, using observed throughput when available. Do not
+invent precise time estimates, progress percentages or completion evidence.
+Keep the task inventory and run settings in the current plan or supported task
+system. ALIGNS.md holds confirmed lasting criteria, not the task backlog.
+
+### Suggest a goal when it would help
+
+The agent may propose a concrete goal without waiting for the user to ask for one.
+Tie the suggestion to the actual gap, such as an unbounded request to keep
+improving a result. State the intended outcome, included and excluded work,
+completion evidence, and the checkpoint or stopping boundary that matters.
+Recommend one useful scope instead of inventing a roadmap. For example:
+"I can compare the remaining channels and prepare drafts for two suitable ones.
+That would complete this pass. Publishing would be a separate step."
+
+Reuse a clear objective and existing authorization. Ask only about unresolved
+choices that change the outcome or execution boundary. A goal proposal does not
+itself authorize creating or starting a goal, loop, automation or schedule.
+Use the client's supported controls only when their requirements and the user's
+authorization are satisfied. If goal tooling is unavailable, agree on a bounded
+plan without pretending a managed goal exists. Never infer a token, time or cost
+budget, raise an existing limit, or restart a stopped run from this suggestion.
+A declined proposal stays closed until relevant circumstances change.
+
+### Check whether repetition is making progress
+
+At meaningful checkpoints, compare each new attempt with the previous evidence
+and completion criteria. New feedback, a changed hypothesis, a code change, or
+a newly observed failure can justify another attempt. Repeating the same action
+without a changed input, new evidence or a testable reason to expect progress
+calls for a checkpoint. This includes polishing an already accepted result with
+no remaining target and checking unchanged sources with no revisit condition.
+
+When progress stalls, state what has already been tried and what remains
+unresolved. Reuse completed results, change the approach within authorized scope,
+or propose a smaller scope, missing prerequisite or user decision. Stop the
+unproductive repetition while continuing independent authorized work. Report
+unfinished outcomes accurately; a stall is not completion of the goal.
+Honor user-set limits and client stop controls. Suggest a task-specific attempt
+or effort limit when useful, not a universal retry count. Do not interrupt a
+justified recovery or demand approval for each ordinary iteration. A requested
+monitoring task may legitimately check for change at its agreed interval.
+This review operates during active turns and cannot impose a runtime limit on
+another process or wake a stopped agent.
+
 ## Before a long autonomous loop
 
 Read existing permission, scope, budget, checkpoint and stopping agreements.

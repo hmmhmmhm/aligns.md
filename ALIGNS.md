@@ -214,6 +214,21 @@ execution error directly; ask only about unresolved judgment criteria.
 The method must not imply that it can wake a stopped agent or that a review
 alone authorizes restarting work or expanding its scope.
 
+## Goals, work scope and repetition
+
+Confirmed scope update: 2026-11-11 (Asia/Seoul). Partial confirmation only.
+
+The skill should suggest a bounded goal when open-ended work, unclear remaining
+scope or stalled repetition makes one useful. Review available work, dependencies,
+completed results and overlapping assignments, and propose completion evidence
+and relevant stopping boundaries. Keep ordinary bounded tasks moving without
+requiring goal setup. Distinguish productive iteration from repeated actions
+that bring no new evidence. Use existing paths 1 and 4 for this review.
+
+Keep task inventories and run settings in the plan or task system, with confirmed
+lasting criteria in ALIGNS.md. A proposal does not authorize creating or starting
+a goal or loop, changing budgets, scheduling work or restarting a stopped run.
+
 ## Verification and delivery
 
 Confirmed from conversation and hypothetical rehearsal: 2026-10-18 16:58 (Asia/Seoul). Partial confirmation only.

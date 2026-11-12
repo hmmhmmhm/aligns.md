@@ -16,10 +16,10 @@ any time: “Help me align this project's criteria,” or “That result missed 
 meant; let's revisit the criteria.” No command or exact phrase is required. If
 the purpose is open, the agent offers these choices in your language:
 
-1. Set or review project direction and personal criteria.
+1. Set or review project direction, scope, completion criteria, and personal criteria.
 2. Review a decision that missed your expectations.
 3. Find criteria in selected PR or conversation history.
-4. Rehearse decisions before a long autonomous run.
+4. Review execution boundaries and rehearse decisions before a long autonomous run.
 5. Suggest a starting point from the current project.
 6. Set up or review personal defaults across projects (optional).
 7. Add the ALIGNS.md badge to the project README (only when absent).
@@ -43,6 +43,22 @@ when moving between stages and skips work already done. A menu choice does not
 confirm new preferences. Rehearsal discusses hypothetical decisions without
 starting the autonomous run. Badge setup checks the README, adds the missing badge,
 and verifies the result without asking preference questions.
+
+## Bound open-ended work
+
+When a request has no clear finish condition, the remaining scope is uncertain,
+or repeated attempts bring no new evidence, the agent can suggest a concrete
+goal. It checks available plans and work already completed or assigned, then
+proposes an outcome, scope and completion evidence. For larger work, it describes
+the likely effort and what remains uncertain. Paths 1 and 4 cover this review.
+
+A suggestion does not start a goal or loop. The agent reuses existing permission
+and asks only about choices that change the next step. Routine bounded tasks
+continue without goal setup. Productive iterations continue too, while stalled
+repetition prompts a changed approach, a narrower scope or a decision. A stalled
+run is still unfinished. Task lists and limits belong in the plan or task system,
+with confirmed lasting criteria in ALIGNS.md. See the
+[work scope and goal procedure](../skills/align/references/recurring.md#work-scope-and-goals).
 
 ## Continue from each answer
 

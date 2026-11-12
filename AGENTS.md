@@ -62,6 +62,12 @@ focused clarification when important judgment diverges, repeated corrections
 suggest a missing criterion, the user is unsure of the next direction, or a loop
 or goal exposes unresolved scope, completion, or stopping criteria. Compare the
 request, configured objective, actual state, and results. Fix known errors directly.
+When open-ended work lacks a finish condition, the remaining scope is unclear,
+or repeated attempts bring no new evidence, use align to review the scope and
+suggest a bounded goal when useful. Reuse completed work and check overlapping
+assignments. Keep task lists in the plan and lasting criteria in ALIGNS.md.
+A suggestion does not create or start a goal or loop, change its limits, or
+replace existing authorization. Do not add goal setup to routine bounded tasks.
 Before a long run with untested boundaries, offer hypothetical rehearsal without
 executing scenarios or launching the run. A review does not authorize a restart,
 budget increase, or override of a user stop. The skill acts during active turns;
